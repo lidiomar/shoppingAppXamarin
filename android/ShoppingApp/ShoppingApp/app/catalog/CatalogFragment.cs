@@ -13,6 +13,7 @@ using Android.Support.V7.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using ShoppingApp.app.cart;
 using static Android.Support.V7.Widget.RecyclerView;
 
 namespace ShoppingApp.app.catalog
@@ -32,6 +33,7 @@ namespace ShoppingApp.app.catalog
             
             View view = inflater.Inflate(Resource.Layout.fragment_catalog, container, false);
             setupRecyclerView(view);
+            setupButtonBuy(view);
             return view;
                      
         }
@@ -43,6 +45,16 @@ namespace ShoppingApp.app.catalog
             CatalogAdapter catalogAdapter = new CatalogAdapter();
             recyclerView.SetAdapter(catalogAdapter);
 
+        }
+
+        private void setupButtonBuy(View view)
+        {
+            Button buttonBuy = view.FindViewById<Button>(Resource.Id.button_buy);
+            buttonBuy.Click += (sender, e) =>
+            {
+                Intent intent = new Intent(Activity, typeof(ShoppingCartActivity));
+                Activity.StartActivity(intent);
+            };
         }
     }
 }

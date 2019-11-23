@@ -2,12 +2,11 @@
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
-using Android.Widget;
-using Android.Views;
+using ShoppingApp.app.catalog;
 
 namespace ShoppingApp.app.cart
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", ParentActivity = typeof(CatalogActivity))]
     public class ShoppingCartActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -24,6 +23,7 @@ namespace ShoppingApp.app.cart
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             SupportActionBar.Title = GetString(Resource.String.cart);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

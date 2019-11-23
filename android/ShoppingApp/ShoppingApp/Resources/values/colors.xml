@@ -8,4 +8,5 @@
     <color name="button_grey">#ada6ac</color>
     <color name="cart_total_background">#e1e7f0</color>
     <color name="divider">#e8e8e8</color>
+    <color name="divider_strong">#ababab</color>
 </resources>

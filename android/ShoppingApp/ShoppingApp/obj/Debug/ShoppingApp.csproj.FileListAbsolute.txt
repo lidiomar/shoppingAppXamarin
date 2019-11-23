@@ -304,3 +304,4 @@
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/ShoppingApp.csprojAssemblyReference.cache
