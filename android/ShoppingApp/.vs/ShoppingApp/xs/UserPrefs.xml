@@ -1,9 +1,14 @@
 ﻿<Properties StartupConfiguration="{2BECE44A-7058-46A7-BD19-840A82A8F1FC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/Resources/values/strings.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/Resources/layout/fragment_catalog.xml">
     <Files>
-      <File FileName="ShoppingApp/Resources/layout/fragment_catalog.xml" Line="41" Column="37" />
-      <File FileName="ShoppingApp/app/catalog/CatalogFragment.cs" Line="45" Column="1" />
-      <File FileName="ShoppingApp/Resources/values/strings.xml" Line="6" Column="46" />
+      <File FileName="ShoppingApp/Resources/layout/fragment_shopping_cart.xml" Line="50" Column="50" />
+      <File FileName="ShoppingApp/Resources/values/colors.xml" Line="9" Column="28" />
+      <File FileName="ShoppingApp/Resources/values/dimens.xml" Line="4" Column="47" />
+      <File FileName="ShoppingApp/Resources/layout/adapter_shopping_cart.xml" Line="95" Column="1" />
+      <File FileName="ShoppingApp/app/cart/ShoppingCartAdapter.cs" Line="22" Column="1" />
+      <File FileName="ShoppingApp/app/cart/ShoppingCartAdapter.cs" Line="20" Column="99" />
+      <File FileName="ShoppingApp/Resources/layout/adapter_catalog.xml" Line="1" Column="1" />
+      <File FileName="ShoppingApp/Resources/layout/fragment_catalog.xml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,15 +16,15 @@
           <Node name="ShoppingApp" expanded="True">
             <Node name="ShoppingApp" expanded="True">
               <Node name="app" expanded="True">
+                <Node name="cart" expanded="True" />
                 <Node name="catalog" expanded="True" />
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
-                <Node name="layout" expanded="True" />
-                <Node name="values" expanded="True">
-                  <Node name="strings.xml" selected="True" />
+                <Node name="layout" expanded="True">
+                  <Node name="fragment_catalog.xml" selected="True" />
                 </Node>
+                <Node name="values" expanded="True" />
               </Node>
             </Node>
           </Node>

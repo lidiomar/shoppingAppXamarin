@@ -7,7 +7,7 @@ using Android.Views;
 
 namespace ShoppingApp.app.catalog
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme")]
     public class CatalogActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
