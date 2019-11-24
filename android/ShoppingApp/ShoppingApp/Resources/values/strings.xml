@@ -6,4 +6,5 @@
     <string name="buy">Comprar \u25B8 R$ 0,00</string>
     <string name="cart">Carrinho</string>
     <string name="checkout">Finalizar compra</string>
+    <string name="price">R$ {0}</string>
 </resources>

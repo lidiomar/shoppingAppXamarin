@@ -36,7 +36,7 @@ namespace ShoppingApp.app.catalog
             if(viewType == productView)
             {
                 View catalogAdapterView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.adapter_catalog, parent, false);
-                return new CatalogViewHolder(catalogAdapterView);
+                return new CatalogViewHolder(catalogAdapterView, parent.Context);
             }
 
             View view = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.catalog_section, parent, false);

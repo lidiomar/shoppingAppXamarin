@@ -4,6 +4,9 @@
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/mscorlib.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/Newtonsoft.Json.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/Refit.dll
+/Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/Square.OkHttp.dll
+/Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/Square.OkIO.dll
+/Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/Square.Picasso.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/System.Core.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/System.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/System.Net.Http.dll

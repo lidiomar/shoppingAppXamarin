@@ -1,7 +1,11 @@
 ﻿<Properties StartupConfiguration="{2BECE44A-7058-46A7-BD19-840A82A8F1FC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/catalog/CatalogViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/catalog/CatalogViewHolder.cs">
     <Files>
-      <File FileName="ShoppingApp/app/catalog/CatalogViewModel.cs" Line="1" Column="1" />
+      <File FileName="ShoppingApp/app/catalog/CatalogViewModel.cs" Line="36" Column="49" />
+      <File FileName="ShoppingApp/app/catalog/CatalogAdapter.cs" Line="57" Column="33" />
+      <File FileName="ShoppingApp/Resources/layout/adapter_catalog.xml" Line="33" Column="45" />
+      <File FileName="ShoppingApp/Resources/values/strings.xml" Line="9" Column="31" />
+      <File FileName="ShoppingApp/app/catalog/CatalogViewHolder.cs" Line="37" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,12 +15,14 @@
               <Node name="app" expanded="True">
                 <Node name="cart" expanded="True" />
                 <Node name="catalog" expanded="True">
-                  <Node name="CatalogViewModel.cs" selected="True" />
+                  <Node name="CatalogViewHolder.cs" selected="True" />
                 </Node>
                 <Node name="model" expanded="True" />
               </Node>
               <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
                 <Node name="layout" expanded="True" />
+                <Node name="values" expanded="True" />
               </Node>
             </Node>
           </Node>

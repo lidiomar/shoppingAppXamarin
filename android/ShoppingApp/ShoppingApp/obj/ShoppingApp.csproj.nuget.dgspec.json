@@ -36,6 +36,14 @@
               "target": "Package",
               "version": "[5.0.23, )"
             },
+            "Square.Picasso": {
+              "target": "Package",
+              "version": "[2.5.2.2, )"
+            },
+            "Xamarin.Android.Support.Annotations": {
+              "target": "Package",
+              "version": "[28.0.0.1, )"
+            },
             "Xamarin.Android.Support.Constraint.Layout": {
               "target": "Package",
               "version": "[1.1.2, )"
