@@ -6,6 +6,6 @@ namespace ShoppingApp.app.catalog
 {
     public interface ICatalogView
     {
-        void LoadData(List<Categorie> categories, List<Sale> sales, List<Product> products);
+        void LoadData(List<Category> categories, List<Object> preparedList);
     }
 }

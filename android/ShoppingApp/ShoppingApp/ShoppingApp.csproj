@@ -75,12 +75,13 @@
     <Compile Include="app\catalog\CatalogRemoteDataSource.cs" />
     <Compile Include="app\catalog\CatalogLocalDataSource.cs" />
     <Compile Include="app\catalog\IService.cs" />
-    <Compile Include="app\model\Categorie.cs" />
+    <Compile Include="app\model\Category.cs" />
     <Compile Include="app\catalog\NetworkService.cs" />
     <Compile Include="app\catalog\ICatalogView.cs" />
     <Compile Include="app\model\Sale.cs" />
     <Compile Include="app\model\Policie.cs" />
     <Compile Include="app\model\Product.cs" />
+    <Compile Include="app\catalog\CatalogSectionViewHolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -166,6 +167,10 @@
       <Generator></Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\values\dimens.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\catalog_section.xml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>

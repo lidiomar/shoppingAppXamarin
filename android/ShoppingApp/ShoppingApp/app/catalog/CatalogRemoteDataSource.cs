@@ -6,15 +6,10 @@ namespace ShoppingApp.app.catalog
 {
     public class CatalogRemoteDataSource 
     {
-        public CatalogRemoteDataSource()
-        {
-           
-        }
-
-        public Task<List<Categorie>> GetCategoriesAsync()
+        public Task<List<Category>> GetCategoriesAsync()
         {
             var apiService = NetworkService.GetApiService();
-            Task<List<Categorie>> task = apiService.GetCategories();
+            Task<List<Category>> task = apiService.GetCategories();
             return task;
      
         }

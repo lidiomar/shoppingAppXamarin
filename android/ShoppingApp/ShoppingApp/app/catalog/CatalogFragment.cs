@@ -1,21 +1,14 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Support.Constraints;
 using Android.Support.V7.Widget;
-using Android.Util;
 using Android.Views;
 using Android.Widget;
 using ShoppingApp.app.cart;
 using ShoppingApp.app.model;
-using static Android.Support.V7.Widget.RecyclerView;
 
 namespace ShoppingApp.app.catalog
 {
@@ -23,6 +16,7 @@ namespace ShoppingApp.app.catalog
     {
 
         protected CatalogViewModel catalogViewModel;
+        private RecyclerView recyclerView;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -45,11 +39,7 @@ namespace ShoppingApp.app.catalog
 
         private void SetupRecyclerView(View view)
         {
-
-            RecyclerView recyclerView = view.FindViewById<RecyclerView>(Resource.Id.catalog_recyclerview);
-            CatalogAdapter catalogAdapter = new CatalogAdapter();
-            recyclerView.SetAdapter(catalogAdapter);
-
+            this.recyclerView = view.FindViewById<RecyclerView>(Resource.Id.catalog_recyclerview);
         }
 
         private void SetupButtonBuy(View view)
@@ -62,9 +52,10 @@ namespace ShoppingApp.app.catalog
             };
         }
 
-        public void LoadData(List<Categorie> categories, List<Sale> sales, List<Product> products)
+        public void LoadData(List<Category> categories, List<Object> preparedList)
         {
-            string a = "";
+            CatalogAdapter catalogAdapter = new CatalogAdapter(preparedList);
+            recyclerView.SetAdapter(catalogAdapter);
         }
     }
 }

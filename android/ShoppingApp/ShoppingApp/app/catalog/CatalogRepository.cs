@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using ShoppingApp.app.model;
 
@@ -8,15 +7,10 @@ namespace ShoppingApp.app.catalog
     public class CatalogRepository
     {
 
-        public CatalogRepository()
-        {
-
-        }
-
-        public Task<List<Categorie>> GetCategoriesAsync()
+        public Task<List<Category>> GetCategoriesAsync()
         {
             CatalogRemoteDataSource catalogRemoteDataSource = new CatalogRemoteDataSource();
-            Task<List<Categorie>> task = catalogRemoteDataSource.GetCategoriesAsync();
+            Task<List<Category>> task = catalogRemoteDataSource.GetCategoriesAsync();
             return task;
         }
 

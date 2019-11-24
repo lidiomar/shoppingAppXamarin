@@ -53,11 +53,11 @@ namespace ShoppingApp.app.catalog
         }
 
         /// <inheritdoc />
-        Task<List<Categorie>> IService.GetCategories()
+        Task<List<Category>> IService.GetCategories()
         {
             var arguments = new object[] {  };
             var func = requestBuilder.BuildRestResultFuncForMethod("GetCategories", new Type[] {  });
-            return (Task<List<Categorie>>)func(Client, arguments);
+            return (Task<List<Category>>)func(Client, arguments);
         }
 
         /// <inheritdoc />

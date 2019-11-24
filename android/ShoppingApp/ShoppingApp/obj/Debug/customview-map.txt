@@ -57,6 +57,7 @@ string;obj/Debug/res/values/strings.xml
 style;obj/Debug/res/values/styles.xml
 TextView;obj/Debug/res/layout/adapter_catalog.xml
 TextView;obj/Debug/res/layout/adapter_shopping_cart.xml
+TextView;obj/Debug/res/layout/catalog_section.xml
 TextView;obj/Debug/res/layout/fragment_shopping_cart.xml
 vector;obj/Debug/res/drawable/ic_arrow_down.xml
 vector;obj/Debug/res/drawable/ic_filter.xml

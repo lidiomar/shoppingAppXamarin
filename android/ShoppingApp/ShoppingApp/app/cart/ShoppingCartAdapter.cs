@@ -1,15 +1,10 @@
-﻿using System;
-using Android.Support.V7.Widget;
+﻿using Android.Support.V7.Widget;
 using Android.Views;
 
 namespace ShoppingApp.app.cart
 {
     public class ShoppingCartAdapter : RecyclerView.Adapter
     {
-        public ShoppingCartAdapter()
-        {
-        }
-
         public override int ItemCount => 20;
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
