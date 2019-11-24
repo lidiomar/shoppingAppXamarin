@@ -4,7 +4,6 @@ using System.Net.Http;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Refit;
-using ShoppingApp.app.model;
 
 /* ******** Hey You! *********
  *
@@ -30,7 +29,7 @@ namespace ShoppingApp.RefitInternalGenerated
 }
 #pragma warning restore
 
-namespace ShoppingApp.app.catalog
+namespace ShoppingApp.app.model
 {
     using ShoppingApp.RefitInternalGenerated;
 

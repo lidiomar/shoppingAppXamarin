@@ -5,8 +5,8 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
-    <activity android:label="@string/app_name" android:parentActivityName="md5f4c1b4a9e8e9e22c5d858cd76fe64dd4.CatalogActivity" android:theme="@style/AppTheme" android:name="md59488767a0f9e06f9e778fad364cf4943.ShoppingCartActivity" />
-    <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md5f4c1b4a9e8e9e22c5d858cd76fe64dd4.CatalogActivity">
+    <activity android:label="@string/app_name" android:parentActivityName="md5f44916c0bbb54411549afcb02c1a44b5.CatalogActivity" android:theme="@style/AppTheme" android:name="md5637e927b7e94b54641ff311953113206.ShoppingCartActivity" />
+    <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md5f44916c0bbb54411549afcb02c1a44b5.CatalogActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

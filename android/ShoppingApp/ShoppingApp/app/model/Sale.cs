@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
+using SQLite;
 
 namespace ShoppingApp.app.model
 {

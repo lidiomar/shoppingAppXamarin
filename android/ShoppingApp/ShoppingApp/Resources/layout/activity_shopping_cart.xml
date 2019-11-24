@@ -37,7 +37,7 @@
         
     <fragment
         android:id="@+id/product_fragment"
-        android:name="ShoppingApp.app.cart.ShoppingCartFragment"
+        android:name="ShoppingApp.app.cart.view.ShoppingCartFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>      
 

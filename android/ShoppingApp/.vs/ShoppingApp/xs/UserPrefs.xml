@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{2BECE44A-7058-46A7-BD19-840A82A8F1FC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/catalog/CatalogViewHolder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/catalog/viewmodel/CatalogViewModel.cs">
     <Files>
-      <File FileName="ShoppingApp/app/catalog/CatalogViewModel.cs" Line="36" Column="49" />
-      <File FileName="ShoppingApp/app/catalog/CatalogAdapter.cs" Line="57" Column="33" />
-      <File FileName="ShoppingApp/Resources/layout/adapter_catalog.xml" Line="33" Column="45" />
-      <File FileName="ShoppingApp/Resources/values/strings.xml" Line="9" Column="31" />
-      <File FileName="ShoppingApp/app/catalog/CatalogViewHolder.cs" Line="37" Column="10" />
+      <File FileName="ShoppingApp/app/App.cs" Line="26" Column="138" />
+      <File FileName="ShoppingApp/app/db/AppDatabase.cs" Line="21" Column="10" />
+      <File FileName="ShoppingApp/app/model/CatalogRepository.cs" Line="25" Column="1" />
+      <File FileName="ShoppingApp/app/catalog/viewmodel/CatalogViewModel.cs" Line="25" Column="65" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,19 +12,28 @@
           <Node name="ShoppingApp" expanded="True">
             <Node name="ShoppingApp" expanded="True">
               <Node name="app" expanded="True">
-                <Node name="cart" expanded="True" />
                 <Node name="catalog" expanded="True">
-                  <Node name="CatalogViewHolder.cs" selected="True" />
+                  <Node name="viewmodel" expanded="True">
+                    <Node name="CatalogViewModel.cs" selected="True" />
+                  </Node>
                 </Node>
+                <Node name="db" expanded="True" />
                 <Node name="model" expanded="True" />
-              </Node>
-              <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
-                <Node name="layout" expanded="True" />
-                <Node name="values" expanded="True" />
               </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>i.Result</Value>
+          <Value>categories</Value>
+          <Value>products</Value>
+          <Value>sales</Value>
+          <Value>result</Value>
+          <Value>j.Result</Value>
+          <Value>App.createdDatabase</Value>
+          <Value>File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Shopping.db3"))</Value>
         </State>
       </Pad>
     </Pads>
