@@ -56,6 +56,7 @@
     <Reference Include="Mono.Android" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -68,6 +69,18 @@
     <Compile Include="app\cart\ShoppingCartAdapter.cs" />
     <Compile Include="app\cart\ShoppingCartFragment.cs" />
     <Compile Include="app\cart\ShoppingCartViewHolder.cs" />
+    <Compile Include="app\catalog\CatalogViewModel.cs" />
+    <Compile Include="app\catalog\CatalogRepository.cs" />
+    <Compile Include="app\catalog\CatalogDataSource.cs" />
+    <Compile Include="app\catalog\CatalogRemoteDataSource.cs" />
+    <Compile Include="app\catalog\CatalogLocalDataSource.cs" />
+    <Compile Include="app\catalog\IService.cs" />
+    <Compile Include="app\model\Categorie.cs" />
+    <Compile Include="app\catalog\NetworkService.cs" />
+    <Compile Include="app\catalog\ICatalogView.cs" />
+    <Compile Include="app\model\Sale.cs" />
+    <Compile Include="app\model\Policie.cs" />
+    <Compile Include="app\model\Product.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -163,6 +176,7 @@
     <Folder Include="app\catalog\" />
     <Folder Include="Resources\menu\" />
     <Folder Include="app\cart\" />
+    <Folder Include="app\model\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
@@ -174,6 +188,9 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat">
       <Version>28.0.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Refit">
+      <Version>5.0.23</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

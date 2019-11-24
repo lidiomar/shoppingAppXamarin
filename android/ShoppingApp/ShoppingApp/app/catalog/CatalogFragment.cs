@@ -14,17 +14,22 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using ShoppingApp.app.cart;
+using ShoppingApp.app.model;
 using static Android.Support.V7.Widget.RecyclerView;
 
 namespace ShoppingApp.app.catalog
 {
-    public class CatalogFragment : Fragment 
+    public class CatalogFragment : Fragment, ICatalogView  
     {
+
+        protected CatalogViewModel catalogViewModel;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
 
             base.OnCreate(savedInstanceState);
+            catalogViewModel = new CatalogViewModel(this);
+            catalogViewModel.GetCategories();
 
         }
 
@@ -32,13 +37,13 @@ namespace ShoppingApp.app.catalog
         {
             
             View view = inflater.Inflate(Resource.Layout.fragment_catalog, container, false);
-            setupRecyclerView(view);
-            setupButtonBuy(view);
+            SetupRecyclerView(view);
+            SetupButtonBuy(view);
             return view;
                      
         }
 
-        private void setupRecyclerView(View view)
+        private void SetupRecyclerView(View view)
         {
 
             RecyclerView recyclerView = view.FindViewById<RecyclerView>(Resource.Id.catalog_recyclerview);
@@ -47,7 +52,7 @@ namespace ShoppingApp.app.catalog
 
         }
 
-        private void setupButtonBuy(View view)
+        private void SetupButtonBuy(View view)
         {
             Button buttonBuy = view.FindViewById<Button>(Resource.Id.button_buy);
             buttonBuy.Click += (sender, e) =>
@@ -55,6 +60,11 @@ namespace ShoppingApp.app.catalog
                 Intent intent = new Intent(Activity, typeof(ShoppingCartActivity));
                 Activity.StartActivity(intent);
             };
+        }
+
+        public void LoadData(List<Categorie> categories, List<Sale> sales, List<Product> products)
+        {
+            string a = "";
         }
     }
 }

@@ -1,29 +1,34 @@
 ﻿<Properties StartupConfiguration="{2BECE44A-7058-46A7-BD19-840A82A8F1FC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/Resources/layout/activity_shopping_cart.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/model/Sale.cs">
     <Files>
-      <File FileName="ShoppingApp/app/cart/ShoppingCartActivity.cs" Line="14" Column="10" />
-      <File FileName="ShoppingApp/app/catalog/CatalogActivity.cs" />
-      <File FileName="ShoppingApp/Resources/layout/fragment_catalog.xml" Line="36" Column="34" />
-      <File FileName="ShoppingApp/Resources/layout/activity_shopping_cart.xml" Line="40" Column="64" />
+      <File FileName="ShoppingApp/app/catalog/CatalogFragment.cs" Line="1" Column="1" />
+      <File FileName="ShoppingApp/app/catalog/CatalogViewModel.cs" Line="38" Column="1" />
+      <File FileName="ShoppingApp/app/model/Product.cs" Line="14" Column="46" />
+      <File FileName="ShoppingApp/app/model/Sale.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShoppingApp" expanded="True">
             <Node name="ShoppingApp" expanded="True">
+              <Node name="Packages" expanded="True" />
               <Node name="app" expanded="True">
                 <Node name="cart" expanded="True" />
                 <Node name="catalog" expanded="True" />
-              </Node>
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True">
-                  <Node name="activity_shopping_cart.xml" selected="True" />
+                <Node name="model" expanded="True">
+                  <Node name="Sale.cs" selected="True" />
                 </Node>
-                <Node name="values" expanded="True" />
               </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>categories</Value>
+          <Value>products</Value>
+          <Value>sales</Value>
+          <Value>result</Value>
         </State>
       </Pad>
     </Pads>
@@ -32,7 +37,10 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/app/catalog/CatalogFragment.cs" relfile="ShoppingApp/app/catalog/CatalogFragment.cs" line="67" column="1" />
+      <Breakpoint file="/Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/app/catalog/CatalogViewModel.cs" relfile="ShoppingApp/app/catalog/CatalogViewModel.cs" line="38" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
