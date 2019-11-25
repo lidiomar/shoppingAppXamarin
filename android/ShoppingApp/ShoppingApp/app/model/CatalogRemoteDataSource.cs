@@ -28,5 +28,10 @@ namespace ShoppingApp.app.model
             return task;
 
         }
+
+        public Task<int> UpdateProductAsync(Product product)
+        {
+            return null;
+        }
     }
 }

@@ -6,6 +6,7 @@ public class MonoPackageManager_Resources {
 		"Newtonsoft.Json.dll",
 		"Refit.dll",
 		"SQLite-net.dll",
+		"SQLiteNetExtensions.dll",
 		"SQLitePCLRaw.batteries_green.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",

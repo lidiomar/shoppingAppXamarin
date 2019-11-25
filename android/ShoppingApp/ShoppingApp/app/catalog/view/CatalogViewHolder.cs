@@ -3,6 +3,7 @@ using Android.Content;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using ShoppingApp.app.catalog.viewmodel;
 using ShoppingApp.app.model;
 using Square.Picasso;
 
@@ -16,7 +17,7 @@ namespace ShoppingApp.app.catalog.view
         private TextView numberOfProducts;
         private ImageButton buttonLess;
         private ImageButton buttonPlus;
-        private Button buttonFavorite;
+        public Button buttonFavorite { get; set; }
         private ImageView productImage;
         private Context context;
         private Picasso picasso;
@@ -58,7 +59,7 @@ namespace ShoppingApp.app.catalog.view
             productPrice.Text = priceFormated;
 
             string urlPhoto = product.Photo;
-            
+
             this.picasso.Load(urlPhoto)
                 .Fit()
                 .CenterCrop()

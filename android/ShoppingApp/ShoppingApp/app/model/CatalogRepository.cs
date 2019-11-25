@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ShoppingApp.app.model
@@ -22,7 +20,15 @@ namespace ShoppingApp.app.model
             {
                 task = catalogLocalDataSource.GetCategoriesAsync().ContinueWith(categoriesRequest =>
                 {
-                    categories = categoriesRequest.Result;
+                    if (categoriesRequest.IsCanceled || categoriesRequest.IsFaulted)
+                    {
+                        //TODO
+                    }
+                    else
+                    {
+                        categories = categoriesRequest.Result;
+                    }
+
                 });
             }
             else
@@ -34,26 +40,36 @@ namespace ShoppingApp.app.model
                     {
                         await App.Database.SaveCategoryAsync(category).ContinueWith(saveCategoriesRequest =>
                         {
-                            //TODO 
+                            if (saveCategoriesRequest.IsCanceled || saveCategoriesRequest.IsFaulted)
+                            {
+                                //TODO
+                            }
+                            else
+                            {
+                                //TODO
+                            }
                         });
                     }
 
                 });
             }
 
-            
             return task;
-
         }
 
         public Task GetSalesAsync()
         {
-            return catalogRemoteDataSource.GetSalesAsync().ContinueWith(request =>
+            return catalogRemoteDataSource.GetSalesAsync().ContinueWith(salesRequest =>
             {
-                sales = request.Result;
-
+                if (salesRequest.IsCanceled || salesRequest.IsFaulted)
+                {
+                    //TODO
+                }
+                else
+                {
+                    sales = salesRequest.Result;
+                }
             });
-
         }
 
         public Task GetProductsAsync()
@@ -62,29 +78,47 @@ namespace ShoppingApp.app.model
 
             if (App.DataBaseCreated())
             {
-                task = catalogLocalDataSource.GetProductsAsync().ContinueWith(i =>
+                task = catalogLocalDataSource.GetProductsAsync().ContinueWith(productsRequest =>
                 {
-                    products = i.Result;
+                    if (productsRequest.IsCanceled || productsRequest.IsFaulted)
+                    {
+                        //TODO
+                    }
+                    else
+                    {
+                        products = productsRequest.Result;
+                    }
                 });
             }
             else
             {
-                task = catalogRemoteDataSource.GetProductsAsync().ContinueWith(async i =>
+                task = catalogRemoteDataSource.GetProductsAsync().ContinueWith(async productsRequest =>
                 {
-                    products = i.Result;
+                    products = productsRequest.Result;
                     foreach (Product product in products)
                     {
-                        await App.Database.SaveProductAsync(product).ContinueWith(saveCategoriesRequest =>
+                        await App.Database.SaveProductAsync(product).ContinueWith(saveProductsRequest =>
                         {
-                            //TODO
+                            if(saveProductsRequest.IsCanceled || saveProductsRequest.IsFaulted)
+                            {
+                                //TODO
+                            }
+                            else
+                            {
+                                //TODO
+                            }
+
                         });
                     }
 
                 });
             }
-
-
             return task;
+        }
+
+        public Task UpdateProductAsync(Product product)
+        {
+            return catalogLocalDataSource.UpdateProductAsync(product);
         }
     }
 }

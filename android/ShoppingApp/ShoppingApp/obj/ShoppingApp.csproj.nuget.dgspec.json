@@ -36,6 +36,10 @@
               "target": "Package",
               "version": "[5.0.23, )"
             },
+            "SQLiteNetExtensions": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Square.Picasso": {
               "target": "Package",
               "version": "[2.5.2.2, )"

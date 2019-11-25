@@ -5,6 +5,7 @@
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/Newtonsoft.Json.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/Refit.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/SQLite-net.dll
+/Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/SQLiteNetExtensions.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/SQLitePCLRaw.batteries_green.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/SQLitePCLRaw.batteries_v2.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/SQLitePCLRaw.core.dll
@@ -79,4 +80,6 @@
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/System.Threading.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/System.Reflection.Extensions.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/System.Globalization.dll
+/Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/System.Resources.ResourceManager.dll
+/Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/System.ObjectModel.dll
 /Users/lfernandomachado/dev/xamarin/android/ShoppingApp/ShoppingApp/obj/Debug/android/assets/Mono.Security.dll

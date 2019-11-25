@@ -19,8 +19,15 @@ namespace ShoppingApp.app.model
 
         public Task<List<Sale>> GetSalesAsync()
         {
+            /*Task<List<Sale>> task = App.Database.GetSalesAsync();
+            return task;*/
             return null;
         }
-        
+
+        public Task<int> UpdateProductAsync(Product product)
+        {
+            Task<int> task = App.Database.UpdateProductAsync(product);
+            return task;
+        }
     }
 }

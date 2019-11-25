@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
-using SQLite;
+using SQLiteNetExtensions.Attributes;
 
 namespace ShoppingApp.app.model
 {
@@ -9,6 +9,7 @@ namespace ShoppingApp.app.model
         [JsonProperty(PropertyName = "category_id")]
         public string Category { get; set; }
         public string Name { get; set; }
+        [TextBlob("policies")]
         public List<Policie> Policies { get; set; }
     }
 }

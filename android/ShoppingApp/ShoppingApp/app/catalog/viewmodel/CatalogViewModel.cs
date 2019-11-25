@@ -16,7 +16,7 @@ namespace ShoppingApp.app.catalog.viewmodel
             this.view = view;
         }
 
-        public async void GetCategories()
+        public async Task GetCategories()
         {
             var getCategories = catalogRepository.GetCategoriesAsync();
             var getProducts = catalogRepository.GetProductsAsync();
@@ -32,13 +32,24 @@ namespace ShoppingApp.app.catalog.viewmodel
                 }
                 else if (result.IsFaulted)
                 {
-                    // If any error occurred exception throws.
+                    //TODO
                 }
                 else if (result.IsCanceled)
                 {
-                    // Task cancelled
+                    //TODO
                 }
             }, TaskScheduler.FromCurrentSynchronizationContext()).ConfigureAwait(false);
+        }
+
+        public async Task UpdateProductAsync(Product product)
+        {
+            await catalogRepository.UpdateProductAsync(product).ContinueWith(result => {
+                if (result.IsFaulted || result.IsCanceled)
+                {
+                    //TODO
+                }
+            });
+
         }
 
         private List<Object> GetPreparedList(List<Product> Products, List<Sale> Sales)

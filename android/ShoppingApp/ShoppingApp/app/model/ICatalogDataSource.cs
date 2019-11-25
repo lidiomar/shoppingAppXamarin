@@ -8,5 +8,6 @@ namespace ShoppingApp.app.model
         Task<List<Category>> GetCategoriesAsync();
         Task<List<Sale>> GetSalesAsync();
         Task<List<Product>> GetProductsAsync();
+        Task<int> UpdateProductAsync(Product product);
     }
 }

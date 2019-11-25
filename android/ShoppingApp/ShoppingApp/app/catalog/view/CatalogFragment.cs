@@ -24,7 +24,7 @@ namespace ShoppingApp.app.catalog.view
 
             base.OnCreate(savedInstanceState);
             catalogViewModel = new CatalogViewModel(this);
-            catalogViewModel.GetCategories();
+            _ = catalogViewModel.GetCategories();
 
         }
 
@@ -55,7 +55,7 @@ namespace ShoppingApp.app.catalog.view
 
         public void LoadData(List<Category> categories, List<Object> preparedList)
         {
-            CatalogAdapter catalogAdapter = new CatalogAdapter(preparedList);
+            CatalogAdapter catalogAdapter = new CatalogAdapter(preparedList, catalogViewModel, Activity);
             recyclerView.SetAdapter(catalogAdapter);
         }
     }

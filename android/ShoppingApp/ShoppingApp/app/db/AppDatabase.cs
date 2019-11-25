@@ -17,6 +17,7 @@ namespace ShoppingApp.app.db
         {
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<Category>().Wait();
+            //_database.CreateTableAsync<Sale>().Wait();
             _database.CreateTableAsync<Product>().Wait();
         }
 
@@ -56,15 +57,31 @@ namespace ShoppingApp.app.db
 
         public Task<int> SaveProductAsync(Product product)
         {
-            /*if (product.Id != 0)
-            {
-                return _database.UpdateAsync(product);
-            }
-            else
-            {
-                return _database.InsertAsync(product);
-            }*/
             return _database.InsertAsync(product);
         }
+
+        public Task<int> UpdateProductAsync(Product product)
+        {
+            return _database.UpdateAsync(product);
+        }
+
+        /************ Sale*/
+
+        /*public Task<List<Sale>> GetSalesAsync()
+        {
+            return _database.Table<Sale>().ToListAsync();
+        }
+
+        public Task<Sale> GetSaleAsync(string id)
+        {
+            return _database.Table<Sale>()
+                            .Where(i => i.Category.Equals(id))
+                            .FirstOrDefaultAsync();
+        }
+
+        public Task<int> SaveSaleAsync(Sale sale)
+        {
+            return _database.InsertAsync(sale);
+        }*/
     }
 }

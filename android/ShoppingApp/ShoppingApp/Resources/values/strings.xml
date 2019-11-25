@@ -7,4 +7,6 @@
     <string name="cart">Carrinho</string>
     <string name="checkout">Finalizar compra</string>
     <string name="price">R$ {0}</string>
+    <string name="favorite_error">Não foi possível marcar o produto {0} como favorito</string>
+
 </resources>
