@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using ShoppingApp.app.model;
+using ShoppingApp.app.model.catalog;
 
 namespace ShoppingApp.app.catalog.view
 {

@@ -20,10 +20,5 @@ namespace ShoppingApp.app
                 return database;
             }
         }
-
-        public static bool DataBaseCreated()
-        {
-            return File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), AppDatabase.dbName));
-        }
     }
 }

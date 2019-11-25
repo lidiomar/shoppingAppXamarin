@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Refit;
+using ShoppingApp.app.model.catalog;
 
 namespace ShoppingApp.app.model
 {

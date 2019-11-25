@@ -61,10 +61,6 @@
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="app\model\Category.cs" />
-    <Compile Include="app\model\Sale.cs" />
-    <Compile Include="app\model\Policie.cs" />
-    <Compile Include="app\model\Product.cs" />
     <Compile Include="app\catalog\view\CatalogActivity.cs" />
     <Compile Include="app\catalog\view\CatalogAdapter.cs" />
     <Compile Include="app\catalog\view\CatalogFragment.cs" />
@@ -75,15 +71,24 @@
     <Compile Include="app\cart\view\ShoppingCartFragment.cs" />
     <Compile Include="app\cart\view\ShoppingCartViewHolder.cs" />
     <Compile Include="app\catalog\view\CatalogSectionViewHolder.cs" />
-    <Compile Include="app\model\CatalogLocalDataSource.cs" />
-    <Compile Include="app\model\CatalogRemoteDataSource.cs" />
-    <Compile Include="app\model\CatalogRepository.cs" />
-    <Compile Include="app\model\ICatalogDataSource.cs" />
     <Compile Include="app\model\IService.cs" />
     <Compile Include="app\model\NetworkService.cs" />
     <Compile Include="app\catalog\viewmodel\CatalogViewModel.cs" />
     <Compile Include="app\db\AppDatabase.cs" />
     <Compile Include="app\App.cs" />
+    <Compile Include="app\catalog\viewmodel\CatalogAdapterViewModel.cs" />
+    <Compile Include="app\model\catalog\adapter\CatalogAdapterLocalDataSource.cs" />
+    <Compile Include="app\model\catalog\adapter\CatalogAdapterRepository.cs" />
+    <Compile Include="app\model\catalog\adapter\ICatalogAdapterDataSource.cs" />
+    <Compile Include="app\model\catalog\fragment\CatalogLocalDataSource.cs" />
+    <Compile Include="app\model\catalog\fragment\CatalogRemoteDataSource.cs" />
+    <Compile Include="app\model\catalog\fragment\CatalogRepository.cs" />
+    <Compile Include="app\model\catalog\fragment\ICatalogDataSource.cs" />
+    <Compile Include="app\model\catalog\Category.cs" />
+    <Compile Include="app\model\catalog\Policie.cs" />
+    <Compile Include="app\model\catalog\Product.cs" />
+    <Compile Include="app\model\catalog\Sale.cs" />
+    <Compile Include="app\catalog\view\ICatalogAdapterView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -196,6 +201,9 @@
     <Folder Include="app\cart\view\" />
     <Folder Include="app\catalog\viewmodel\" />
     <Folder Include="app\db\" />
+    <Folder Include="app\model\catalog\" />
+    <Folder Include="app\model\catalog\adapter\" />
+    <Folder Include="app\model\catalog\fragment\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />

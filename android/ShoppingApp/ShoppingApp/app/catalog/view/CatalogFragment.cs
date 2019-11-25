@@ -9,7 +9,7 @@ using Android.Views;
 using Android.Widget;
 using ShoppingApp.app.cart.view;
 using ShoppingApp.app.catalog.viewmodel;
-using ShoppingApp.app.model;
+using ShoppingApp.app.model.catalog;
 
 namespace ShoppingApp.app.catalog.view
 {
@@ -55,7 +55,7 @@ namespace ShoppingApp.app.catalog.view
 
         public void LoadData(List<Category> categories, List<Object> preparedList)
         {
-            CatalogAdapter catalogAdapter = new CatalogAdapter(preparedList, catalogViewModel, Activity);
+            CatalogAdapter catalogAdapter = new CatalogAdapter(preparedList, Activity);
             recyclerView.SetAdapter(catalogAdapter);
         }
     }

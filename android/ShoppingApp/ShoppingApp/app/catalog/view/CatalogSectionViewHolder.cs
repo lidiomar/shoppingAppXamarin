@@ -1,8 +1,7 @@
-﻿using System;
-using Android.Support.V7.Widget;
+﻿using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
-using ShoppingApp.app.model;
+using ShoppingApp.app.model.catalog;
 
 namespace ShoppingApp.app.catalog
 {

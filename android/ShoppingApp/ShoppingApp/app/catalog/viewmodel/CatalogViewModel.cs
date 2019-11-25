@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ShoppingApp.app.catalog.view;
 using ShoppingApp.app.model;
+using ShoppingApp.app.model.catalog;
+using ShoppingApp.app.model.fragment;
 
 namespace ShoppingApp.app.catalog.viewmodel
 {
@@ -10,7 +12,9 @@ namespace ShoppingApp.app.catalog.viewmodel
     {
         protected CatalogRepository catalogRepository = new CatalogRepository();
         protected ICatalogView view;
-        
+        private List<Category> categories;
+        private List<Sale> sales;
+        private List<Product> products;
         public CatalogViewModel(ICatalogView view)
         {
             this.view = view;
@@ -18,17 +22,25 @@ namespace ShoppingApp.app.catalog.viewmodel
 
         public async Task GetCategories()
         {
-            var getCategories = catalogRepository.GetCategoriesAsync();
-            var getProducts = catalogRepository.GetProductsAsync();
-            var getSales = catalogRepository.GetSalesAsync();
+            var getCategories = catalogRepository.GetCategoriesAsync().ContinueWith(i=> {
+                categories = i.Result;
+            });
+
+            var getProducts = catalogRepository.GetProductsAsync().ContinueWith(i => {
+                products = i.Result;
+            });
+
+            var getSales = catalogRepository.GetSalesAsync().ContinueWith(i => {
+                sales = i.Result;
+            });
 
             await Task.WhenAll(getCategories, getProducts, getSales).ContinueWith(result =>
             {
 
                 if (result.IsCompleted && result.Status == TaskStatus.RanToCompletion)
                 {
-                    List<Object> preparedList = GetPreparedList(catalogRepository.products, catalogRepository.sales);
-                    this.view.LoadData(catalogRepository.categories, preparedList);
+                    List<Object> preparedList = GetPreparedList(products, sales);
+                    this.view.LoadData(categories, preparedList);
                 }
                 else if (result.IsFaulted)
                 {
@@ -39,17 +51,6 @@ namespace ShoppingApp.app.catalog.viewmodel
                     //TODO
                 }
             }, TaskScheduler.FromCurrentSynchronizationContext()).ConfigureAwait(false);
-        }
-
-        public async Task UpdateProductAsync(Product product)
-        {
-            await catalogRepository.UpdateProductAsync(product).ContinueWith(result => {
-                if (result.IsFaulted || result.IsCanceled)
-                {
-                    //TODO
-                }
-            });
-
         }
 
         private List<Object> GetPreparedList(List<Product> Products, List<Sale> Sales)

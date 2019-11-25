@@ -5,23 +5,23 @@ using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using ShoppingApp.app.catalog.viewmodel;
-using ShoppingApp.app.model;
+using ShoppingApp.app.model.catalog;
 
 namespace ShoppingApp.app.catalog.view
 {
-    public class CatalogAdapter : RecyclerView.Adapter
+    public class CatalogAdapter : RecyclerView.Adapter, ICatalogAdapterView
     {
         private List<Object> products;
 
         private readonly int productView = 1;
         private readonly int saleView = 2;
-        private CatalogViewModel catalogViewModel;
+        private CatalogAdapterViewModel catalogAdapterViewModel;
         private Activity activity;
 
-        public CatalogAdapter(List<Object> products, CatalogViewModel catalogViewModel, Activity activity )
+        public CatalogAdapter(List<Object> products, Activity activity )
         {
             this.products = products;
-            this.catalogViewModel = catalogViewModel;
+            this.catalogAdapterViewModel = new CatalogAdapterViewModel(this);
             this.activity = activity;
         }
 
@@ -68,7 +68,7 @@ namespace ShoppingApp.app.catalog.view
                 ((Product)products[position]).Favorite = true;
             }
 
-            catalogViewModel.UpdateProductAsync((Product)products[position]).ContinueWith(i => {
+            catalogAdapterViewModel.UpdateProductAsync((Product)products[position]).ContinueWith(i => {
                 if (i.IsFaulted || i.IsCanceled)
                 {
                     string markAsfavoriteError = activity.GetString(Resource.String.favorite_error);
@@ -105,6 +105,11 @@ namespace ShoppingApp.app.catalog.view
             }
 
             return base.GetItemViewType(position);
+        }
+
+        public void ButtonClickResult()
+        {
+            
         }
     }
 }

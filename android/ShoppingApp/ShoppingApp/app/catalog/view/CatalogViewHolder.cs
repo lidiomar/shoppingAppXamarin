@@ -5,6 +5,7 @@ using Android.Views;
 using Android.Widget;
 using ShoppingApp.app.catalog.viewmodel;
 using ShoppingApp.app.model;
+using ShoppingApp.app.model.catalog;
 using Square.Picasso;
 
 namespace ShoppingApp.app.catalog.view

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using ShoppingApp.app.model;
+using ShoppingApp.app.model.catalog;
 using SQLite;
 
 namespace ShoppingApp.app.db

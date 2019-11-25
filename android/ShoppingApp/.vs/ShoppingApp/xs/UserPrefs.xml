@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{2BECE44A-7058-46A7-BD19-840A82A8F1FC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/model/CatalogRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/catalog/viewmodel/CatalogAdapterViewModel.cs">
     <Files>
-      <File FileName="ShoppingApp/app/model/CatalogRepository.cs" Line="20" Column="14" />
+      <File FileName="ShoppingApp/app/model/catalog/adapter/ICatalogAdapterDataSource.cs" Line="1" Column="1" />
+      <File FileName="ShoppingApp/app/catalog/viewmodel/CatalogAdapterViewModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,28 +10,35 @@
           <Node name="ShoppingApp" expanded="True">
             <Node name="ShoppingApp" expanded="True">
               <Node name="app" expanded="True">
+                <Node name="cart" expanded="True">
+                  <Node name="view" expanded="True" />
+                </Node>
                 <Node name="catalog" expanded="True">
                   <Node name="view" expanded="True" />
-                  <Node name="viewmodel" expanded="True" />
+                  <Node name="viewmodel" expanded="True">
+                    <Node name="CatalogAdapterViewModel.cs" selected="True" />
+                  </Node>
                 </Node>
                 <Node name="db" expanded="True" />
                 <Node name="model" expanded="True">
-                  <Node name="CatalogRepository.cs" selected="True" />
+                  <Node name="catalog" expanded="True">
+                    <Node name="adapter" expanded="True" />
+                    <Node name="fragment" expanded="True" />
+                  </Node>
                 </Node>
-              </Node>
-              <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
               </Node>
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>product</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ShoppingApp AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0041569538" />
+  <MonoDevelop.Ide.ItemProperties.ShoppingApp AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0053595654" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
