@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Android.App;
+using Android.Content;
 using Android.Support.V7.Widget;
-using Android.Util;
 using Android.Views;
 using Android.Widget;
 using ShoppingApp.app.catalog.viewmodel;
@@ -12,15 +12,13 @@ namespace ShoppingApp.app.catalog.view
 {
     public class CatalogAdapter : RecyclerView.Adapter, ICatalogAdapterView
     {
-        private List<Object> products;
-        private readonly int plus = 0;
-        private readonly int less = 1;
-
+        public List<Object> products;
         private readonly int productView = 2;
         private readonly int saleView = 3;
-        private CatalogAdapterViewModel catalogAdapterViewModel;
+
+        public CatalogAdapterViewModel catalogAdapterViewModel;
         private Activity activity;
-        private Dictionary<string, Sale> salesDict;
+        public Dictionary<string, Sale> salesDict;
 
         public CatalogAdapter(List<Object> products, Activity activity, Dictionary<string, Sale> salesDict)
         {
@@ -34,9 +32,9 @@ namespace ShoppingApp.app.catalog.view
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
-            if(holder is CatalogViewHolder)
+            if (holder is CatalogViewHolder)
             {
-                ((CatalogViewHolder)holder).Bind((Product)products[position]);
+                ((CatalogViewHolder)holder).Bind((Product)products[position], false);
                 Button buttonFavorite = ((CatalogViewHolder)holder).buttonFavorite;
 
                 if (((Product)products[position]).Favorite)
@@ -48,108 +46,28 @@ namespace ShoppingApp.app.catalog.view
                     ((CatalogViewHolder)holder).buttonFavorite.SetBackgroundResource(Resource.Drawable.ic_star);
                 }
 
-                ((CatalogViewHolder)holder).buttonFavorite.SetTag(Resource.Id.position, position);
-                ((CatalogViewHolder)holder).buttonFavorite.Click -= ButtonFavorite_Click;
-                ((CatalogViewHolder)holder).buttonFavorite.Click += ButtonFavorite_Click;
-
-                ((CatalogViewHolder)holder).buttonPlus.SetTag(Resource.Id.position, position);
-                ((CatalogViewHolder)holder).buttonPlus.SetTag(Resource.Id.button_quantity_action, plus);
-                ((CatalogViewHolder)holder).buttonPlus.Click -= ButtonQuantity_Click;
-                ((CatalogViewHolder)holder).buttonPlus.Click += ButtonQuantity_Click;
-
-                ((CatalogViewHolder)holder).buttonLess.SetTag(Resource.Id.position, position);
-                ((CatalogViewHolder)holder).buttonLess.SetTag(Resource.Id.button_quantity_action, less);
-                ((CatalogViewHolder)holder).buttonLess.Click -= ButtonQuantity_Click;
-                ((CatalogViewHolder)holder).buttonLess.Click += ButtonQuantity_Click;
+                ((CatalogViewHolder)holder).buttonFavorite.SetOnClickListener(null);
+                ((CatalogViewHolder)holder).buttonFavorite.SetOnClickListener(new ClickFavorite((Product)products[position], catalogAdapterViewModel,activity));
 
 
-            } else if(holder is CatalogSectionViewHolder)
+                ((CatalogViewHolder)holder).buttonPlus.SetOnClickListener(null);
+                ((CatalogViewHolder)holder).buttonPlus.SetOnClickListener(new ClickChangeItemCount(ClickChangeItemCount.plus, (CatalogViewHolder)holder, position, this));
+
+                ((CatalogViewHolder)holder).buttonLess.SetOnClickListener(null);
+                ((CatalogViewHolder)holder).buttonLess.SetOnClickListener(new ClickChangeItemCount(ClickChangeItemCount.less, (CatalogViewHolder)holder, position, this));
+
+            }
+            else if (holder is CatalogSectionViewHolder)
             {
                 ((CatalogSectionViewHolder)holder).Bind((Sale)products[position]);
-            }            
-        }
-         
-        private void ButtonQuantity_Click(object sender, EventArgs eventArgs)
-        {
-            int position = (int)((ImageButton)sender).GetTag(Resource.Id.position);
-            int action = (int)((ImageButton)sender).GetTag(Resource.Id.button_quantity_action);
-            Product product = (Product)products[position];
-
-            if (action == plus)
-            {
-                ((Product)products[position]).SumPrice += product.Price;
-            }else
-            {
-                ((Product)products[position]).SumPrice -= product.Price;
             }
-            
-
-            ((Product)products[position]).Quantity = GetNumberOfProductsSelected(product);
-            float discount = 0;
-
-            if (salesDict.ContainsKey(product.Category))
-            {
-                Sale sale = salesDict[product.Category];
-                List<Policie> policies = sale.Policies;
-                discount = GetPercentDiscount(policies, ((Product)products[position]).Quantity);
-            }
-
-            float discountValue = GetDiscountValue(((Product)products[position]).SumPrice, discount);
-            float displayValue = ((Product)products[position]).SumPrice - discountValue;
-            
         }
 
-        public float GetDiscountValue(float sumPrice, float discount)
-        {
-            return sumPrice * discount / 100;
-        }
 
-        public int GetNumberOfProductsSelected(Product product)
-        {
-            return (int)Math.Round(product.SumPrice / product.Price);
-        }
-
-        public float GetPercentDiscount(List<Policie> policies, float numberOfProductsSelected)
-        {
-            float discount = 0;
-            foreach (Policie policie in policies)
-            {
-                if (numberOfProductsSelected >= policie.Min)
-                {
-                    discount = policie.Discount;
-                }
-            }
-            return discount;
-        }
-
-        private void ButtonFavorite_Click(object sender, EventArgs eventArgs)
-        {
-            int position = (int)((Button)sender).GetTag(Resource.Id.position);
-
-            if (((Product)products[position]).Favorite)
-            {
-                (sender as Button).SetBackgroundResource(Resource.Drawable.ic_star);
-                ((Product)products[position]).Favorite = false;
-            }
-            else
-            {
-                (sender as Button).SetBackgroundResource(Resource.Drawable.ic_star_selected);
-                ((Product)products[position]).Favorite = true;
-            }
-
-            catalogAdapterViewModel.UpdateProductAsync((Product)products[position]).ContinueWith(i => {
-                if (i.IsFaulted || i.IsCanceled)
-                {
-                    string markAsfavoriteError = activity.GetString(Resource.String.favorite_error);
-                    string markAsfavoriteErrorFormated = String.Format(markAsfavoriteError, ((Product)products[position])?.Name);
-                    Toast.MakeText(activity, markAsfavoriteErrorFormated, ToastLength.Short).Show();
-                }
-            });
-        }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
-            if(viewType == productView)
+            if (viewType == productView)
             {
                 View catalogAdapterView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.adapter_catalog, parent, false);
                 return new CatalogViewHolder(catalogAdapterView, parent.Context);
@@ -157,18 +75,19 @@ namespace ShoppingApp.app.catalog.view
 
             View view = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.catalog_section, parent, false);
             return new CatalogSectionViewHolder(view);
-            
+
         }
 
         public override int GetItemViewType(int position)
         {
             Object element = products[position];
 
-            if(element is Product)
+            if (element is Product)
             {
                 return productView;
 
-            } else if(element == null || element is Sale)
+            }
+            else if (element == null || element is Sale)
             {
                 return saleView;
             }
@@ -179,6 +98,101 @@ namespace ShoppingApp.app.catalog.view
         public void ButtonClickResult()
         {
             throw new NotImplementedException();
+        }
+    }
+
+    internal class ClickFavorite : Java.Lang.Object, View.IOnClickListener
+    {
+        public Product product;
+        private readonly CatalogAdapterViewModel catalogAdapterViewModel;
+        private readonly Context context;
+
+        public ClickFavorite(Product product, CatalogAdapterViewModel catalogAdapterViewModel, Context context)
+        {
+            this.product = product;
+            this.catalogAdapterViewModel = catalogAdapterViewModel;
+            this.context = context;
+        }
+
+        public void OnClick(View view)
+        {
+            if (product.Favorite)
+            {
+                (view as Button).SetBackgroundResource(Resource.Drawable.ic_star);
+                product.Favorite = false;
+            }
+            else
+            {
+                (view as Button).SetBackgroundResource(Resource.Drawable.ic_star_selected);
+                product.Favorite = true;
+            }
+
+            catalogAdapterViewModel.UpdateProductAsync(product).ContinueWith(i =>
+            {
+                if (i.IsFaulted || i.IsCanceled)
+                {
+                    string markAsfavoriteError = context.GetString(Resource.String.favorite_error);
+                    string markAsfavoriteErrorFormated = String.Format(markAsfavoriteError, product?.Name);
+                    Toast.MakeText(context, markAsfavoriteErrorFormated, ToastLength.Short).Show();
+                }
+            });
+        }
+    }
+
+    internal class ClickChangeItemCount : Java.Lang.Object, View.IOnClickListener
+    {
+        private readonly int action;
+        public static readonly int plus = 1;
+        public static readonly int less = 2;
+        private readonly Dictionary<string, Sale> salesDict;
+        private readonly CatalogAdapterViewModel catalogAdapterViewModel;
+        private readonly CatalogViewHolder viewHolder;
+        public Product product;
+
+        public ClickChangeItemCount(int action, CatalogViewHolder viewHolder, int position, CatalogAdapter adapter)
+        {
+            this.action = action;
+            salesDict = adapter.salesDict;
+            catalogAdapterViewModel = adapter.catalogAdapterViewModel;
+            this.viewHolder = viewHolder;
+            this.product = (Product)adapter.products[position];
+        }
+
+        public void OnClick(View v)
+        {
+            if (action == plus)
+            {
+                product.SumPrice += product.Price;
+            }
+            else
+            {
+                if(product.SumPrice <= 0)
+                {
+                    return;
+                }
+                product.SumPrice -= product.Price;
+            }
+
+            product.DiscountPercent = 0;
+            product.Quantity = catalogAdapterViewModel.GetNumberOfProductsSelected(product);
+
+            if(product.Quantity == 0)
+            {
+                product.SumPrice = 0;
+            }
+
+            if (product.Category != null && salesDict.ContainsKey(product.Category))
+            {
+                Sale sale = salesDict[product.Category];
+                List<Policie> policies = sale.Policies;
+                product.DiscountPercent = catalogAdapterViewModel.GetPercentDiscount(policies, product.Quantity);
+            }
+            
+            product.DiscountValue = catalogAdapterViewModel.GetDiscountValue(product.SumPrice, product.DiscountPercent);
+            
+
+            viewHolder.Bind(product, true);
+
         }
     }
 }

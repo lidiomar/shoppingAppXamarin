@@ -1,30 +1,20 @@
 ﻿<Properties StartupConfiguration="{2BECE44A-7058-46A7-BD19-840A82A8F1FC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/model/catalog/Product.cs">
-    <Files>
-      <File FileName="ShoppingApp/app/model/catalog/Product.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShoppingApp" expanded="True">
             <Node name="ShoppingApp" expanded="True">
               <Node name="app" expanded="True">
-                <Node name="cart" expanded="True">
-                  <Node name="view" expanded="True" />
-                </Node>
                 <Node name="catalog" expanded="True">
                   <Node name="view" expanded="True" />
                   <Node name="viewmodel" expanded="True" />
                 </Node>
-                <Node name="db" expanded="True" />
-                <Node name="model" expanded="True">
-                  <Node name="catalog" expanded="True">
-                    <Node name="Product.cs" selected="True" />
-                  </Node>
-                </Node>
               </Node>
               <Node name="Resources" expanded="True">
-                <Node name="values" expanded="True" />
+                <Node name="layout" expanded="True">
+                  <Node name="adapter_catalog.xml" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -32,13 +22,15 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>result</Value>
-          <Value>products</Value>
+          <Value>product.SumPrice</Value>
+          <Value>product.Price</Value>
+          <Value>product.SumPrice &lt; product.Price</Value>
+          <Value>product.SumPrice &lt;= 0</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ShoppingApp AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0041569538" />
+  <MonoDevelop.Ide.ItemProperties.ShoppingApp AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0053595654" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

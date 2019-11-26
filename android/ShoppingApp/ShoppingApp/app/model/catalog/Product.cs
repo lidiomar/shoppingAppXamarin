@@ -12,9 +12,13 @@ namespace ShoppingApp.app.model.catalog
         public string Photo { get; set; }
         public float Price { get; set; }
         [Ignore]
-        public float SumPrice { get; set; }
+        public float SumPrice { get; set;}
         [Ignore]
         public int Quantity { get; set; }
+        [Ignore]
+        public float DiscountValue { get; set; }
+        [Ignore]
+        public float DiscountPercent { get; set; }
         [JsonProperty(PropertyName = "category_id")]
         public string Category { get; set; }
         public bool Favorite { get; set; }

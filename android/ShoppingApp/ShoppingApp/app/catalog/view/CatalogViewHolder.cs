@@ -3,8 +3,6 @@ using Android.Content;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
-using ShoppingApp.app.catalog.viewmodel;
-using ShoppingApp.app.model;
 using ShoppingApp.app.model.catalog;
 using Square.Picasso;
 
@@ -12,14 +10,15 @@ namespace ShoppingApp.app.catalog.view
 {
     public class CatalogViewHolder : RecyclerView.ViewHolder
     {
-        private TextView productName;
-        private TextView productDiscount;
-        private TextView productPrice;
-        private TextView numberOfProducts;
-        public ImageButton buttonLess;
-        public ImageButton buttonPlus;
+        private TextView productName { get; set; }
+        private TextView productDiscount { get; set; }
+        private TextView productPrice { get; set; }
+        private TextView numberOfProducts { get; set; }
+        public ImageButton buttonLess { get; set; }
+        public ImageButton buttonPlus { get; set; }
         public Button buttonFavorite { get; set; }
-        private ImageView productImage;
+        private ImageView productImage { get; set; }
+
         private Context context;
         private Picasso picasso;
 
@@ -48,25 +47,75 @@ namespace ShoppingApp.app.catalog.view
             this.picasso.SetIndicatorsEnabled(true);
         }
 
-        public void Bind(Product product)
+        public void Bind(Product product, bool fromClick)
         {
-            productDiscount.Visibility = ViewStates.Gone;
-            numberOfProducts.Visibility = ViewStates.Gone;
-
+            //Name
             productName.Text = product.Name;
+
+            //Price
+            if (product.SumPrice > 0)
+            {
+                float displayValue = product.SumPrice - product.DiscountValue;
+                productPrice.Text = GetPrice(displayValue);
+            }else
+            {
+                productPrice.Text = GetPrice(product.Price);
+            }
+
+            //Quantity
+            if (product.Quantity > 0)
+            {
+                numberOfProducts.Text = GetUN(product.Quantity.ToString());
+                numberOfProducts.Visibility = ViewStates.Visible;
+            }
+            else
+            {
+                numberOfProducts.Visibility = ViewStates.Gone;
+            }
+
+            //Discount
+            if (product.DiscountPercent > 0)
+            {
+                productDiscount.Text = GetDiscount(((int)product.DiscountPercent).ToString());
+                productDiscount.Visibility = ViewStates.Visible;
+            }
+            else
+            {
+                productDiscount.Visibility = ViewStates.Gone;
+            }
+
+            if (!fromClick)
+            {
+                string urlPhoto = product.Photo;
+                this.picasso.Load(urlPhoto)
+                    .Fit()
+                    .CenterCrop()
+                    .Placeholder(Resource.Drawable.ic_image_placeholder)
+                    .Error(Resource.Drawable.ic_not_found)
+                    .Into(productImage);
+            }
+            
+        }
+
+        private string GetPrice(float priceValue)
+        {
             string price = context.GetString(Resource.String.price);
-            string priceFormated = String.Format(price, product?.Price.ToString("0.00"));
+            string priceFormated = String.Format(price, priceValue.ToString("0.00"));
+            return priceFormated;
+        }
 
-            productPrice.Text = priceFormated;
+        private string GetUN(string quantity)
+        {
+            string un = context.GetString(Resource.String.un);
+            string quantityFormated = String.Format(un, quantity);
+            return quantityFormated;
+        }
 
-            string urlPhoto = product.Photo;
-
-            this.picasso.Load(urlPhoto)
-                .Fit()
-                .CenterCrop()
-                .Placeholder(Resource.Drawable.ic_image_placeholder)
-                .Error(Resource.Drawable.ic_not_found)
-                .Into(productImage);
+        private string GetDiscount(string discount)
+        {
+            string discountString = context.GetString(Resource.String.discount);
+            string discountFormated = String.Format(discountString, discount);
+            return discountFormated;
         }
     }
 }
