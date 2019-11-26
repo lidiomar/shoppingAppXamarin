@@ -20,7 +20,7 @@ namespace ShoppingApp.app.catalog.viewmodel
             this.view = view;
         }
 
-        public async Task GetCategories()
+        public async Task GetData()
         {
             var getCategories = catalogRepository.GetCategoriesAsync().ContinueWith(i=> {
                 categories = i.Result;

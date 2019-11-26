@@ -1404,7 +1404,7 @@ int string action_settings 0x7f0e0027
 int string app_name 0x7f0e0028
 int string appbar_scrolling_view_behavior 0x7f0e0029
 int string bottom_sheet_behavior 0x7f0e002a
-int string buy 0x7f0e002b
+int string buy_value 0x7f0e002b
 int string cart 0x7f0e002c
 int string catalog 0x7f0e002d
 int string character_counter_content_description 0x7f0e002e

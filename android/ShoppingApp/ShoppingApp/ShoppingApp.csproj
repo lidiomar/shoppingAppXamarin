@@ -88,7 +88,6 @@
     <Compile Include="app\model\catalog\Policie.cs" />
     <Compile Include="app\model\catalog\Product.cs" />
     <Compile Include="app\model\catalog\Sale.cs" />
-    <Compile Include="app\catalog\view\ICatalogAdapterView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

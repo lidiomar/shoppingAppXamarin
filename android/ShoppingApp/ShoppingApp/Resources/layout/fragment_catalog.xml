@@ -39,7 +39,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:background="@color/default_yellow"
-            android:text="@string/buy"/>
+            tools:text="@string/buy_value"/>
 
     </android.support.constraint.ConstraintLayout>
 

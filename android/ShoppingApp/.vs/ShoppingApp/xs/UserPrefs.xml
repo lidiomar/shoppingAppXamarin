@@ -6,15 +6,24 @@
           <Node name="ShoppingApp" expanded="True">
             <Node name="ShoppingApp" expanded="True">
               <Node name="app" expanded="True">
+                <Node name="cart" expanded="True">
+                  <Node name="view" expanded="True" />
+                </Node>
                 <Node name="catalog" expanded="True">
                   <Node name="view" expanded="True" />
-                  <Node name="viewmodel" expanded="True" />
+                  <Node name="viewmodel" expanded="True">
+                    <Node name="CatalogViewModel.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="model" expanded="True">
+                  <Node name="catalog" expanded="True">
+                    <Node name="adapter" expanded="True" />
+                    <Node name="fragment" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
               <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True">
-                  <Node name="adapter_catalog.xml" selected="True" />
-                </Node>
+                <Node name="layout" expanded="True" />
               </Node>
             </Node>
           </Node>

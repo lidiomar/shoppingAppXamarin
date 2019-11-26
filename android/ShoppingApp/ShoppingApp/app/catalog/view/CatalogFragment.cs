@@ -18,13 +18,13 @@ namespace ShoppingApp.app.catalog.view
 
         protected CatalogViewModel catalogViewModel;
         private RecyclerView recyclerView;
-
+        private Button buttonBuy;
         public override void OnCreate(Bundle savedInstanceState)
         {
 
             base.OnCreate(savedInstanceState);
             catalogViewModel = new CatalogViewModel(this);
-            _ = catalogViewModel.GetCategories();
+            _ = catalogViewModel.GetData();
 
         }
 
@@ -45,17 +45,34 @@ namespace ShoppingApp.app.catalog.view
 
         private void SetupButtonBuy(View view)
         {
-            Button buttonBuy = view.FindViewById<Button>(Resource.Id.button_buy);
+            buttonBuy = view.FindViewById<Button>(Resource.Id.button_buy);
             buttonBuy.Click += (sender, e) =>
             {
                 Intent intent = new Intent(Activity, typeof(ShoppingCartActivity));
                 Activity.StartActivity(intent);
             };
+
+            UpdateButtonBuyValue(0);
+        }
+
+        public void UpdateButtonBuyValue(float value)
+        {
+            string format = Activity.GetString(Resource.String.buy_value);
+            string formatted = String.Format(format, value.ToString("0.00"));
+            buttonBuy.Text = formatted;
+
+            if (value <= 0)
+            {
+                buttonBuy.Enabled = false;
+            }else
+            {
+                buttonBuy.Enabled = true;
+            }
         }
 
         public void LoadData(List<Category> categories, List<Object> preparedList, Dictionary<string, Sale> salesDict)
         {
-            CatalogAdapter catalogAdapter = new CatalogAdapter(preparedList, Activity, salesDict);
+            CatalogAdapter catalogAdapter = new CatalogAdapter(preparedList, Activity, salesDict, this);
             recyclerView.SetAdapter(catalogAdapter);
         }
     }

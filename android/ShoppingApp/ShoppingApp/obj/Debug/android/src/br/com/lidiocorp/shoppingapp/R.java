@@ -5489,7 +5489,7 @@ public final class R {
     public static final int app_name=0x7f0e0028;
     public static final int appbar_scrolling_view_behavior=0x7f0e0029;
     public static final int bottom_sheet_behavior=0x7f0e002a;
-    public static final int buy=0x7f0e002b;
+    public static final int buy_value=0x7f0e002b;
     public static final int cart=0x7f0e002c;
     public static final int catalog=0x7f0e002d;
     public static final int character_counter_content_description=0x7f0e002e;

@@ -4601,7 +4601,7 @@ namespace ShoppingApp
 			public const int bottom_sheet_behavior = 2131623978;
 			
 			// aapt resource value: 0x7F0E002B
-			public const int buy = 2131623979;
+			public const int buy_value = 2131623979;
 			
 			// aapt resource value: 0x7F0E002C
 			public const int cart = 2131623980;

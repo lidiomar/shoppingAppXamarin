@@ -1,7 +1,5 @@
-adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_custom.xml
 adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_custom_round.xml
-adaptive-icon;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
 android.support.constraint.ConstraintLayout;obj/Debug/res/layout/adapter_catalog.xml
 android.support.constraint.ConstraintLayout;obj/Debug/res/layout/adapter_shopping_cart.xml
 android.support.constraint.ConstraintLayout;obj/Debug/res/layout/fragment_catalog.xml
@@ -14,10 +12,8 @@ android.support.v7.widget.RecyclerView;obj/Debug/res/layout/fragment_catalog.xml
 android.support.v7.widget.RecyclerView;obj/Debug/res/layout/fragment_shopping_cart.xml
 android.support.v7.widget.Toolbar;obj/Debug/res/layout/activity_catalog.xml
 android.support.v7.widget.Toolbar;obj/Debug/res/layout/activity_shopping_cart.xml
-background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_custom.xml
 background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_custom_round.xml
-background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
 Button;obj/Debug/res/layout/adapter_catalog.xml
 Button;obj/Debug/res/layout/fragment_catalog.xml
 Button;obj/Debug/res/layout/fragment_shopping_cart.xml
@@ -27,10 +23,8 @@ color;obj/Debug/res/values/ic_launcher_background.xml
 dimen;obj/Debug/res/values/dimens.xml
 external-cache-path;/Users/lidiomarfernandomachado/dev_test/xamarin/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/obj/Debug/lp/45/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 external-path;/Users/lidiomarfernandomachado/dev_test/xamarin/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/obj/Debug/lp/45/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
-foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_custom.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_custom_round.xml
-foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_round.xml
 fragment;obj/Debug/res/layout/activity_catalog.xml
 fragment;obj/Debug/res/layout/activity_shopping_cart.xml
 FrameLayout;obj/Debug/res/layout/activity_catalog.xml
@@ -45,8 +39,6 @@ item;obj/Debug/res/values/ids.xml
 item;obj/Debug/res/values/styles.xml
 LinearLayout;obj/Debug/res/layout/activity_catalog.xml
 LinearLayout;obj/Debug/res/layout/activity_shopping_cart.xml
-md5637e927b7e94b54641ff311953113206.ShoppingCartFragment;obj/Debug/res/layout/activity_shopping_cart.xml
-md5f44916c0bbb54411549afcb02c1a44b5.CatalogFragment;obj/Debug/res/layout/activity_catalog.xml
 menu;obj/Debug/res/menu/menu_filter.xml
 path;obj/Debug/res/drawable/ic_arrow_down.xml
 path;obj/Debug/res/drawable/ic_filter.xml

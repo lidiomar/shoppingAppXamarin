@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using ShoppingApp.app.catalog.view;
 using ShoppingApp.app.model.catalog;
 using ShoppingApp.app.model.catalog.adapter;
 
@@ -9,12 +8,20 @@ namespace ShoppingApp.app.catalog.viewmodel
 {
     public class CatalogAdapterViewModel
     {
-        private ICatalogAdapterView view;
+        public Dictionary<int, float> productValuesDict = new Dictionary<int, float>();
         protected CatalogAdapterRepository catalogAdapterRepository = new CatalogAdapterRepository();
+        static CatalogAdapterViewModel catalogAdapterViewModel;
 
-        public CatalogAdapterViewModel(ICatalogAdapterView view)
+        public static CatalogAdapterViewModel GetInstance
         {
-            this.view = view;
+            get
+            {
+                if (catalogAdapterViewModel == null)
+                {
+                    catalogAdapterViewModel = new CatalogAdapterViewModel();
+                }
+                return catalogAdapterViewModel;
+            }
         }
 
         public async Task UpdateProductAsync(Product product)
@@ -49,6 +56,23 @@ namespace ShoppingApp.app.catalog.viewmodel
                 }
             }
             return discount;
+        }
+
+        public void IncrementTotalValue(int productId, float value)
+        {
+            productValuesDict[productId] = value;
+        }
+
+        public float GetTotalValue()
+        {
+            float totalValue = 0;
+
+            foreach (var item in productValuesDict)
+            {
+                totalValue += item.Value;
+            }
+
+            return totalValue;
         }
     }
 }

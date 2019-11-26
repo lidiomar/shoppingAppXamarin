@@ -10,22 +10,21 @@ using ShoppingApp.app.model.catalog;
 
 namespace ShoppingApp.app.catalog.view
 {
-    public class CatalogAdapter : RecyclerView.Adapter, ICatalogAdapterView
+    public class CatalogAdapter : RecyclerView.Adapter
     {
         public List<Object> products;
         private readonly int productView = 2;
         private readonly int saleView = 3;
-
-        public CatalogAdapterViewModel catalogAdapterViewModel;
+        public ICatalogView catalogFragmentView;
         private Activity activity;
         public Dictionary<string, Sale> salesDict;
 
-        public CatalogAdapter(List<Object> products, Activity activity, Dictionary<string, Sale> salesDict)
+        public CatalogAdapter(List<Object> products, Activity activity, Dictionary<string, Sale> salesDict, ICatalogView view)
         {
             this.products = products;
-            this.catalogAdapterViewModel = new CatalogAdapterViewModel(this);
             this.activity = activity;
             this.salesDict = salesDict;
+            this.catalogFragmentView = view;
         }
 
         public override int ItemCount => products.Count;
@@ -35,7 +34,6 @@ namespace ShoppingApp.app.catalog.view
             if (holder is CatalogViewHolder)
             {
                 ((CatalogViewHolder)holder).Bind((Product)products[position], false);
-                Button buttonFavorite = ((CatalogViewHolder)holder).buttonFavorite;
 
                 if (((Product)products[position]).Favorite)
                 {
@@ -47,7 +45,7 @@ namespace ShoppingApp.app.catalog.view
                 }
 
                 ((CatalogViewHolder)holder).buttonFavorite.SetOnClickListener(null);
-                ((CatalogViewHolder)holder).buttonFavorite.SetOnClickListener(new ClickFavorite((Product)products[position], catalogAdapterViewModel,activity));
+                ((CatalogViewHolder)holder).buttonFavorite.SetOnClickListener(new ClickFavorite((Product)products[position],activity));
 
 
                 ((CatalogViewHolder)holder).buttonPlus.SetOnClickListener(null);
@@ -63,7 +61,7 @@ namespace ShoppingApp.app.catalog.view
             }
         }
 
-
+        
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
@@ -85,19 +83,14 @@ namespace ShoppingApp.app.catalog.view
             if (element is Product)
             {
                 return productView;
-
             }
-            else if (element == null || element is Sale)
+
+            if (element == null || element is Sale)
             {
                 return saleView;
             }
 
             return base.GetItemViewType(position);
-        }
-
-        public void ButtonClickResult()
-        {
-            throw new NotImplementedException();
         }
     }
 
@@ -107,10 +100,10 @@ namespace ShoppingApp.app.catalog.view
         private readonly CatalogAdapterViewModel catalogAdapterViewModel;
         private readonly Context context;
 
-        public ClickFavorite(Product product, CatalogAdapterViewModel catalogAdapterViewModel, Context context)
+        public ClickFavorite(Product product, Context context)
         {
             this.product = product;
-            this.catalogAdapterViewModel = catalogAdapterViewModel;
+            this.catalogAdapterViewModel = CatalogAdapterViewModel.GetInstance;
             this.context = context;
         }
 
@@ -147,15 +140,17 @@ namespace ShoppingApp.app.catalog.view
         private readonly Dictionary<string, Sale> salesDict;
         private readonly CatalogAdapterViewModel catalogAdapterViewModel;
         private readonly CatalogViewHolder viewHolder;
+        private CatalogAdapter adapter;
         public Product product;
 
         public ClickChangeItemCount(int action, CatalogViewHolder viewHolder, int position, CatalogAdapter adapter)
         {
             this.action = action;
             salesDict = adapter.salesDict;
-            catalogAdapterViewModel = adapter.catalogAdapterViewModel;
+            this.catalogAdapterViewModel = CatalogAdapterViewModel.GetInstance;
             this.viewHolder = viewHolder;
             this.product = (Product)adapter.products[position];
+            this.adapter = adapter;
         }
 
         public void OnClick(View v)
@@ -189,9 +184,12 @@ namespace ShoppingApp.app.catalog.view
             }
             
             product.DiscountValue = catalogAdapterViewModel.GetDiscountValue(product.SumPrice, product.DiscountPercent);
-            
 
             viewHolder.Bind(product, true);
+
+            catalogAdapterViewModel.IncrementTotalValue(product.Id, product.SumPrice - product.DiscountValue);
+            float totalValue = catalogAdapterViewModel.GetTotalValue();
+            adapter.catalogFragmentView.UpdateButtonBuyValue(totalValue);
 
         }
     }

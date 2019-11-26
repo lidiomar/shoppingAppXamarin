@@ -17,21 +17,21 @@ namespace ShoppingApp.app.model.fragment
             {
                 Log.Info("cacheControl", "categories loaded from LOCAL data source");
                 return local;
-            }else
-            {
-                List<Category> categories = await catalogRemoteDataSource.GetCategoriesAsync();
-                foreach (Category category in categories)
-                {
-                    await App.Database.SaveCategoryAsync(category).ContinueWith(i => {
-                        if (i.IsFaulted || i.IsCanceled)
-                        {
-                            //TODO
-                        }
-                    });
-                }
-                Log.Info("cacheControl", "categories loaded from REMOTE data source");
-                return categories;
             }
+
+            List<Category> categories = await catalogRemoteDataSource.GetCategoriesAsync();
+            foreach (Category category in categories)
+            {
+                await App.Database.SaveCategoryAsync(category).ContinueWith(i => {
+                    if (i.IsFaulted || i.IsCanceled)
+                    {
+                        //TODO
+                    }
+                });
+            }
+            Log.Info("cacheControl", "categories loaded from REMOTE data source");
+            return categories;
+            
         }
 
         public async Task<List<Sale>> GetSalesAsync()
@@ -49,21 +49,21 @@ namespace ShoppingApp.app.model.fragment
                 Log.Info("cacheControl", "products loaded from LOCAL data source");
                 return local;
             }
-            else
+            
+            
+            List<Product> products = await catalogRemoteDataSource.GetProductsAsync();
+            foreach(Product product in products)
             {
-                List<Product> products = await catalogRemoteDataSource.GetProductsAsync();
-                foreach(Product product in products)
-                {
-                    await App.Database.SaveProductAsync(product).ContinueWith(i => {
-                        if(i.IsFaulted || i.IsCanceled)
-                        {
-                            //TODO
-                        }
-                    });
-                }
-                Log.Info("cacheControl","products loaded from REMOTE data source");
-                return products;
+                await App.Database.SaveProductAsync(product).ContinueWith(i => {
+                    if(i.IsFaulted || i.IsCanceled)
+                    {
+                        //TODO
+                    }
+                });
             }
+            Log.Info("cacheControl","products loaded from REMOTE data source");
+            return products;
+            
         }     
     }
 }
