@@ -40,7 +40,9 @@ namespace ShoppingApp.app.catalog.viewmodel
                 if (result.IsCompleted && result.Status == TaskStatus.RanToCompletion)
                 {
                     List<Object> preparedList = GetPreparedList(products, sales);
-                    this.view.LoadData(categories, preparedList);
+                    Dictionary<string, Sale> salesDict = GetSaleDictionary(sales);
+
+                    this.view.LoadData(categories, preparedList, salesDict);
                 }
                 else if (result.IsFaulted)
                 {
@@ -80,6 +82,18 @@ namespace ShoppingApp.app.catalog.viewmodel
                 }
             }
             return null;
+        }
+
+        private Dictionary<string, Sale> GetSaleDictionary(List<Sale> Sales)
+        {
+            Dictionary<string, Sale> saleDict = new Dictionary<string, Sale>();
+
+            foreach (Sale sale in Sales)
+            {
+                saleDict[sale.Category] = sale;
+            }
+
+            return saleDict;
         }
     }
 }

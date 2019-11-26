@@ -2130,20 +2130,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/lidiomarfernandomachado/.nuget/packages/": {}
+    "/Users/lfernandomachado/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lidiomarfernandomachado/dev_test/xamarin/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
+      "projectUniqueName": "/Users/lfernandomachado/Desktop/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
       "projectName": "ShoppingApp",
-      "projectPath": "/Users/lidiomarfernandomachado/dev_test/xamarin/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
-      "packagesPath": "/Users/lidiomarfernandomachado/.nuget/packages/",
-      "outputPath": "/Users/lidiomarfernandomachado/dev_test/xamarin/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/obj/",
+      "projectPath": "/Users/lfernandomachado/Desktop/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
+      "packagesPath": "/Users/lfernandomachado/.nuget/packages/",
+      "outputPath": "/Users/lfernandomachado/Desktop/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/lidiomarfernandomachado/.config/NuGet/NuGet.Config"
+        "/Users/lfernandomachado/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid90"

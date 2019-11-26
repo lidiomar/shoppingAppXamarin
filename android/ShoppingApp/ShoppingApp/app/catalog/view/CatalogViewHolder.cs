@@ -16,8 +16,8 @@ namespace ShoppingApp.app.catalog.view
         private TextView productDiscount;
         private TextView productPrice;
         private TextView numberOfProducts;
-        private ImageButton buttonLess;
-        private ImageButton buttonPlus;
+        public ImageButton buttonLess;
+        public ImageButton buttonPlus;
         public Button buttonFavorite { get; set; }
         private ImageView productImage;
         private Context context;

@@ -53,9 +53,9 @@ namespace ShoppingApp.app.catalog.view
             };
         }
 
-        public void LoadData(List<Category> categories, List<Object> preparedList)
+        public void LoadData(List<Category> categories, List<Object> preparedList, Dictionary<string, Sale> salesDict)
         {
-            CatalogAdapter catalogAdapter = new CatalogAdapter(preparedList, Activity);
+            CatalogAdapter catalogAdapter = new CatalogAdapter(preparedList, Activity, salesDict);
             recyclerView.SetAdapter(catalogAdapter);
         }
     }
