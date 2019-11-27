@@ -6,22 +6,17 @@ using ShoppingApp.app.model.catalog.adapter;
 
 namespace ShoppingApp.app.catalog.viewmodel
 {
-    public class CatalogAdapterViewModel
+    public class CatalogAdapterViewModel : ICatalogAdapterViewModel
     {
-        public Dictionary<int, float> productValuesDict = new Dictionary<int, float>();
-        protected CatalogAdapterRepository catalogAdapterRepository = new CatalogAdapterRepository();
-        static CatalogAdapterViewModel catalogAdapterViewModel;
+        private readonly Dictionary<int, float> productValuesDict;
+        private readonly Dictionary<int, Product> productsToCart;
 
-        public static CatalogAdapterViewModel GetInstance
+        protected CatalogAdapterRepository catalogAdapterRepository = new CatalogAdapterRepository();
+
+        public CatalogAdapterViewModel()
         {
-            get
-            {
-                if (catalogAdapterViewModel == null)
-                {
-                    catalogAdapterViewModel = new CatalogAdapterViewModel();
-                }
-                return catalogAdapterViewModel;
-            }
+            productsToCart = new Dictionary<int, Product>();
+            productValuesDict = new Dictionary<int, float>();
         }
 
         public async Task UpdateProductAsync(Product product)
@@ -33,6 +28,16 @@ namespace ShoppingApp.app.catalog.viewmodel
                 }
             });
 
+        }
+
+        public List<Product> GetProductsToCart()
+        {
+            List<Product> products = new List<Product>();
+            foreach (var item in productsToCart)
+            {
+                products.Add(item.Value);
+            }
+            return products;
         }
 
         public float GetDiscountValue(float sumPrice, float discount)
@@ -58,9 +63,29 @@ namespace ShoppingApp.app.catalog.viewmodel
             return discount;
         }
 
-        public void IncrementTotalValue(int productId, float value)
+        public void AddProductToCart(Product product, float value)
         {
-            productValuesDict[productId] = value;
+            productValuesDict[product.Id] = value;
+
+            if(value <= 0 && productsToCart.ContainsKey(product.Id))
+            {
+                productsToCart.Remove(product.Id);
+            }else
+            {
+                productsToCart[product.Id] = product;
+            }
+        }
+
+        public int GetQuantity()
+        {
+            int quantitty = 0;
+
+            foreach (var item in productsToCart)
+            {
+                quantitty += item.Value.Quantity;
+            }
+
+            return quantitty;
         }
 
         public float GetTotalValue()

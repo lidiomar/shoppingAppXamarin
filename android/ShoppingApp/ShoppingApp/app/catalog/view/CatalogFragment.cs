@@ -16,6 +16,9 @@ namespace ShoppingApp.app.catalog.view
 {
     public class CatalogFragment : Fragment, ICatalogView  
     {
+        public static readonly string productJsonExtra = "productsJson";
+        public static readonly string quantityJsonExtra = "quantityJson";
+        public static readonly string totalValueJsonExtra = "totalValueJson";
 
         protected CatalogViewModel catalogViewModel;
         private RecyclerView recyclerView;
@@ -23,6 +26,7 @@ namespace ShoppingApp.app.catalog.view
         private List<Category> categories;
         private CatalogAdapter catalogAdapter;
         private Android.Runtime.JavaList<Object> preparedList;
+
         public override void OnCreate(Bundle savedInstanceState)
         {
 
@@ -52,7 +56,20 @@ namespace ShoppingApp.app.catalog.view
             buttonBuy = view.FindViewById<Button>(Resource.Id.button_buy);
             buttonBuy.Click += (sender, e) =>
             {
+                ICatalogAdapterViewModel catalogAdapterViewModel = catalogAdapter.catalogAdapterViewModel;
+
+                List<Product> products = catalogAdapterViewModel.GetProductsToCart();
+                string productsJson = Newtonsoft.Json.JsonConvert.SerializeObject(products);
+
+                int quantity = catalogAdapterViewModel.GetQuantity();
+
+                float totalValue = catalogAdapterViewModel.GetTotalValue();
+
                 Intent intent = new Intent(Activity, typeof(ShoppingCartActivity));
+                intent.PutExtra(productJsonExtra, productsJson);
+                intent.PutExtra(quantityJsonExtra, quantity);
+                intent.PutExtra(totalValueJsonExtra, totalValue);
+
                 Activity.StartActivity(intent);
             };
 
@@ -97,7 +114,7 @@ namespace ShoppingApp.app.catalog.view
                 {
                     menu.Add(0, category.Id, category.Id, category.Name);
                 }
-                menu.Add(0, -1, 0, "Todas categorias");
+                menu.Add(0, -1, 0, Resource.String.all_categories);
             }
         }
 
@@ -111,6 +128,7 @@ namespace ShoppingApp.app.catalog.view
                 _ = catalogViewModel.GetProductsByCategory(item.ItemId.ToString());
             }
             UpdateButtonBuyValue(0);
+            
             return true;
         }
 

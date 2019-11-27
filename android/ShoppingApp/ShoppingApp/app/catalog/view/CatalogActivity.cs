@@ -15,10 +15,10 @@ namespace ShoppingApp.app.catalog.view
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_catalog);
-            setupToolbar();
+            SetupToolbar();
         }
 
-        private void setupToolbar()
+        private void SetupToolbar()
         {
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);

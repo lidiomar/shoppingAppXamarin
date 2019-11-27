@@ -10,4 +10,5 @@
     <string name="favorite_error">Não foi possível marcar o produto {0} como favorito</string>
     <string name="un">{0} UN</string>
     <string name="discount">{0}%</string>
+    <string name="all_categories">Todas as categorias</string>
 </resources>

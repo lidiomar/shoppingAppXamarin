@@ -10,28 +10,28 @@ namespace ShoppingApp.app.catalog.view
 {
     public class CatalogViewHolder : RecyclerView.ViewHolder
     {
-        private TextView productName { get; set; }
-        private TextView productDiscount { get; set; }
-        private TextView productPrice { get; set; }
-        private TextView numberOfProducts { get; set; }
-        public ImageButton buttonLess { get; set; }
-        public ImageButton buttonPlus { get; set; }
-        public Button buttonFavorite { get; set; }
-        private ImageView productImage { get; set; }
+        private TextView ProductName { get; set; }
+        private TextView ProductDiscount { get; set; }
+        private TextView ProductPrice { get; set; }
+        private TextView NumberOfProducts { get; set; }
+        public ImageButton ButtonLess { get; set; }
+        public ImageButton ButtonPlus { get; set; }
+        public Button ButtonFavorite { get; set; }
+        private ImageView ProductImage { get; set; }
 
-        private Context context;
-        private Picasso picasso;
+        private readonly Context context;
+        private readonly Picasso picasso;
 
         public CatalogViewHolder(View view, Context context) : base(view)
         {
-            this.productName = view.FindViewById<TextView>(Resource.Id.product_name);
-            this.productDiscount = view.FindViewById<TextView>(Resource.Id.product_discount);
-            this.productPrice = view.FindViewById<TextView>(Resource.Id.product_price);
-            this.numberOfProducts = view.FindViewById<TextView>(Resource.Id.number_of_products);
-            this.buttonLess = view.FindViewById<ImageButton>(Resource.Id.button_less);
-            this.buttonPlus = view.FindViewById<ImageButton>(Resource.Id.button_plus);
-            this.buttonFavorite = view.FindViewById<Button>(Resource.Id.button_favorite);
-            this.productImage = view.FindViewById<ImageView>(Resource.Id.product_image);
+            this.ProductName = view.FindViewById<TextView>(Resource.Id.product_name);
+            this.ProductDiscount = view.FindViewById<TextView>(Resource.Id.product_discount);
+            this.ProductPrice = view.FindViewById<TextView>(Resource.Id.product_price);
+            this.NumberOfProducts = view.FindViewById<TextView>(Resource.Id.number_of_products);
+            this.ButtonLess = view.FindViewById<ImageButton>(Resource.Id.button_less);
+            this.ButtonPlus = view.FindViewById<ImageButton>(Resource.Id.button_plus);
+            this.ButtonFavorite = view.FindViewById<Button>(Resource.Id.button_favorite);
+            this.ProductImage = view.FindViewById<ImageView>(Resource.Id.product_image);
             this.context = context;
             this.picasso = Picasso.With(context);
 
@@ -50,38 +50,38 @@ namespace ShoppingApp.app.catalog.view
         public void Bind(Product product, bool fromClick)
         {
             //Name
-            productName.Text = product.Name;
+            ProductName.Text = product.Name;
 
             //Price
             if (product.SumPrice > 0)
             {
                 float displayValue = product.SumPrice - product.DiscountValue;
-                productPrice.Text = GetPrice(displayValue);
+                ProductPrice.Text = Utils.GetPrice(context, displayValue);
             }else
             {
-                productPrice.Text = GetPrice(product.Price);
+                ProductPrice.Text = Utils.GetPrice(context, product.Price);
             }
 
             //Quantity
             if (product.Quantity > 0)
             {
-                numberOfProducts.Text = GetUN(product.Quantity.ToString());
-                numberOfProducts.Visibility = ViewStates.Visible;
+                NumberOfProducts.Text = Utils.GetUN(context, product.Quantity.ToString());
+                NumberOfProducts.Visibility = ViewStates.Visible;
             }
             else
             {
-                numberOfProducts.Visibility = ViewStates.Gone;
+                NumberOfProducts.Visibility = ViewStates.Gone;
             }
 
             //Discount
             if (product.DiscountPercent > 0)
             {
-                productDiscount.Text = GetDiscount(((int)product.DiscountPercent).ToString());
-                productDiscount.Visibility = ViewStates.Visible;
+                ProductDiscount.Text = Utils.GetDiscount(context, ((int)product.DiscountPercent).ToString());
+                ProductDiscount.Visibility = ViewStates.Visible;
             }
             else
             {
-                productDiscount.Visibility = ViewStates.Gone;
+                ProductDiscount.Visibility = ViewStates.Gone;
             }
 
             if (!fromClick)
@@ -92,30 +92,9 @@ namespace ShoppingApp.app.catalog.view
                     .CenterCrop()
                     .Placeholder(Resource.Drawable.ic_image_placeholder)
                     .Error(Resource.Drawable.ic_not_found)
-                    .Into(productImage);
+                    .Into(ProductImage);
             }
             
-        }
-
-        private string GetPrice(float priceValue)
-        {
-            string price = context.GetString(Resource.String.price);
-            string priceFormated = String.Format(price, priceValue.ToString("0.00"));
-            return priceFormated;
-        }
-
-        private string GetUN(string quantity)
-        {
-            string un = context.GetString(Resource.String.un);
-            string quantityFormated = String.Format(un, quantity);
-            return quantityFormated;
-        }
-
-        private string GetDiscount(string discount)
-        {
-            string discountString = context.GetString(Resource.String.discount);
-            string discountFormated = String.Format(discountString, discount);
-            return discountFormated;
         }
     }
 }

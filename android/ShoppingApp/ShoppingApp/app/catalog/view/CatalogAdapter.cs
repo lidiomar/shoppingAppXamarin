@@ -16,15 +16,17 @@ namespace ShoppingApp.app.catalog.view
         private readonly int productView = 2;
         private readonly int saleView = 3;
         public ICatalogView catalogFragmentView;
-        private Activity activity;
+        private readonly Activity activity;
         public Dictionary<string, Sale> salesDict;
+        public ICatalogAdapterViewModel catalogAdapterViewModel;
 
         public CatalogAdapter(Android.Runtime.JavaList<Object> products, Activity activity, Dictionary<string, Sale> salesDict, ICatalogView view)
         {
             this.products = products;
             this.activity = activity;
             this.salesDict = salesDict;
-            this.catalogFragmentView = view;
+            catalogAdapterViewModel = new CatalogAdapterViewModel();
+            catalogFragmentView = view;
         }
 
         public override int ItemCount => products.Count;
@@ -37,22 +39,22 @@ namespace ShoppingApp.app.catalog.view
 
                 if (((Product)products[position]).Favorite)
                 {
-                    ((CatalogViewHolder)holder).buttonFavorite.SetBackgroundResource(Resource.Drawable.ic_star_selected);
+                    ((CatalogViewHolder)holder).ButtonFavorite.SetBackgroundResource(Resource.Drawable.ic_star_selected);
                 }
                 else
                 {
-                    ((CatalogViewHolder)holder).buttonFavorite.SetBackgroundResource(Resource.Drawable.ic_star);
+                    ((CatalogViewHolder)holder).ButtonFavorite.SetBackgroundResource(Resource.Drawable.ic_star);
                 }
 
-                ((CatalogViewHolder)holder).buttonFavorite.SetOnClickListener(null);
-                ((CatalogViewHolder)holder).buttonFavorite.SetOnClickListener(new ClickFavorite((Product)products[position],activity));
+                ((CatalogViewHolder)holder).ButtonFavorite.SetOnClickListener(null);
+                ((CatalogViewHolder)holder).ButtonFavorite.SetOnClickListener(new ClickFavorite((Product)products[position],activity, this));
 
 
-                ((CatalogViewHolder)holder).buttonPlus.SetOnClickListener(null);
-                ((CatalogViewHolder)holder).buttonPlus.SetOnClickListener(new ClickChangeItemCount(ClickChangeItemCount.plus, (CatalogViewHolder)holder, position, this));
+                ((CatalogViewHolder)holder).ButtonPlus.SetOnClickListener(null);
+                ((CatalogViewHolder)holder).ButtonPlus.SetOnClickListener(new ClickChangeItemCount(ClickChangeItemCount.plus, (CatalogViewHolder)holder, position, this));
 
-                ((CatalogViewHolder)holder).buttonLess.SetOnClickListener(null);
-                ((CatalogViewHolder)holder).buttonLess.SetOnClickListener(new ClickChangeItemCount(ClickChangeItemCount.less, (CatalogViewHolder)holder, position, this));
+                ((CatalogViewHolder)holder).ButtonLess.SetOnClickListener(null);
+                ((CatalogViewHolder)holder).ButtonLess.SetOnClickListener(new ClickChangeItemCount(ClickChangeItemCount.less, (CatalogViewHolder)holder, position, this));
 
             }
             else if (holder is CatalogSectionViewHolder)
@@ -97,13 +99,13 @@ namespace ShoppingApp.app.catalog.view
     internal class ClickFavorite : Java.Lang.Object, View.IOnClickListener
     {
         public Product product;
-        private readonly CatalogAdapterViewModel catalogAdapterViewModel;
+        private readonly ICatalogAdapterViewModel catalogAdapterViewModel;
         private readonly Context context;
 
-        public ClickFavorite(Product product, Context context)
+        public ClickFavorite(Product product, Context context, CatalogAdapter catalogAdapter)
         {
             this.product = product;
-            this.catalogAdapterViewModel = CatalogAdapterViewModel.GetInstance;
+            this.catalogAdapterViewModel = catalogAdapter.catalogAdapterViewModel;
             this.context = context;
         }
 
@@ -138,16 +140,16 @@ namespace ShoppingApp.app.catalog.view
         public static readonly int plus = 1;
         public static readonly int less = 2;
         private readonly Dictionary<string, Sale> salesDict;
-        private readonly CatalogAdapterViewModel catalogAdapterViewModel;
+        private readonly ICatalogAdapterViewModel catalogAdapterViewModel;
         private readonly CatalogViewHolder viewHolder;
-        private CatalogAdapter adapter;
+        private readonly CatalogAdapter adapter;
         public Product product;
 
         public ClickChangeItemCount(int action, CatalogViewHolder viewHolder, int position, CatalogAdapter adapter)
         {
             this.action = action;
             salesDict = adapter.salesDict;
-            this.catalogAdapterViewModel = CatalogAdapterViewModel.GetInstance;
+            this.catalogAdapterViewModel = adapter.catalogAdapterViewModel;
             this.viewHolder = viewHolder;
             this.product = (Product)adapter.products[position];
             this.adapter = adapter;
@@ -187,7 +189,7 @@ namespace ShoppingApp.app.catalog.view
 
             viewHolder.Bind(product, true);
 
-            catalogAdapterViewModel.IncrementTotalValue(product.Id, product.SumPrice - product.DiscountValue);
+            catalogAdapterViewModel.AddProductToCart(product, product.SumPrice - product.DiscountValue);
             float totalValue = catalogAdapterViewModel.GetTotalValue();
             adapter.catalogFragmentView.UpdateButtonBuyValue(totalValue);
 

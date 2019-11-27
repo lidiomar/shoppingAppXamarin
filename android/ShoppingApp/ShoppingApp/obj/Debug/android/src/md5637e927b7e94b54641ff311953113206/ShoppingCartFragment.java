@@ -2,7 +2,7 @@ package md5637e927b7e94b54641ff311953113206;
 
 
 public class ShoppingCartFragment
-	extends android.app.Fragment
+	extends android.support.v4.app.Fragment
 	implements
 		mono.android.IGCUserPeer
 {
