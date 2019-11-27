@@ -55,6 +55,13 @@ namespace ShoppingApp.app.db
                             .FirstOrDefaultAsync();
         }
 
+        public Task<List<Product>> GetProductsByCategoryAsync(string categoryId)
+        {
+            return _database.Table<Product>()
+                            .Where(i => i.Category.Equals(categoryId))
+                            .ToListAsync();
+        }
+
         public Task<int> SaveProductAsync(Product product)
         {
             return _database.InsertAsync(product);

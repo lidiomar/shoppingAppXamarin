@@ -18,6 +18,12 @@ namespace ShoppingApp.app.model.fragment
             return task;
         }
 
+        public Task<List<Product>> GetProductsByCategoryAsync(string category)
+        {
+            Task<List<Product>> task = App.Database.GetProductsByCategoryAsync(category);
+            return task;
+        }
+
         public Task<List<Sale>> GetSalesAsync()
         {
             /*Task<List<Sale>> task = App.Database.GetSalesAsync();

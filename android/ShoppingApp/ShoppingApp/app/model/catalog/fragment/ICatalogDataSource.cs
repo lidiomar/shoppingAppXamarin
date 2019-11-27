@@ -9,5 +9,6 @@ namespace ShoppingApp.app.model.fragment
         Task<List<Category>> GetCategoriesAsync();
         Task<List<Sale>> GetSalesAsync();
         Task<List<Product>> GetProductsAsync();
+        Task<List<Product>> GetProductsByCategoryAsync(string category);
     }
 }

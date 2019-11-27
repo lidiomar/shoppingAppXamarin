@@ -12,14 +12,14 @@ namespace ShoppingApp.app.catalog.view
 {
     public class CatalogAdapter : RecyclerView.Adapter
     {
-        public List<Object> products;
+        public Android.Runtime.JavaList<Object> products;
         private readonly int productView = 2;
         private readonly int saleView = 3;
         public ICatalogView catalogFragmentView;
         private Activity activity;
         public Dictionary<string, Sale> salesDict;
 
-        public CatalogAdapter(List<Object> products, Activity activity, Dictionary<string, Sale> salesDict, ICatalogView view)
+        public CatalogAdapter(Android.Runtime.JavaList<Object> products, Activity activity, Dictionary<string, Sale> salesDict, ICatalogView view)
         {
             this.products = products;
             this.activity = activity;

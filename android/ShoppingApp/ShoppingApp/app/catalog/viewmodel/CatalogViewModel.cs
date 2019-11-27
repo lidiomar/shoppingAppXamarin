@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using ShoppingApp.app.catalog.view;
-using ShoppingApp.app.model;
 using ShoppingApp.app.model.catalog;
 using ShoppingApp.app.model.fragment;
 
@@ -39,7 +38,7 @@ namespace ShoppingApp.app.catalog.viewmodel
 
                 if (result.IsCompleted && result.Status == TaskStatus.RanToCompletion)
                 {
-                    List<Object> preparedList = GetPreparedList(products, sales);
+                    Android.Runtime.JavaList<Object> preparedList = GetPreparedList(products, sales);
                     Dictionary<string, Sale> salesDict = GetSaleDictionary(sales);
 
                     this.view.LoadData(categories, preparedList, salesDict);
@@ -52,12 +51,43 @@ namespace ShoppingApp.app.catalog.viewmodel
                 {
                     //TODO
                 }
+
             }, TaskScheduler.FromCurrentSynchronizationContext()).ConfigureAwait(false);
         }
 
-        private List<Object> GetPreparedList(List<Product> Products, List<Sale> Sales)
+        public async Task GetProductsByCategory(string category)
         {
-            List<Object> preparedList = new List<Object>();
+            var getSales = catalogRepository.GetSalesAsync().ContinueWith(i => {
+                sales = i.Result;
+            });
+
+            var getProducts = catalogRepository.GetProductsByCategoryAsync(category).ContinueWith(i => {
+                products = i.Result;
+            });
+
+            await Task.WhenAll(getProducts, getSales).ContinueWith(result =>
+            {
+
+                if (result.IsCompleted && result.Status == TaskStatus.RanToCompletion)
+                {
+                    Android.Runtime.JavaList<Object> preparedList = GetPreparedList(products, sales);
+                    this.view.LoadFiteredData(preparedList);
+                }
+                else if (result.IsFaulted)
+                {
+                    //TODO
+                }
+                else if (result.IsCanceled)
+                {
+                    //TODO
+                }
+
+            }, TaskScheduler.FromCurrentSynchronizationContext()).ConfigureAwait(false);
+        }
+
+        private Android.Runtime.JavaList<Object> GetPreparedList(List<Product> Products, List<Sale> Sales)
+        {
+            Android.Runtime.JavaList<Object> preparedList = new Android.Runtime.JavaList<Object>();
             string currentCategory = "";
             foreach (Product product in Products)
             {

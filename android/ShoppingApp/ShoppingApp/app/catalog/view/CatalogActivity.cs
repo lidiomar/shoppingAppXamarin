@@ -31,20 +31,5 @@ namespace ShoppingApp.app.catalog.view
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-
-        public override bool OnPrepareOptionsMenu(IMenu menu)
-        {
-            return base.OnPrepareOptionsMenu(menu);
-
-        }
-
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.menu_filter, menu);
-            return true;
-        }
-
     }
-
-    
 }

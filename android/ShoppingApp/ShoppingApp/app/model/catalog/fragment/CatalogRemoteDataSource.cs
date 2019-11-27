@@ -29,5 +29,10 @@ namespace ShoppingApp.app.model.fragment
             return task;
 
         }
+
+        public Task<List<Product>> GetProductsByCategoryAsync(string category)
+        {
+            return null;
+        }
     }
 }

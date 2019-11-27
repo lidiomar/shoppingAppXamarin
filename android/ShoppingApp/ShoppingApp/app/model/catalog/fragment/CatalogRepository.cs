@@ -64,6 +64,14 @@ namespace ShoppingApp.app.model.fragment
             Log.Info("cacheControl","products loaded from REMOTE data source");
             return products;
             
-        }     
+        }
+
+        public async Task<List<Product>> GetProductsByCategoryAsync(string category)
+        {
+            List<Product> local = await catalogLocalDataSource.GetProductsByCategoryAsync(category);
+            Log.Info("cacheControl", "products BY CATEGORY loaded from LOCAL data source");
+            return local;
+            
+        }
     }
 }
