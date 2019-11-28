@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.V7.App;
@@ -6,7 +7,7 @@ using ShoppingApp.app.catalog.view;
 
 namespace ShoppingApp.app.cart.view
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", ParentActivity = typeof(CatalogActivity))]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", ParentActivity = typeof(CatalogActivity), ScreenOrientation = ScreenOrientation.Portrait)]
     public class ShoppingCartActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
