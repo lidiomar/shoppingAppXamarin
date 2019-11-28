@@ -68,6 +68,7 @@ namespace ShoppingApp.app.catalog.view
         void HandleRefresh(object sender, EventArgs e)
         {
             _ = catalogViewModel.GetData();
+            UpdateButtonBuyValue(0);
             swipeRefresh.Refreshing = false;
         }
 
@@ -170,14 +171,11 @@ namespace ShoppingApp.app.catalog.view
 
         }
 
-        public void IsLoading(bool loading)
+        public void IsLoading()
         {
-            if (loading)
-            {
-                progressBar.Visibility = ViewStates.Visible;
-                main.Visibility = ViewStates.Gone;
-                message.Visibility = ViewStates.Gone;
-            }
+            progressBar.Visibility = ViewStates.Visible;
+            main.Visibility = ViewStates.Gone;
+            message.Visibility = ViewStates.Gone;
         }
 
         public void ShowErrorMessage()

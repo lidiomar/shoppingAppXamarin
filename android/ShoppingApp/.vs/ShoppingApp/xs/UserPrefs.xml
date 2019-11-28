@@ -1,10 +1,8 @@
 ﻿<Properties StartupConfiguration="{2BECE44A-7058-46A7-BD19-840A82A8F1FC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/catalog/view/CatalogAdapter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/cart/view/ShoppingCartViewHolder.cs">
     <Files>
-      <File FileName="ShoppingApp/Resources/layout/fragment_catalog.xml" Line="16" Column="58" />
-      <File FileName="ShoppingApp/app/cart/view/ShoppingCartFragment.cs" Line="1" Column="1" />
-      <File FileName="ShoppingApp/app/catalog/view/CatalogFragment.cs" Line="65" Column="1" />
-      <File FileName="ShoppingApp/app/catalog/view/CatalogAdapter.cs" Line="1" Column="1" />
+      <File FileName="ShoppingApp/app/catalog/view/CatalogViewHolder.cs" Line="46" Column="16" />
+      <File FileName="ShoppingApp/app/cart/view/ShoppingCartViewHolder.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,12 +11,13 @@
             <Node name="ShoppingApp" expanded="True">
               <Node name="app" expanded="True">
                 <Node name="cart" expanded="True">
-                  <Node name="view" expanded="True" />
+                  <Node name="view" expanded="True">
+                    <Node name="ShoppingCartViewHolder.cs" selected="True" />
+                  </Node>
                 </Node>
                 <Node name="catalog" expanded="True">
-                  <Node name="view" expanded="True">
-                    <Node name="CatalogAdapter.cs" selected="True" />
-                  </Node>
+                  <Node name="view" expanded="True" />
+                  <Node name="viewmodel" expanded="True" />
                 </Node>
               </Node>
               <Node name="Resources" expanded="True">

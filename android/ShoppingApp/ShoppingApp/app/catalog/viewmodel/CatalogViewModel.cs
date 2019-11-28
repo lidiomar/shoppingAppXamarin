@@ -21,7 +21,7 @@ namespace ShoppingApp.app.catalog.viewmodel
 
         public async Task GetData()
         {
-            this.view.IsLoading(true);
+            this.view.IsLoading();
             var getCategories = catalogRepository.GetCategoriesAsync().ContinueWith(i=> {
                 categories = i.Result;
             });
@@ -36,7 +36,6 @@ namespace ShoppingApp.app.catalog.viewmodel
 
             await Task.WhenAll(getCategories, getProducts, getSales).ContinueWith(result =>
             {
-                this.view.IsLoading(false);
                 if (result.IsCompleted && result.Status == TaskStatus.RanToCompletion)
                 {
                     Android.Runtime.JavaList<Object> preparedList = GetPreparedList(products, sales);
@@ -58,7 +57,7 @@ namespace ShoppingApp.app.catalog.viewmodel
 
         public async Task GetProductsByCategory(string category)
         {
-            this.view.IsLoading(true);
+            this.view.IsLoading();
             var getSales = catalogRepository.GetSalesAsync().ContinueWith(i => {
                 sales = i.Result;
             });
@@ -69,7 +68,6 @@ namespace ShoppingApp.app.catalog.viewmodel
 
             await Task.WhenAll(getProducts, getSales).ContinueWith(result =>
             {
-                this.view.IsLoading(false);
                 if (result.IsCompleted && result.Status == TaskStatus.RanToCompletion)
                 {
                     Android.Runtime.JavaList<Object> preparedList = GetPreparedList(products, sales);

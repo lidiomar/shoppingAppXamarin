@@ -44,7 +44,7 @@ namespace ShoppingApp.app.catalog.view
              * Indicador Vermelho: Rede
              * Indicador Verde: Memória
              */
-            this.picasso.SetIndicatorsEnabled(true);
+            this.picasso.SetIndicatorsEnabled(false);
         }
 
         public void Bind(Product product, bool fromClick)
