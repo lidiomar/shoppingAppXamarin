@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{2BECE44A-7058-46A7-BD19-840A82A8F1FC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/catalog/view/CatalogActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingApp/app/cart/view/ShoppingCartFragment.cs">
     <Files>
-      <File FileName="ShoppingApp/app/cart/view/ShoppingCartActivity.cs" Line="10" Column="158" />
-      <File FileName="ShoppingApp/app/catalog/view/CatalogActivity.cs" Line="8" Column="2" />
+      <File FileName="ShoppingAppUITest/Tests.cs" Line="33" Column="68" />
+      <File FileName="ShoppingApp/Resources/layout/fragment_catalog.xml" Line="38" Column="48" />
+      <File FileName="ShoppingApp/Resources/layout/adapter_catalog.xml" Line="1" Column="1" />
+      <File FileName="ShoppingApp/Resources/layout/fragment_shopping_cart.xml" Line="10" Column="46" />
+      <File FileName="ShoppingApp/app/cart/view/ShoppingCartFragment.cs" Line="48" Column="98" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,25 +14,34 @@
             <Node name="ShoppingApp" expanded="True">
               <Node name="app" expanded="True">
                 <Node name="cart" expanded="True">
-                  <Node name="view" expanded="True" />
+                  <Node name="view" expanded="True">
+                    <Node name="ShoppingCartFragment.cs" selected="True" />
+                  </Node>
                 </Node>
                 <Node name="catalog" expanded="True">
-                  <Node name="view" expanded="True">
-                    <Node name="CatalogActivity.cs" selected="True" />
-                  </Node>
-                  <Node name="viewmodel" expanded="True" />
+                  <Node name="view" expanded="True" />
                 </Node>
-                <Node name="db" expanded="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="ShoppingAppUITest" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="ShoppingApp" expanded="True">
+            <Node name="ShoppingAppUITest" expanded="True">
+              <Node name="ShoppingAppUITest" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ShoppingApp AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.2b25454c8d1c7ece" />
+  <MonoDevelop.Ide.ItemProperties.ShoppingApp AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0041569538" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

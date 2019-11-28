@@ -45,7 +45,7 @@ namespace ShoppingApp.app.cart.view
                 string jsonObject = Activity.Intent.GetStringExtra(CatalogFragment.productJsonExtra);
                 List<Product> products = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Product>>(jsonObject);
 
-                RecyclerView recyclerView = view.FindViewById<RecyclerView>(Resource.Id.catalog_recyclerview);
+                RecyclerView recyclerView = view.FindViewById<RecyclerView>(Resource.Id.cart_recyclerview);
                 ShoppingCartAdapter shoppingCartAdapter = new ShoppingCartAdapter(products);
                 recyclerView.SetAdapter(shoppingCartAdapter);
 
