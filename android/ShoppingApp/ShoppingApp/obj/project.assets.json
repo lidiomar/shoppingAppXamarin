@@ -2135,11 +2135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lidiomarfernandomachado/dev_test/xamarin/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
+      "projectUniqueName": "/Users/lidiomarfernandomachado/dev_test/xamarin2/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
       "projectName": "ShoppingApp",
-      "projectPath": "/Users/lidiomarfernandomachado/dev_test/xamarin/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
+      "projectPath": "/Users/lidiomarfernandomachado/dev_test/xamarin2/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
       "packagesPath": "/Users/lidiomarfernandomachado/.nuget/packages/",
-      "outputPath": "/Users/lidiomarfernandomachado/dev_test/xamarin/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/obj/",
+      "outputPath": "/Users/lidiomarfernandomachado/dev_test/xamarin2/shoppingAppXamarin/android/ShoppingApp/ShoppingApp/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

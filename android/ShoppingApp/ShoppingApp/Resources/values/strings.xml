@@ -11,4 +11,6 @@
     <string name="un">{0} UN</string>
     <string name="discount">{0}%</string>
     <string name="all_categories">Todas as categorias</string>
+    <string name="error">Ocorreu um erro ao carregar os dados</string>
+
 </resources>

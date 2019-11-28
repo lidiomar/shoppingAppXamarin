@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 using Android.Content;
 using Android.OS;
+using Android.Support.Constraints;
 using Android.Support.V4.App;
 using Android.Support.V7.Widget;
 using Android.Views;
@@ -22,6 +23,9 @@ namespace ShoppingApp.app.catalog.view
 
         protected CatalogViewModel catalogViewModel;
         private RecyclerView recyclerView;
+        private ConstraintLayout main;
+        private ProgressBar progressBar;
+        private TextView message;
         private Button buttonBuy;
         private List<Category> categories;
         private CatalogAdapter catalogAdapter;
@@ -29,26 +33,27 @@ namespace ShoppingApp.app.catalog.view
 
         public override void OnCreate(Bundle savedInstanceState)
         {
-
             base.OnCreate(savedInstanceState);
-            catalogViewModel = new CatalogViewModel(this);
-            _ = catalogViewModel.GetData();
-            HasOptionsMenu = true;
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             
             View view = inflater.Inflate(Resource.Layout.fragment_catalog, container, false);
-            SetupRecyclerView(view);
+
+            progressBar = view.FindViewById<ProgressBar>(Resource.Id.progressbar);
+            main = view.FindViewById<ConstraintLayout>(Resource.Id.main);
+            message = view.FindViewById<TextView>(Resource.Id.message);
+            recyclerView = view.FindViewById<RecyclerView>(Resource.Id.catalog_recyclerview);
+
             SetupButtonBuy(view);
+
+            catalogViewModel = new CatalogViewModel(this);
+            _ = catalogViewModel.GetData();
+            HasOptionsMenu = true;
+
             return view;
                      
-        }
-
-        private void SetupRecyclerView(View view)
-        {
-            this.recyclerView = view.FindViewById<RecyclerView>(Resource.Id.catalog_recyclerview);
         }
 
         private void SetupButtonBuy(View view)
@@ -93,7 +98,12 @@ namespace ShoppingApp.app.catalog.view
 
         public void LoadData(List<Category> categories, Android.Runtime.JavaList<Object> preparedList, Dictionary<string, Sale> salesDict)
         {
-            if(categories.Count > 0)
+            ShowMain();
+            progressBar.Visibility = ViewStates.Gone;
+            main.Visibility = ViewStates.Visible;
+            message.Visibility = ViewStates.Gone;
+
+            if (categories.Count > 0)
             {
                 this.categories = categories;
                 Activity.InvalidateOptionsMenu();
@@ -134,6 +144,8 @@ namespace ShoppingApp.app.catalog.view
 
         public void LoadFiteredData(Android.Runtime.JavaList<object> preparedList)
         {
+            ShowMain();
+
             this.preparedList.Clear();
             foreach(object o in preparedList)
             {
@@ -141,6 +153,30 @@ namespace ShoppingApp.app.catalog.view
             }
             catalogAdapter.NotifyDataSetChanged();
 
+        }
+
+        public void IsLoading(bool loading)
+        {
+            if (loading)
+            {
+                progressBar.Visibility = ViewStates.Visible;
+                main.Visibility = ViewStates.Gone;
+                message.Visibility = ViewStates.Gone;
+            }
+        }
+
+        public void ShowErrorMessage()
+        {
+            progressBar.Visibility = ViewStates.Gone;
+            main.Visibility = ViewStates.Gone;
+            message.Visibility = ViewStates.Visible;
+        }
+
+        private void ShowMain()
+        {
+            progressBar.Visibility = ViewStates.Gone;
+            main.Visibility = ViewStates.Visible;
+            message.Visibility = ViewStates.Gone;
         }
     }
 }
