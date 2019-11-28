@@ -6,6 +6,7 @@ using Android.Content;
 using Android.OS;
 using Android.Support.Constraints;
 using Android.Support.V4.App;
+using Android.Support.V4.Widget;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
@@ -29,6 +30,7 @@ namespace ShoppingApp.app.catalog.view
         private Button buttonBuy;
         private List<Category> categories;
         private CatalogAdapter catalogAdapter;
+        private SwipeRefreshLayout swipeRefresh;
         private Android.Runtime.JavaList<Object> preparedList;
 
         public override void OnCreate(Bundle savedInstanceState)
@@ -45,7 +47,9 @@ namespace ShoppingApp.app.catalog.view
             main = view.FindViewById<ConstraintLayout>(Resource.Id.main);
             message = view.FindViewById<TextView>(Resource.Id.message);
             recyclerView = view.FindViewById<RecyclerView>(Resource.Id.catalog_recyclerview);
+            swipeRefresh = view.FindViewById<SwipeRefreshLayout>(Resource.Id.swiperefresh);
 
+            SetupSwipeRefresh();
             SetupButtonBuy(view);
 
             catalogViewModel = new CatalogViewModel(this);
@@ -54,6 +58,17 @@ namespace ShoppingApp.app.catalog.view
 
             return view;
                      
+        }
+
+        private void SetupSwipeRefresh()
+        {
+            swipeRefresh.Refresh += HandleRefresh;
+        }
+
+        void HandleRefresh(object sender, EventArgs e)
+        {
+            _ = catalogViewModel.GetData();
+            swipeRefresh.Refreshing = false;
         }
 
         private void SetupButtonBuy(View view)
