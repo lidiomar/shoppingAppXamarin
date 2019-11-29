@@ -13,6 +13,7 @@
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/bin/Debug/Xamarin.UITest.dll
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/bin/Debug/nunit.framework.xml
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/bin/Debug/Xamarin.UITest.xml
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/obj/Debug/ShoppingAppUITest.csprojAssemblyReference.cache
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/obj/Debug/ShoppingAppUITest.csproj.CopyComplete
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/obj/Debug/ShoppingAppUITest.dll
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/obj/Debug/ShoppingAppUITest.pdb

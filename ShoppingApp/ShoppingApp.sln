@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingAppUITest", "Shoppi
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared", "Shared\Shared.shproj", "{42195A85-61ED-4C22-87EB-D55D6B9C351E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingAppTest", "ShoppingAppTest\ShoppingAppTest.csproj", "{D91266CE-1790-4380-81FB-039C1B457153}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,5 +23,9 @@ Global
 		{437026A9-A512-4997-BDA2-70AE52EDD8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{437026A9-A512-4997-BDA2-70AE52EDD8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{437026A9-A512-4997-BDA2-70AE52EDD8C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91266CE-1790-4380-81FB-039C1B457153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91266CE-1790-4380-81FB-039C1B457153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91266CE-1790-4380-81FB-039C1B457153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91266CE-1790-4380-81FB-039C1B457153}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

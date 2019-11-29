@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Droid.app;
-using ShoppingApp.app.model.catalog;
 
 namespace ShoppingApp.app.model.catalog
 {

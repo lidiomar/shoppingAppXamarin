@@ -5,6 +5,7 @@ using Android.Content;
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using Shared.view;
 using ShoppingApp;
 using ShoppingApp.app.catalog.viewmodel;
 using ShoppingApp.app.model.catalog;
@@ -13,7 +14,7 @@ namespace Droid.app.catalog
 {
     public class CatalogAdapter : RecyclerView.Adapter
     {
-        public Android.Runtime.JavaList<Object> products;
+        public List<Object> products;
         private readonly int productView = 2;
         private readonly int saleView = 3;
         public ICatalogView catalogFragmentView;
@@ -21,7 +22,7 @@ namespace Droid.app.catalog
         public Dictionary<string, Sale> salesDict;
         public ICatalogElementViewModel catalogAdapterViewModel;
 
-        public CatalogAdapter(Android.Runtime.JavaList<Object> products, Activity activity, Dictionary<string, Sale> salesDict, ICatalogView view)
+        public CatalogAdapter(List<Object> products, Activity activity, Dictionary<string, Sale> salesDict, ICatalogView view)
         {
             this.products = products;
             this.activity = activity;

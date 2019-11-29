@@ -1,25 +1,19 @@
 ﻿<Properties StartupConfiguration="{2BECE44A-7058-46A7-BD19-840A82A8F1FC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Resources/layout/activity_catalog.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingAppUITest/Tests.cs">
     <Files>
-      <File FileName="Shared/viewmodel/CatalogViewModel.cs" Line="1" Column="1" />
-      <File FileName="ShoppingAppUITest/Tests.cs" Line="32" Column="36" />
-      <File FileName="Droid/Resources/layout/fragment_catalog.xml" Line="1" Column="1" />
-      <File FileName="Droid/Resources/layout/activity_catalog.xml" Line="1" Column="1" />
+      <File FileName="ShoppingAppUITest/Tests.cs" Line="11" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShoppingApp" expanded="True">
-            <Node name="Droid" expanded="True">
-              <Node name="app" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True">
-                  <Node name="activity_catalog.xml" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-            <Node name="ShoppingAppUITest" expanded="True" />
+            <Node name="ShoppingAppUITest" selected="True" />
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="ShoppingApp" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

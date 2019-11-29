@@ -61,7 +61,6 @@
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="app\App.cs" />
     <Compile Include="app\Utils.cs" />
     <Compile Include="app\cart\ShoppingCartActivity.cs" />
     <Compile Include="app\cart\ShoppingCartAdapter.cs" />
@@ -72,7 +71,6 @@
     <Compile Include="app\catalog\CatalogFragment.cs" />
     <Compile Include="app\catalog\CatalogSectionViewHolder.cs" />
     <Compile Include="app\catalog\CatalogViewHolder.cs" />
-    <Compile Include="app\catalog\ICatalogView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

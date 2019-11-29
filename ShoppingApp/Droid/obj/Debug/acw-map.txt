@@ -1,6 +1,3 @@
-Droid.app.App, ShoppingApp;md5221d1a4a54faa4033f64ae16ade6e001.App
-Droid.app.App;md5221d1a4a54faa4033f64ae16ade6e001.App
-droid.app.App;md5221d1a4a54faa4033f64ae16ade6e001.App
 Droid.app.catalog.CatalogActivity, ShoppingApp;md5f2adc123c2fefe161886eb9a533e9372.CatalogActivity
 Droid.app.catalog.CatalogActivity;md5f2adc123c2fefe161886eb9a533e9372.CatalogActivity
 droid.app.catalog.CatalogActivity;md5f2adc123c2fefe161886eb9a533e9372.CatalogActivity

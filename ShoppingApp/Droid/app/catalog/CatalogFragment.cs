@@ -11,6 +11,7 @@ using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using Droid.app.cart;
+using Shared.view;
 using ShoppingApp;
 using ShoppingApp.app.catalog.viewmodel;
 using ShoppingApp.app.model.catalog;
@@ -32,7 +33,7 @@ namespace Droid.app.catalog
         private List<Category> categories;
         private CatalogAdapter catalogAdapter;
         private SwipeRefreshLayout swipeRefresh;
-        private Android.Runtime.JavaList<Object> preparedList;
+        private List<Object> preparedList;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -113,7 +114,7 @@ namespace Droid.app.catalog
             }
         }
 
-        public void LoadData(List<Category> categories, Android.Runtime.JavaList<Object> preparedList, Dictionary<string, Sale> salesDict)
+        public void LoadData(List<Category> categories, List<Object> preparedList, Dictionary<string, Sale> salesDict)
         {
             ShowMain();
             progressBar.Visibility = ViewStates.Gone;
@@ -159,7 +160,7 @@ namespace Droid.app.catalog
             return true;
         }
 
-        public void LoadFiteredData(Android.Runtime.JavaList<object> preparedList)
+        public void LoadFiteredData(List<object> preparedList)
         {
             ShowMain();
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Droid.app.catalog;
+using Shared.view;
 using ShoppingApp.app.model.catalog;
 
 namespace ShoppingApp.app.catalog.viewmodel
@@ -37,7 +37,7 @@ namespace ShoppingApp.app.catalog.viewmodel
             {
                 if (result.IsCompleted && result.Status == TaskStatus.RanToCompletion)
                 {
-                    Android.Runtime.JavaList<Object> preparedList = GetPreparedList(products, sales);
+                    List<Object> preparedList = GetPreparedList(products, sales);
                     Dictionary<string, Sale> salesDict = GetSaleDictionary(sales);
 
                     this.view.LoadData(categories, preparedList, salesDict);
@@ -69,7 +69,7 @@ namespace ShoppingApp.app.catalog.viewmodel
             {
                 if (result.IsCompleted && result.Status == TaskStatus.RanToCompletion)
                 {
-                    Android.Runtime.JavaList<Object> preparedList = GetPreparedList(products, sales);
+                    List<Object> preparedList = GetPreparedList(products, sales);
                     this.view.LoadFiteredData(preparedList);
                 }
                 else if (result.IsFaulted)
@@ -83,9 +83,9 @@ namespace ShoppingApp.app.catalog.viewmodel
             }, TaskScheduler.FromCurrentSynchronizationContext()).ConfigureAwait(false);
         }
 
-        private Android.Runtime.JavaList<Object> GetPreparedList(List<Product> Products, List<Sale> Sales)
+        private List<Object> GetPreparedList(List<Product> Products, List<Sale> Sales)
         {
-            Android.Runtime.JavaList<Object> preparedList = new Android.Runtime.JavaList<Object>();
+            List<Object> preparedList = new List<Object>();
             string currentCategory = "";
             foreach (Product product in Products)
             {
