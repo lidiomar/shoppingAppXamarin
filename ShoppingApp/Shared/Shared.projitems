@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{42195A85-61ED-4C22-87EB-D55D6B9C351E}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)db\AppDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\catalog\Category.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\catalog\Policie.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\catalog\Product.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\catalog\Sale.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\IService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\NetworkService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)viewmodel\CatalogElementViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)viewmodel\CatalogViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)viewmodel\ICatalogElementViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\catalog\CatalogLocalDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\catalog\CatalogRemoteDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\catalog\CatalogRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\catalog\ICatalogDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\catalog\CatalogElementLocalDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\catalog\CatalogElementRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)model\catalog\ICatalogAdapterDataSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)db\" />
+    <Folder Include="$(MSBuildThisFileDirectory)model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)viewmodel\" />
+  </ItemGroup>
+</Project>
