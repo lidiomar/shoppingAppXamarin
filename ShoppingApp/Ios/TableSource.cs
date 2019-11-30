@@ -44,17 +44,13 @@ namespace Ios
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
             // request a recycled cell to save memory
-            CustomVegCell cell = tableView.DequeueReusableCell(cellIdentifier) as CustomVegCell;
+            CatalogTableViewCell cell = tableView.DequeueReusableCell(CatalogTableViewCell.Key) as CatalogTableViewCell;
 
             // if there are no cells to reuse, create a new one
             if (cell == null)
             {
-                cell = new CustomVegCell(cellIdentifier);
+                cell = CatalogTableViewCell.Create();
             }
-
-            cell.UpdateCell(tableItems[indexPath.Row].Heading
-                            , tableItems[indexPath.Row].SubHeading
-                            , UIImage.FromFile("Images/" + tableItems[indexPath.Row].ImageName));
 
             return cell;
         }
