@@ -149,4 +149,5 @@
     <resources>
         <image name="pencil" catalog="system" width="64" height="56"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

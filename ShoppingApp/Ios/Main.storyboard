@@ -61,7 +61,7 @@
                         <viewLayoutGuide key="safeArea" id="Vjp-Th-k2L"/>
                     </view>
                     <navigationItem key="navigationItem" title="Catálogo" id="its-n6-Xob">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="pencil" catalog="system" id="vsh-7Y-0ys">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="line.horizontal.3.decrease" catalog="system" id="vsh-7Y-0ys">
                             <color key="tintColor" red="1" green="0.93725490199999995" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
@@ -147,6 +147,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="line.horizontal.3.decrease" catalog="system" width="64" height="36"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

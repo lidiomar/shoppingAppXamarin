@@ -6,10 +6,10 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/actool/bundle/AppIcon60x60@2x.png</string>
-			<string>/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/actool/bundle/AppIcon76x76@2x~ipad.png</string>
-			<string>/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/actool/bundle/Assets.car</string>
-			<string>/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/actool/partial-info.plist</string>
+			<string>/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/actool/bundle/AppIcon60x60@2x.png</string>
+			<string>/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/actool/bundle/AppIcon76x76@2x~ipad.png</string>
+			<string>/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/actool/bundle/Assets.car</string>
+			<string>/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/actool/partial-info.plist</string>
 		</array>
 	</dict>
 	<key>com.apple.actool.document.notices</key>
@@ -20,7 +20,7 @@
 				<string>./AppIcon.appiconset/[][ipad][76x76][][][1x][][]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/actool/cloned-assets/Assets.xcassets</string>
+			<string>/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>76x76@1x app icons only apply to iPad apps targeting releases of iOS prior to 10.0.</string>
 			<key>type</key>

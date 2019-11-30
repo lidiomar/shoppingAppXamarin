@@ -16,6 +16,10 @@ namespace Ios
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
+
+            UINavigationBar.Appearance.BarTintColor = UIColor.FromName("CustomGray");
+            UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = UIColor.White });
+
             return true;
         }
 
