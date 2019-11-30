@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{4722FE14-77EC-4962-8292-2626C786DE28}|Default">
   <MonoDevelop.Ide.ItemProperties.Ios automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.092188B6-709A-4FBF-89F0-59FEC71D708D" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Resources/layout/adapter_catalog.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Resources/values/dimens.xml">
     <Files>
-      <File FileName="Droid/Resources/layout/adapter_catalog.xml" Line="39" Column="33" />
+      <File FileName="Droid/Resources/layout/activity_catalog.xml" Line="40" Column="11" />
+      <File FileName="Droid/Resources/layout/fragment_catalog.xml" Line="39" Column="60" />
+      <File FileName="Droid/Resources/values/dimens.xml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,12 +12,12 @@
           <Node name="ShoppingApp" expanded="True">
             <Node name="Droid" expanded="True">
               <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True">
-                  <Node name="adapter_catalog.xml" selected="True" />
+                <Node name="layout" expanded="True" />
+                <Node name="values" expanded="True">
+                  <Node name="dimens.xml" selected="True" />
                 </Node>
               </Node>
             </Node>
-            <Node name="Ios" expanded="True" />
           </Node>
         </State>
       </Pad>
