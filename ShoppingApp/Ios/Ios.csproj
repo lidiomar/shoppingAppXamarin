@@ -115,6 +115,7 @@
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\" />
+        <Folder Include="Images\" />
     </ItemGroup>
     <ItemGroup>
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -132,6 +133,30 @@
         <Compile Include="ViewController.designer.cs">
             <DependentUpon>ViewController.cs</DependentUpon>
         </Compile>
+        <Compile Include="TableSource.cs" />
+        <Compile Include="CustomVegCell.cs" />
+        <Compile Include="TableItem.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <BundleResource Include="Images\Bulbs.jpg" />
+      <BundleResource Include="Images\Bulbs%402x.jpg" />
+      <BundleResource Include="Images\Flower Buds.jpg" />
+      <BundleResource Include="Images\Flower Buds%402x.jpg" />
+      <BundleResource Include="Images\Fruits.jpg" />
+      <BundleResource Include="Images\Fruits%402x.jpg" />
+      <BundleResource Include="Images\Legumes.jpg" />
+      <BundleResource Include="Images\Legumes%402x.jpg" />
+      <BundleResource Include="Images\Tubers.jpg" />
+      <BundleResource Include="Images\Tubers%402x.jpg" />
+      <BundleResource Include="Images\Vegetables.jpg" />
+      <BundleResource Include="Images\Vegetables%402x.jpg" />
+      <BundleResource Include="Images\Icons\72_icon.png" />
+      <BundleResource Include="Images\Icons\50_icon.png" />
+      <BundleResource Include="Images\Icons\512_icon.png" />
+      <BundleResource Include="Images\Icons\57_icon.png" />
+      <BundleResource Include="Images\Icons\58_icon.png" />
+      <BundleResource Include="Images\Icons\114_icon.png" />
+      <BundleResource Include="Images\Icons\29_icon.png" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -56,6 +56,9 @@
                     <navigationItem key="navigationItem" title="Catálogo" id="its-n6-Xob">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="pencil" catalog="system" id="vsh-7Y-0ys"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableViewCatalog" destination="dUw-nT-gnP" id="name-outlet-dUw-nT-gnP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="568-Uw-eH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

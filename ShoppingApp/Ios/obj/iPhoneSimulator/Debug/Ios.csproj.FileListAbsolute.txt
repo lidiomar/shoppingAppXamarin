@@ -22,3 +22,11 @@
 /Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.csproj.CopyComplete
 /Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.exe
 /Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.pdb
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.csprojAssemblyReference.cache
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/optimized/Images/Icons/72_icon.png
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/optimized/Images/Icons/50_icon.png
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/optimized/Images/Icons/512_icon.png
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/optimized/Images/Icons/57_icon.png
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/optimized/Images/Icons/58_icon.png
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/optimized/Images/Icons/114_icon.png
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/optimized/Images/Icons/29_icon.png
