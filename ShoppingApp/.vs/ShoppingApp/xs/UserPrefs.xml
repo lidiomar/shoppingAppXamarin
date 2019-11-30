@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{4722FE14-77EC-4962-8292-2626C786DE28}|Default">
   <MonoDevelop.Ide.ItemProperties.Ios automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.80CFC64E-A9EC-4B77-8183-9C6CAFB2C584" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ios/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ios/ViewController.cs">
     <Files>
-      <File FileName="Ios/AppDelegate.cs" Line="23" Column="25" />
+      <File FileName="Ios/TableSource.cs" Line="36" Column="72" />
+      <File FileName="Ios/ViewController.cs" Line="32" Column="24" />
+      <File FileName="Ios/ViewController.designer.cs" Line="18" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShoppingApp" expanded="True">
             <Node name="Ios" expanded="True">
-              <Node name="AppDelegate.cs" selected="True" />
+              <Node name="CatalogTableViewCell.cs" expanded="True" />
+              <Node name="ViewController.cs" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>

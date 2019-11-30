@@ -15,10 +15,19 @@ namespace Ios
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIBarButtonItem FIlterBarButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView tableViewCatalog { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (FIlterBarButton != null) {
+                FIlterBarButton.Dispose ();
+                FIlterBarButton = null;
+            }
+
             if (tableViewCatalog != null) {
                 tableViewCatalog.Dispose ();
                 tableViewCatalog = null;
