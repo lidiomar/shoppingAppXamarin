@@ -21,14 +21,14 @@ background;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_custom_round.xml
 Button;obj/Debug/res/layout/adapter_catalog.xml
 Button;obj/Debug/res/layout/fragment_catalog.xml
 Button;obj/Debug/res/layout/fragment_shopping_cart.xml
-cache-path;/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Droid/obj/Debug/lp/45/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+cache-path;/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Droid/obj/Debug/lp/45/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 color;obj/Debug/res/values/colors.xml
 color;obj/Debug/res/values/ic_launcher_background.xml
 dimen;obj/Debug/res/values/dimens.xml
 Droid.app.cart.ShoppingCartFragment;obj/Debug/res/layout/activity_shopping_cart.xml
 Droid.app.catalog.CatalogFragment;obj/Debug/res/layout/activity_catalog.xml
-external-cache-path;/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Droid/obj/Debug/lp/45/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
-external-path;/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Droid/obj/Debug/lp/45/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+external-cache-path;/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Droid/obj/Debug/lp/45/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+external-path;/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Droid/obj/Debug/lp/45/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_custom.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/ic_launcher_custom_round.xml
 fragment;obj/Debug/res/layout/activity_catalog.xml
@@ -55,7 +55,7 @@ path;obj/Debug/res/drawable/ic_not_found.xml
 path;obj/Debug/res/drawable/ic_plus.xml
 path;obj/Debug/res/drawable/ic_star.xml
 path;obj/Debug/res/drawable/ic_star_selected.xml
-paths;/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Droid/obj/Debug/lp/45/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+paths;/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/Droid/obj/Debug/lp/45/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 ProgressBar;obj/Debug/res/layout/fragment_catalog.xml
 resources;obj/Debug/res/values/colors.xml
 resources;obj/Debug/res/values/dimens.xml

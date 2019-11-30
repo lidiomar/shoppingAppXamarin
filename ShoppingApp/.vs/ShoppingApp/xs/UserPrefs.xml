@@ -1,14 +1,10 @@
 ﻿<Properties StartupConfiguration="{2BECE44A-7058-46A7-BD19-840A82A8F1FC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingAppUITest/Tests.cs">
-    <Files>
-      <File FileName="ShoppingAppUITest/Tests.cs" Line="11" Column="23" />
-    </Files>
+  <MonoDevelop.Ide.ItemProperties.Ios automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.092188B6-709A-4FBF-89F0-59FEC71D708D" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ShoppingApp" expanded="True">
-            <Node name="ShoppingAppUITest" selected="True" />
-          </Node>
+          <Node name="ShoppingApp" expanded="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
@@ -25,5 +21,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0041569538" />
+  <MonoDevelop.Ide.ItemProperties.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.2b25454c8d1c7ece" />
 </Properties>

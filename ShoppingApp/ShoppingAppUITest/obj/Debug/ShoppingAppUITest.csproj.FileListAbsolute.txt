@@ -17,3 +17,13 @@
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/obj/Debug/ShoppingAppUITest.csproj.CopyComplete
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/obj/Debug/ShoppingAppUITest.dll
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/obj/Debug/ShoppingAppUITest.pdb
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/bin/Debug/ShoppingAppUITest.dll
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/bin/Debug/ShoppingAppUITest.pdb
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/bin/Debug/nunit.framework.dll
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/bin/Debug/Xamarin.UITest.dll
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/bin/Debug/nunit.framework.xml
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/bin/Debug/Xamarin.UITest.xml
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/obj/Debug/ShoppingAppUITest.csprojAssemblyReference.cache
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/obj/Debug/ShoppingAppUITest.csproj.CopyComplete
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/obj/Debug/ShoppingAppUITest.dll
+/Users/lidiomarfernandomachado/dev_test/bla/shoppingAppXamarin/ShoppingApp/ShoppingAppUITest/obj/Debug/ShoppingAppUITest.pdb
