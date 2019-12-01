@@ -8,3 +8,4 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.6.0.12/lib/mono/Xamarin.iOS/System.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.6.0.12/lib/mono/Xamarin.iOS/System.Net.Http.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.6.0.12/lib/mono/Xamarin.iOS/Facades/System.Drawing.Common.dll
+/Users/lfernandomachado/.nuget/packages/xamarin.sdwebimage/4.4.7/lib/Xamarin.iOS/SDWebImage.iOS.dll

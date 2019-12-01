@@ -47,7 +47,8 @@
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/optimized/Images/Icons/114_icon.png
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/optimized/Images/Icons/29_icon.png
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/optimized/
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.csprojAssemblyReference.cache
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.csproj.CopyComplete
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.exe
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.pdb
-/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.csprojAssemblyReference.cache
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/SDWebImage.iOS.dll

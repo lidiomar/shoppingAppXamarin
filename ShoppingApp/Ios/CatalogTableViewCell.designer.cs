@@ -17,11 +17,20 @@ namespace Ios
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton ButtonFavorite { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView ProductImage { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (ButtonFavorite != null) {
                 ButtonFavorite.Dispose ();
                 ButtonFavorite = null;
+            }
+
+            if (ProductImage != null) {
+                ProductImage.Dispose ();
+                ProductImage = null;
             }
         }
     }

@@ -50,6 +50,7 @@ namespace Ios
             if (cell == null)
             {
                 cell = CatalogTableViewCell.Create();
+                
             }
 
             return cell;

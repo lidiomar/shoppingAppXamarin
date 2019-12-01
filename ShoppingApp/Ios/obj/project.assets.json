@@ -25,6 +25,15 @@
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
+      },
+      "Xamarin.SDWebImage/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SDWebImage.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SDWebImage.iOS.dll": {}
+        }
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
@@ -50,6 +59,15 @@
         },
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.SDWebImage/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SDWebImage.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SDWebImage.iOS.dll": {}
         }
       }
     },
@@ -77,6 +95,15 @@
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
+      },
+      "Xamarin.SDWebImage/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SDWebImage.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SDWebImage.iOS.dll": {}
+        }
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
@@ -102,6 +129,15 @@
         },
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.SDWebImage/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/SDWebImage.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/SDWebImage.iOS.dll": {}
         }
       }
     }
@@ -196,11 +232,27 @@
         "xamarin.essentials.1.2.0.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
+    },
+    "Xamarin.SDWebImage/4.4.7": {
+      "sha512": "AAqWiihpznEuaoHVyWsQOP+GArxJgSf8gOksTT+Qg9rg9yqR9YxnreUtVUQW45xZ+iMyzhskmRRK7HzdNtgJVQ==",
+      "type": "package",
+      "path": "xamarin.sdwebimage/4.4.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/Xamarin.Mac/SDWebImage.macOS.dll",
+        "lib/Xamarin.iOS/SDWebImage.iOS.dll",
+        "lib/Xamarin.tvOS/SDWebImage.tvOS.dll",
+        "xamarin.sdwebimage.4.4.7.nupkg.sha512",
+        "xamarin.sdwebimage.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
-      "Xamarin.Essentials >= 1.2.0"
+      "Xamarin.Essentials >= 1.2.0",
+      "Xamarin.SDWebImage >= 4.4.7"
     ]
   },
   "packageFolders": {
@@ -237,6 +289,10 @@
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.2.0, )"
+          },
+          "Xamarin.SDWebImage": {
+            "target": "Package",
+            "version": "[4.4.7, )"
           }
         }
       }

@@ -22,6 +22,7 @@
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll
 -r=/Users/lfernandomachado/.nuget/packages/xamarin.essentials/1.2.0/lib/xamarinios10/Xamarin.Essentials.dll
+-r=/Users/lfernandomachado/.nuget/packages/xamarin.sdwebimage/4.4.7/lib/Xamarin.iOS/SDWebImage.iOS.dll
  --target-framework=Xamarin.iOS,v1.0
 --root-assembly=/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/Ios.exe
  

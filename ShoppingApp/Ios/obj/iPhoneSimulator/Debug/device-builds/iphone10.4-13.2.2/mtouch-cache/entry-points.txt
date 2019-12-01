@@ -1108,6 +1108,34 @@ Function=NetSecurityNative_Unwrap
 	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
 Function=SystemNative_GetDomainSocketSizes
 	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.Core.dll
+ObjectiveCClass=OBJC_CLASS_$_SDWebImageDownloader
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_SDWebImageDownloaderOperation
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_SDWebImagePrefetcher
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_SDImageCache
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_FLAnimatedImage
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_FLAnimatedImageView
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_SDImageCacheConfig
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+Field=SDWebImageDownloadFinishNotification
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+Field=SDWebImageDownloadReceiveResponseNotification
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+Field=SDWebImageDownloadStartNotification
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+Field=SDWebImageDownloadStopNotification
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+Field=SDWebImageErrorDomain
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_SDWebImageDownloadToken
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_SDWebImageManager
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
 Function=mono_pmip
 Function=xamarin_dyn_objc_msgSend
 Function=xamarin_dyn_objc_msgSendSuper
