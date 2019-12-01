@@ -1,22 +1,19 @@
 ﻿<Properties StartupConfiguration="{4722FE14-77EC-4962-8292-2626C786DE28}|Default">
   <MonoDevelop.Ide.ItemProperties.Ios automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.80CFC64E-A9EC-4B77-8183-9C6CAFB2C584" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ios/TableSource.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ios/CatalogTableViewCell.cs">
     <Files>
-      <File FileName="Ios/CatalogTableViewCell.cs" Line="32" Column="10" />
-      <File FileName="Ios/TableSource.cs" Line="1" Column="1" />
+      <File FileName="Ios/ShoppingCartTableSource.cs" Line="1" Column="1" />
+      <File FileName="Ios/ShppingCartTableViewCell.cs" Line="31" Column="170" />
+      <File FileName="Ios/CatalogTableViewCell.cs" Line="31" Column="170" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShoppingApp" expanded="True">
-            <Node name="Droid" expanded="True">
-              <Node name="Packages" expanded="True" />
-            </Node>
+            <Node name="Droid" expanded="True" />
             <Node name="Ios" expanded="True">
-              <Node name="Packages" expanded="True" />
-              <Node name="CatalogTableViewCell.cs" expanded="True" />
-              <Node name="TableSource.cs" selected="True" />
-              <Node name="ViewController.cs" expanded="True" />
+              <Node name="CatalogTableViewCell.cs" selected="True" />
+              <Node name="ShppingCartTableViewCell.cs" expanded="True" />
             </Node>
           </Node>
         </State>

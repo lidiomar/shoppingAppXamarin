@@ -28,7 +28,7 @@ namespace Ios
         public override void LayoutSubviews()
         {
             base.LayoutSubviews();
-            ProductImage.SetImage(new NSUrl("https://simplest-meuspedidos-arquivos.s3.amazonaws.com/media/imagem_produto/133421/fda44b12-48f7-11e6-996c-0aad52ea90db.jpeg"));
+            ProductImage.SetImage(new NSUrl("https://simplest-meuspedidos-arquivos.s3.amazonaws.com/media/imagem_produto/133421/07b3b1d8-48f8-11e6-aa97-020adee616d7.jpeg"));
         }
     }
 }

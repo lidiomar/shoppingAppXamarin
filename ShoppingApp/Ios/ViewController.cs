@@ -13,8 +13,8 @@ namespace Ios
 
         public override void ViewDidLoad ()
         {
-            base.ViewDidLoad ();
-            CreateTableItems();
+            base.ViewDidLoad();
+            LoadTable();
             ButtonFilter();
         }
 
@@ -58,20 +58,10 @@ namespace Ios
             };
         }
 
-        protected void CreateTableItems()
+        protected void LoadTable()
         {
             tableViewCatalog.SeparatorColor = UIColor.FromRGB(127, 106, 0);
-
-            List<TableItem> tableItems = new List<TableItem>
-            {
-                new TableItem("Vegetables") { SubHeading = "65 items", ImageName = "Vegetables.jpg" },
-                new TableItem("Fruits") { SubHeading = "17 items", ImageName = "Fruits.jpg" },
-                new TableItem("Flower Buds") { SubHeading = "5 items", ImageName = "Flower Buds.jpg" },
-                new TableItem("Legumes") { SubHeading = "33 items", ImageName = "Legumes.jpg" },
-                new TableItem("Bulbs") { SubHeading = "18 items", ImageName = "Bulbs.jpg" },
-                new TableItem("Tubers") { SubHeading = "43 items", ImageName = "Tubers.jpg" }
-            };
-            tableViewCatalog.Source = new TableSource(tableItems, this);
+            tableViewCatalog.Source = new TableSource(this);
         }
     }
 }

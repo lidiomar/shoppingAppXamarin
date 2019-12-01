@@ -5,6 +5,10 @@
       <LogicalName>CatalogTableViewCell.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/ibtool/ShppingCartTableViewCell.nib">
+      <LogicalName>ShppingCartTableViewCell.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/ibtool-link/Main.storyboardc/UvJ-h2-Ly5-view-FAS-ck-sIT.nib">
       <LogicalName>Main.storyboardc/UvJ-h2-Ly5-view-FAS-ck-sIT.nib</LogicalName>
       <Optimize>false</Optimize>
