@@ -67,7 +67,7 @@ namespace Ios.app.catalog
         {
             ShowMain();
             tableViewCatalog.SeparatorColor = UIColor.FromRGB(127, 106, 0);
-            tableViewCatalog.Source = new TableSource(this);
+            tableViewCatalog.Source = new TableSource(this, preparedList, salesDict);
             tableViewCatalog.ReloadData();
             ButtonFilter();
         }

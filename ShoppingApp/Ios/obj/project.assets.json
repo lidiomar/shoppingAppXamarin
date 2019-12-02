@@ -959,20 +959,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/lfernandomachado/.nuget/packages/": {}
+    "/Users/lidiomarfernandomachado/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/Ios.csproj",
+      "projectUniqueName": "/Users/lidiomarfernandomachado/dev_test/shoppingAppXamarin/ShoppingApp/Ios/Ios.csproj",
       "projectName": "Ios",
-      "projectPath": "/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/Ios.csproj",
-      "packagesPath": "/Users/lfernandomachado/.nuget/packages/",
-      "outputPath": "/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/",
+      "projectPath": "/Users/lidiomarfernandomachado/dev_test/shoppingAppXamarin/ShoppingApp/Ios/Ios.csproj",
+      "packagesPath": "/Users/lidiomarfernandomachado/.nuget/packages/",
+      "outputPath": "/Users/lidiomarfernandomachado/dev_test/shoppingAppXamarin/ShoppingApp/Ios/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/lfernandomachado/.config/NuGet/NuGet.Config"
+        "/Users/lidiomarfernandomachado/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"

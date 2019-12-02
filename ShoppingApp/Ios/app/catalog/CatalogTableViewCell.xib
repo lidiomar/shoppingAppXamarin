@@ -112,6 +112,12 @@
             <connections>
                 <outlet property="ButtonFavorite" destination="Qu6-CQ-9mn" id="name-outlet-Qu6-CQ-9mn"/>
                 <outlet property="ProductImage" destination="0P8-LK-TOg" id="name-outlet-0P8-LK-TOg"/>
+                <outlet property="ProductDescription" destination="TRP-DD-jc8" id="name-outlet-TRP-DD-jc8"/>
+                <outlet property="ProductDiscount" destination="hzN-Rh-gLc" id="name-outlet-hzN-Rh-gLc"/>
+                <outlet property="ProductPrice" destination="3c5-UU-3lF" id="name-outlet-3c5-UU-3lF"/>
+                <outlet property="ProductQuantity" destination="4QR-hg-VHY" id="name-outlet-4QR-hg-VHY"/>
+                <outlet property="ButtonLess" destination="xFg-Wu-Mbr" id="name-outlet-xFg-Wu-Mbr"/>
+                <outlet property="ButtonPlus" destination="mI5-jv-aOe" id="name-outlet-mI5-jv-aOe"/>
             </connections>
             <point key="canvasLocation" x="228.80000000000001" y="2.6986506746626691"/>
         </tableViewCell>

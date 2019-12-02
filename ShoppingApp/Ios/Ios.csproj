@@ -135,12 +135,17 @@
         <Folder Include="app\" />
         <Folder Include="app\cart\" />
         <Folder Include="app\catalog\" />
+        <Folder Include="Resources\Base.lproj\" />
+        <Folder Include="Resources\en.lproj\" />
+        <Folder Include="Resources\es.lproj\" />
+        <Folder Include="Resources\pt.lproj\" />
     </ItemGroup>
     <ItemGroup>
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
         <InterfaceDefinition Include="Main.storyboard" />
         <InterfaceDefinition Include="app\catalog\CatalogTableViewCell.xib" />
         <InterfaceDefinition Include="app\cart\ShoppingCartTableViewCell.xib" />
+        <InterfaceDefinition Include="app\catalog\SaleTableViewCell.xib" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
@@ -168,6 +173,19 @@
         <Compile Include="app\cart\ShoppingCartViewController.designer.cs">
           <DependentUpon>ShoppingCartViewController.cs</DependentUpon>
         </Compile>
+        <Compile Include="app\catalog\SaleTableViewCell.cs" />
+        <Compile Include="app\catalog\SaleTableViewCell.designer.cs">
+          <DependentUpon>SaleTableViewCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="SceneDelegate.designer.cs">
+          <DependentUpon>SceneDelegate.cs</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <BundleResource Include="Resources\en.lproj\Localizable.strings" />
+      <BundleResource Include="Resources\es.lproj\Localizable.strings" />
+      <BundleResource Include="Resources\pt.lproj\Localizable.strings" />
+      <BundleResource Include="Resources\Base.lproj\Localizable.strings" />
     </ItemGroup>
     <Import Project="..\Shared\Shared.projitems" Label="Shared" Condition="Exists('..\Shared\Shared.projitems')" />
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

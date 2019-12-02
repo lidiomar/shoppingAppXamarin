@@ -3,6 +3,7 @@
 using Foundation;
 using UIKit;
 using SDWebImage;
+using ShoppingApp.app.model.catalog;
 
 namespace Ios.app.catalog
 {
@@ -10,6 +11,7 @@ namespace Ios.app.catalog
     {
         public static readonly NSString Key = new NSString("CatalogTableViewCell");
         public static readonly UINib Nib = UINib.FromName("CatalogTableViewCell", NSBundle.MainBundle);
+        public Product product;
 
         static CatalogTableViewCell()
         {
@@ -29,7 +31,22 @@ namespace Ios.app.catalog
         public override void LayoutSubviews()
         {
             base.LayoutSubviews();
-            ProductImage.SetImage(new NSUrl("https://simplest-meuspedidos-arquivos.s3.amazonaws.com/media/imagem_produto/133421/07b3b1d8-48f8-11e6-aa97-020adee616d7.jpeg"));
+            string photoUrl = product.Photo;
+            ProductImage.SetImage(new NSUrl(photoUrl));
+            ProductDescription.Text = product.Name;
+           
+            string price = NSBundle.MainBundle.GetLocalizedString("price", " ");
+            string priceFormated = String.Format(price, product.Price.ToString("0.00"));
+            ProductPrice.Text = priceFormated;
+
+            ProductDiscount.Hidden |= product.DiscountPercent <= 0;
+
+            ProductQuantity.Hidden |= product.Quantity <= 0;
+
+
+            //ProductPrice.Text = product.Price;
         }
+
+        
     }
 }
