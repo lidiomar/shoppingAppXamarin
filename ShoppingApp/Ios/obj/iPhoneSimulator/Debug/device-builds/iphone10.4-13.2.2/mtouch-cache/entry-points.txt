@@ -61,13 +61,65 @@ Function=xamarin_log
 	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/mscorlib.dll
 Function=xamarin_get_locale_country_code
 	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/mscorlib.dll
+Function=NetSecurityNative_ReleaseGssBuffer
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DisplayMinorStatus
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DisplayMajorStatus
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ImportUserName
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ImportPrincipalName
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ReleaseName
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitiateCredSpNego
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitiateCredWithPassword
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ReleaseCred
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitSecContext
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_AcceptSecContext
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DeleteSecContext
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_Wrap
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_Unwrap
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+Function=xamarin_start_wwan
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=SystemNative_GetDomainSocketSizes
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.Core.dll
+Function=BrotliDecoderCreateInstance
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDecompressStream
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDecompress
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDestroyInstance
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderIsFinished
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCreateInstance
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderSetParameter
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCompressStream
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderHasMoreOutput
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderDestroyInstance
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCompress
+	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.IO.Compression.dll
 Function=xamarin_find_protocol_wrapper_type
 	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_release_block_on_main_thread
 	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_start_wwan
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/Xamarin.iOS.dll
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
 Function=xamarin_get_block_descriptor
 	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__NMatrix4_objc_msgSend
@@ -1078,36 +1130,6 @@ Function=xamarin_localized_string_format_9
 	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_init_nsthread
 	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=NetSecurityNative_ReleaseGssBuffer
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_DisplayMinorStatus
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_DisplayMajorStatus
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_ImportUserName
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_ImportPrincipalName
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_ReleaseName
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_InitiateCredSpNego
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_InitiateCredWithPassword
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_ReleaseCred
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_InitSecContext
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_AcceptSecContext
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_DeleteSecContext
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_Wrap
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=NetSecurityNative_Unwrap
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.dll
-Function=SystemNative_GetDomainSocketSizes
-	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/System.Core.dll
 ObjectiveCClass=OBJC_CLASS_$_SDWebImageDownloader
 	/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache/1-Link/SDWebImage.iOS.dll
 ObjectiveCClass=OBJC_CLASS_$_SDWebImageDownloaderOperation

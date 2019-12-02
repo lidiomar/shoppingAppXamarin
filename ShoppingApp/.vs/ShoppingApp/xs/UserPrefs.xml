@@ -1,19 +1,29 @@
 ﻿<Properties StartupConfiguration="{4722FE14-77EC-4962-8292-2626C786DE28}|Default">
   <MonoDevelop.Ide.ItemProperties.Ios automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.80CFC64E-A9EC-4B77-8183-9C6CAFB2C584" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ios/CatalogTableViewCell.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ios/app/catalog/ViewController.designer.cs">
     <Files>
-      <File FileName="Ios/ShoppingCartTableSource.cs" Line="1" Column="1" />
-      <File FileName="Ios/ShppingCartTableViewCell.cs" Line="31" Column="170" />
-      <File FileName="Ios/CatalogTableViewCell.cs" Line="31" Column="170" />
+      <File FileName="Ios/app/catalog/ViewController.designer.cs" Line="16" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShoppingApp" expanded="True">
-            <Node name="Droid" expanded="True" />
+            <Node name="Droid" expanded="True">
+              <Node name="Packages" expanded="True" />
+            </Node>
             <Node name="Ios" expanded="True">
-              <Node name="CatalogTableViewCell.cs" selected="True" />
-              <Node name="ShppingCartTableViewCell.cs" expanded="True" />
+              <Node name="References" expanded="True" />
+              <Node name="Packages" expanded="True" />
+              <Node name="app" expanded="True">
+                <Node name="catalog" expanded="True">
+                  <Node name="ViewController.cs" expanded="True">
+                    <Node name="ViewController.designer.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Shared" expanded="True">
+              <Node name="db" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -27,5 +37,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.2b25454c8d1c7ece" />
+  <MonoDevelop.Ide.ItemProperties.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0041569538" />
 </Properties>

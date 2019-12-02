@@ -65,11 +65,21 @@
         <Reference Include="Xamarin.iOS" />
         <Reference Include="System.Numerics" />
         <Reference Include="System.Numerics.Vectors" />
+        <Reference Include="System.Net.Http" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
       <PackageReference Include="Xamarin.SDWebImage">
         <Version>4.4.7</Version>
+      </PackageReference>
+      <PackageReference Include="sqlite-net-pcl">
+        <Version>1.6.292</Version>
+      </PackageReference>
+      <PackageReference Include="Refit">
+        <Version>5.0.23</Version>
+      </PackageReference>
+      <PackageReference Include="SQLiteNetExtensions">
+        <Version>2.1.0</Version>
       </PackageReference>
     </ItemGroup>
     <ItemGroup>
@@ -122,12 +132,15 @@
         <Folder Include="Images\" />
         <Folder Include="Assets.xcassets\CustomGray.colorset\" />
         <Folder Include="Assets.xcassets\IconFilter.appiconset\" />
+        <Folder Include="app\" />
+        <Folder Include="app\cart\" />
+        <Folder Include="app\catalog\" />
     </ItemGroup>
     <ItemGroup>
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
         <InterfaceDefinition Include="Main.storyboard" />
-        <InterfaceDefinition Include="CatalogTableViewCell.xib" />
-        <InterfaceDefinition Include="ShppingCartTableViewCell.xib" />
+        <InterfaceDefinition Include="app\catalog\CatalogTableViewCell.xib" />
+        <InterfaceDefinition Include="app\cart\ShoppingCartTableViewCell.xib" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
@@ -137,25 +150,25 @@
         <Compile Include="Main.cs" />
         <Compile Include="AppDelegate.cs" />
         <Compile Include="SceneDelegate.cs" />
-        <Compile Include="ViewController.cs" />
-        <Compile Include="ViewController.designer.cs">
-            <DependentUpon>ViewController.cs</DependentUpon>
-        </Compile>
-        <Compile Include="TableSource.cs" />
-        <Compile Include="TableItem.cs" />
-        <Compile Include="CatalogTableViewCell.cs" />
-        <Compile Include="CatalogTableViewCell.designer.cs">
+        <Compile Include="app\catalog\CatalogTableViewCell.cs" />
+        <Compile Include="app\catalog\CatalogTableViewCell.designer.cs">
           <DependentUpon>CatalogTableViewCell.cs</DependentUpon>
         </Compile>
-        <Compile Include="ShppingCartTableViewCell.cs" />
-        <Compile Include="ShppingCartTableViewCell.designer.cs">
-          <DependentUpon>ShppingCartTableViewCell.cs</DependentUpon>
+        <Compile Include="app\catalog\TableSource.cs" />
+        <Compile Include="app\catalog\ViewController.cs" />
+        <Compile Include="app\catalog\ViewController.designer.cs">
+          <DependentUpon>ViewController.cs</DependentUpon>
         </Compile>
-        <Compile Include="ShoppingCartViewController.cs" />
-        <Compile Include="ShoppingCartViewController.designer.cs">
+        <Compile Include="app\cart\ShoppingCartTableSource.cs" />
+        <Compile Include="app\cart\ShoppingCartTableViewCell.cs" />
+        <Compile Include="app\cart\ShoppingCartTableViewCell.designer.cs">
+          <DependentUpon>ShoppingCartTableViewCell.cs</DependentUpon>
+        </Compile>
+        <Compile Include="app\cart\ShoppingCartViewController.cs" />
+        <Compile Include="app\cart\ShoppingCartViewController.designer.cs">
           <DependentUpon>ShoppingCartViewController.cs</DependentUpon>
         </Compile>
-        <Compile Include="ShoppingCartTableSource.cs" />
     </ItemGroup>
+    <Import Project="..\Shared\Shared.projitems" Label="Shared" Condition="Exists('..\Shared\Shared.projitems')" />
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -44,3 +44,14 @@
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.csproj.CopyComplete
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.exe
 /Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.pdb
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/Ios.csprojAssemblyReference.cache
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/RefitStubs.g.cs
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/Refit.dll
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/SQLite-net.dll
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/SQLiteNetExtensions.dll
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/SQLiteNetExtensions.pdb
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/SQLitePCLRaw.batteries_green.dll
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/SQLitePCLRaw.batteries_v2.dll
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/SQLitePCLRaw.core.dll
+/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/SQLitePCLRaw.provider.sqlite3.dll
