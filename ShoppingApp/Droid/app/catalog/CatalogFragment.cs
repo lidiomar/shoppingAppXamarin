@@ -117,9 +117,6 @@ namespace Droid.app.catalog
         public void LoadData(List<Category> categories, List<Object> preparedList, Dictionary<string, Sale> salesDict)
         {
             ShowMain();
-            progressBar.Visibility = ViewStates.Gone;
-            main.Visibility = ViewStates.Visible;
-            message.Visibility = ViewStates.Gone;
 
             if (categories.Count > 0)
             {
@@ -187,7 +184,7 @@ namespace Droid.app.catalog
             message.Visibility = ViewStates.Visible;
         }
 
-        private void ShowMain()
+        public void ShowMain()
         {
             progressBar.Visibility = ViewStates.Gone;
             main.Visibility = ViewStates.Visible;

@@ -11,5 +11,6 @@ namespace Shared.view
         void UpdateButtonBuyValue(float value);
         void IsLoading();
         void ShowErrorMessage();
+        void ShowMain();
     }
 }

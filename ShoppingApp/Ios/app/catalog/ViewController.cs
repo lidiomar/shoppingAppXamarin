@@ -20,11 +20,7 @@ namespace Ios.app.catalog
         {
             base.ViewDidLoad();
             catalogViewModel = new CatalogViewModel(this);
-            tableViewCatalog.SeparatorColor = UIColor.FromRGB(127, 106, 0);
-            tableViewCatalog.Source = new TableSource(this);
-            //_ = catalogViewModel.GetData();
-
-            ButtonFilter();
+            _ = catalogViewModel.GetData();
         }
 
         public override void DidReceiveMemoryWarning ()
@@ -69,6 +65,11 @@ namespace Ios.app.catalog
 
         public void LoadData(List<Category> categories, List<object> preparedList, Dictionary<string, Sale> salesDict)
         {
+            ShowMain();
+            tableViewCatalog.SeparatorColor = UIColor.FromRGB(127, 106, 0);
+            tableViewCatalog.Source = new TableSource(this);
+            tableViewCatalog.ReloadData();
+            ButtonFilter();
         }
 
         public void LoadFiteredData(List<object> preparedList)
@@ -83,12 +84,23 @@ namespace Ios.app.catalog
 
         public void IsLoading()
         {
-            
+            mainView.Hidden = true;
+            errorView.Hidden = true;
+            loadingView.Hidden = false;
         }
 
         public void ShowErrorMessage()
         {
-            
+            mainView.Hidden = true;
+            errorView.Hidden = false;
+            loadingView.Hidden = true;
+        }
+
+        public void ShowMain()
+        {
+            mainView.Hidden = false;
+            errorView.Hidden = true;
+            loadingView.Hidden = true;
         }
     }
 }
