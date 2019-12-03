@@ -14,6 +14,10 @@ namespace Ios.app.catalog
     partial class ViewController
     {
         [Outlet]
+        UIKit.UIButton buttonBuy { get; set; }
+
+
+        [Outlet]
         UIKit.UIView errorView { get; set; }
 
 

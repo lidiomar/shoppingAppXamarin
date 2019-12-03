@@ -1,44 +1,31 @@
 ﻿<Properties StartupConfiguration="{4722FE14-77EC-4962-8292-2626C786DE28}|Default">
-  <MonoDevelop.Ide.ItemProperties.Ios automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.11D40C1C-7D9E-4E2F-A35C-9C3DA8ABCDFC" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Shared/model/catalog/Product.cs">
+  <MonoDevelop.Ide.ItemProperties.Ios automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.80CFC64E-A9EC-4B77-8183-9C6CAFB2C584" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ios/app/catalog/TableSource.cs">
     <Files>
-      <File FileName="Droid/app/Utils.cs" Line="13" Column="34" />
-      <File FileName="Ios/app/catalog/TableSource.cs" Line="65" Column="2" />
-      <File FileName="Ios/app/catalog/CatalogTableViewCell.cs" Line="14" Column="21" />
-      <File FileName="Ios/Resources/en.lproj/Localizable.strings" Line="10" Column="48" />
-      <File FileName="Shared/model/catalog/Product.cs" Line="6" Column="18" />
+      <File FileName="Ios/app/catalog/CatalogTableViewCell.cs" Line="150" Column="1" />
+      <File FileName="Ios/app/catalog/TableSource.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShoppingApp" expanded="True">
-            <Node name="Droid" expanded="True">
-              <Node name="app" expanded="True" />
-            </Node>
             <Node name="Ios" expanded="True">
               <Node name="app" expanded="True">
-                <Node name="catalog" expanded="True" />
+                <Node name="catalog" expanded="True">
+                  <Node name="TableSource.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="Resources" expanded="True">
                 <Node name="Base.lproj" expanded="True" />
                 <Node name="en.lproj" expanded="True" />
+                <Node name="es.lproj" expanded="True" />
+                <Node name="pt.lproj" expanded="True" />
               </Node>
             </Node>
             <Node name="Shared" expanded="True">
-              <Node name="model" expanded="True">
-                <Node name="catalog" expanded="True">
-                  <Node name="Product.cs" selected="True" />
-                </Node>
-              </Node>
+              <Node name="viewmodel" expanded="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>products</Value>
-          <Value>categories</Value>
-          <Value>category</Value>
         </State>
       </Pad>
     </Pads>
@@ -50,5 +37,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0053595654" />
+  <MonoDevelop.Ide.ItemProperties.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.0041569538" />
 </Properties>

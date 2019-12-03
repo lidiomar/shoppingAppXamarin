@@ -1,0 +1,10 @@
+﻿"catalog"="Catálogo";
+"buy_value"="Comprar \u25B8 R$ {0}";
+"cart"="Carrinho";
+"checkout"="Finalizar compra";
+"price"="R$ {0}";
+"favorite_error"="Não foi possível marcar o produto {0} como favorito";
+"un"="{0} UN";
+"discount"="{0}%";
+"all_categories"="Todas as categorias";
+"error"="Ocorreu um erro ao carregar os dados";

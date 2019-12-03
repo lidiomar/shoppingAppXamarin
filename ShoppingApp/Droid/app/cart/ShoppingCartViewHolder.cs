@@ -2,6 +2,7 @@
 using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using Shared;
 using ShoppingApp;
 using ShoppingApp.app.model.catalog;
 using Square.Picasso;
@@ -37,15 +38,15 @@ namespace Droid.app.cart
 
             //Price
             float displayValue = product.SumPrice - product.DiscountValue;
-            ProductPrice.Text = Utils.GetPrice(context, displayValue);
+            ProductPrice.Text = Utils.GetPrice(context.GetString(Resource.String.price), displayValue);
 
             //Quantity
-            NumberOfProducts.Text = Utils.GetUN(context, product.Quantity.ToString());
+            NumberOfProducts.Text = Utils.GetUN(context.GetString(Resource.String.un), product.Quantity.ToString());
 
             //Discount
             if (product.DiscountPercent > 0)
             {
-                ProductDiscount.Text = Utils.GetDiscount(context, ((int)product.DiscountPercent).ToString());
+                ProductDiscount.Text = Utils.GetDiscount(context.GetString(Resource.String.discount), ((int)product.DiscountPercent).ToString());
                 ProductDiscount.Visibility = ViewStates.Visible;
             }
             else

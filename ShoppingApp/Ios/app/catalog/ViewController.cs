@@ -21,6 +21,7 @@ namespace Ios.app.catalog
             base.ViewDidLoad();
             catalogViewModel = new CatalogViewModel(this);
             _ = catalogViewModel.GetData();
+            UpdateButtonBuyValue(0);
         }
 
         public override void DidReceiveMemoryWarning ()
@@ -79,7 +80,18 @@ namespace Ios.app.catalog
 
         public void UpdateButtonBuyValue(float value)
         {
-            
+            string format = NSBundle.MainBundle.GetLocalizedString("buy_value", " ");
+            string formatted = String.Format(format, value.ToString("0.00"));
+            buttonBuy.SetTitle(formatted, UIControlState.Normal);
+
+            if (value <= 0)
+            {
+                buttonBuy.Enabled = false;
+            }
+            else
+            {
+                buttonBuy.Enabled = true;
+            }
         }
 
         public void IsLoading()

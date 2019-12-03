@@ -29,6 +29,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)viewmodel\Bla.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)view\ICatalogView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)db\App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)db\" />

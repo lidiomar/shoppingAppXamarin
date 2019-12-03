@@ -5,8 +5,8 @@ using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using Droid.app.catalog;
+using Shared;
 using ShoppingApp;
-using ShoppingApp.app.catalog;
 using ShoppingApp.app.model.catalog;
 
 namespace Droid.app.cart
@@ -51,9 +51,9 @@ namespace Droid.app.cart
                 ShoppingCartAdapter shoppingCartAdapter = new ShoppingCartAdapter(products);
                 recyclerView.SetAdapter(shoppingCartAdapter);
 
-                this.totalValueView.Text = Utils.GetPrice(Activity, Activity.Intent.GetFloatExtra(CatalogFragment.totalValueJsonExtra, 0));
+                this.totalValueView.Text = Utils.GetPrice(Activity.GetString(Resource.String.price), Activity.Intent.GetFloatExtra(CatalogFragment.totalValueJsonExtra, 0));
                 int quantity = Activity.Intent.GetIntExtra(CatalogFragment.quantityJsonExtra, 0);
-                this.itemsCount.Text = Utils.GetUN(Activity, quantity.ToString());
+                this.itemsCount.Text = Utils.GetUN(Activity.GetString(Resource.String.un), quantity.ToString());
             }
 
         }

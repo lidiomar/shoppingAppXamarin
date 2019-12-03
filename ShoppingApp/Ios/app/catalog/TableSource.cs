@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using Foundation;
+using Shared.view;
+using ShoppingApp.app.catalog.viewmodel;
 using ShoppingApp.app.model.catalog;
 using UIKit;
 
@@ -9,16 +11,18 @@ namespace Ios.app.catalog
 {
     public class TableSource : UITableViewSource
     {
-        private UIViewController owner;
         NSString cellIdentifier = new NSString("TableCell");
-        List<object> preparedList = new List<object>();
-        Dictionary<string, Sale> salesDict = new Dictionary<string, Sale>();
+        public ICatalogView owner;
+        public List<object> preparedList = new List<object>();
+        public Dictionary<string, Sale> salesDict = new Dictionary<string, Sale>();
+        public ICatalogElementViewModel catalogElementViewModel;
 
-        public TableSource(UIViewController owner, List<object> preparedList, Dictionary<string, Sale> salesDict)
+        public TableSource(ICatalogView owner, List<object> preparedList, Dictionary<string, Sale> salesDict)
         {
             this.owner = owner;
             this.preparedList = preparedList;
             this.salesDict = salesDict;
+            this.catalogElementViewModel = new CatalogElementViewModel();
         }
         
         public override nint RowsInSection(UITableView tableview, nint section)
@@ -38,7 +42,8 @@ namespace Ios.app.catalog
                 {
                     cell = CatalogTableViewCell.Create();
                 }
-                ((CatalogTableViewCell)cell).product = (Product)item;
+                ((CatalogTableViewCell)cell).tableSource = this;
+                ((CatalogTableViewCell)cell).position = indexPath.Row;
             }
             else
             {

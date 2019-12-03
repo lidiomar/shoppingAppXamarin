@@ -120,6 +120,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="FIlterBarButton" destination="vsh-7Y-0ys" id="name-outlet-vsh-7Y-0ys"/>
+                        <outlet property="buttonBuy" destination="tpN-QL-jym" id="DG1-w6-S2p"/>
                         <outlet property="errorView" destination="8yc-oK-FF9" id="GGi-vK-fhV"/>
                         <outlet property="loadingView" destination="dKU-j0-dF2" id="i3K-8W-wfX"/>
                         <outlet property="mainView" destination="2Yb-Zg-3PT" id="7Wx-rg-VvP"/>
