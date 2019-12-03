@@ -3,6 +3,8 @@
 using Foundation;
 using UIKit;
 using SDWebImage;
+using ShoppingApp.app.model.catalog;
+using Shared;
 
 namespace Ios.app.cart
 {
@@ -10,6 +12,7 @@ namespace Ios.app.cart
     {
         public static readonly NSString Key = new NSString("ShoppingCartTableViewCell");
         public static readonly UINib Nib;
+        public Product product;
 
         static ShoppingCartTableViewCell()
         {
@@ -29,7 +32,24 @@ namespace Ios.app.cart
         public override void LayoutSubviews()
         {
             base.LayoutSubviews();
-            ProductImage.SetImage(new NSUrl("https://simplest-meuspedidos-arquivos.s3.amazonaws.com/media/imagem_produto/133421/07b3b1d8-48f8-11e6-aa97-020adee616d7.jpeg"));
+            ProductImage.SetImage(new NSUrl(product.Photo));
+            ProductName.Text = product.Name;
+
+            float displayValue = product.SumPrice - product.DiscountValue;
+            ProductPrice.Text = Utils.GetPrice(NSBundle.MainBundle.GetLocalizedString("price", " "), displayValue);
+
+            ProductQuantity.Text = Utils.GetUN(NSBundle.MainBundle.GetLocalizedString("un", " "), product.Quantity.ToString());
+
+            //Discount
+            if (product.DiscountPercent > 0)
+            {
+                ProductDiscount.Text = Utils.GetDiscount(NSBundle.MainBundle.GetLocalizedString("discount", " "), ((int)product.DiscountPercent).ToString());
+                ProductDiscount.Hidden = false;
+            }
+            else
+            {
+                ProductDiscount.Hidden = true;
+            }
         }
     }
 }

@@ -33,7 +33,7 @@
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="UvJ-h2-Ly5" kind="show" id="po5-M7-tIA"/>
+                                                    <segue destination="UvJ-h2-Ly5" kind="show" id="po5-M7-tIA" identifier="buttonBuySegue"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -231,6 +231,10 @@
                     <navigationItem key="navigationItem" title="Carrinho" id="hES-3J-OaJ"/>
                     <connections>
                         <outlet property="tableViewShoppingCart" destination="zUK-CX-UBc" id="name-outlet-zUK-CX-UBc"/>
+                        <outlet property="UnLabel" destination="pO4-hC-2XP" id="name-outlet-pO4-hC-2XP"/>
+                        <outlet property="PriceLabel" destination="qfX-zE-VYW" id="name-outlet-qfX-zE-VYW"/>
+                        <outlet property="TotalLabel" destination="7i1-ZB-E4c" id="name-outlet-7i1-ZB-E4c"/>
+                        <outlet property="Checkout" destination="MPA-Mk-9l2" id="name-outlet-MPA-Mk-9l2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00N-zv-k8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -261,8 +265,8 @@
             <point key="canvasLocation" x="300" y="374"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="line.horizontal.3.decrease" catalog="system"/>
     </resources>
-    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

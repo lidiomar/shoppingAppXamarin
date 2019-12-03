@@ -75,6 +75,10 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="ProductImage" destination="SvB-o5-8yG" id="name-outlet-SvB-o5-8yG"/>
+                <outlet property="ProductName" destination="FJe-3E-7tx" id="name-outlet-FJe-3E-7tx"/>
+                <outlet property="ProductQuantity" destination="JUu-MQ-Wv7" id="name-outlet-JUu-MQ-Wv7"/>
+                <outlet property="ProductDiscount" destination="Y3m-40-mgM" id="name-outlet-Y3m-40-mgM"/>
+                <outlet property="ProductPrice" destination="kGK-bh-60H" id="name-outlet-kGK-bh-60H"/>
             </connections>
             <point key="canvasLocation" x="74.400000000000006" y="-1.7991004497751126"/>
         </tableViewCell>

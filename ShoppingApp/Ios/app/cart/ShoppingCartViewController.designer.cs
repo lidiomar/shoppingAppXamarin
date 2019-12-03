@@ -16,13 +16,49 @@ namespace Ios.app.cart
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton Checkout { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel PriceLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView tableViewShoppingCart { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel TotalLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel UnLabel { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (Checkout != null) {
+                Checkout.Dispose ();
+                Checkout = null;
+            }
+
+            if (PriceLabel != null) {
+                PriceLabel.Dispose ();
+                PriceLabel = null;
+            }
+
             if (tableViewShoppingCart != null) {
                 tableViewShoppingCart.Dispose ();
                 tableViewShoppingCart = null;
+            }
+
+            if (TotalLabel != null) {
+                TotalLabel.Dispose ();
+                TotalLabel = null;
+            }
+
+            if (UnLabel != null) {
+                UnLabel.Dispose ();
+                UnLabel = null;
             }
         }
     }

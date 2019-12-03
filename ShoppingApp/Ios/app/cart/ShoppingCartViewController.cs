@@ -1,11 +1,18 @@
 using Foundation;
+using Shared;
+using ShoppingApp.app.model.catalog;
 using System;
+using System.Collections.Generic;
 using UIKit;
 
 namespace Ios.app.cart
 {
     public partial class ShoppingCartViewController : UIViewController
     {
+        public List<Product> products;
+        public int quantity;
+        public float totalValue;
+
         public ShoppingCartViewController(IntPtr handle) : base(handle)
         {
         }
@@ -13,13 +20,19 @@ namespace Ios.app.cart
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            Checkout.SetTitle(NSBundle.MainBundle.GetLocalizedString("checkout", ""), UIControlState.Normal);
+            UnLabel.Text = Utils.GetUN(NSBundle.MainBundle.GetLocalizedString("un", ""), quantity.ToString());
+            TotalLabel.Text = NSBundle.MainBundle.GetLocalizedString("total", " ");
+            PriceLabel.Text = Utils.GetPrice(NSBundle.MainBundle.GetLocalizedString("price", ""), totalValue);
+
             LoadTable();
         }
 
         protected void LoadTable()
         {
             tableViewShoppingCart.SeparatorColor = UIColor.FromRGB(127, 106, 0);
-            tableViewShoppingCart.Source = new ShoppingCartTableSource(this);
+            tableViewShoppingCart.Source = new ShoppingCartTableSource(products);
         }
     }
 }

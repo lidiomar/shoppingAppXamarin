@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using Ios.app.cart;
 using Shared.view;
 using ShoppingApp.app.catalog.viewmodel;
 using ShoppingApp.app.model.catalog;
@@ -27,7 +28,20 @@ namespace Ios.app.catalog
         public override void DidReceiveMemoryWarning ()
         {
             base.DidReceiveMemoryWarning ();
-            // Release any cached data, images, etc that aren't in use.
+        }
+
+        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        {
+            if (segue.Identifier.Equals("buttonBuySegue"))
+            {
+                ShoppingCartViewController shoppingCartViewController = (ShoppingCartViewController)segue.DestinationViewController;
+
+                shoppingCartViewController.products = tableSource.catalogElementViewModel.GetProductsToCart();
+                shoppingCartViewController.quantity = tableSource.catalogElementViewModel.GetQuantity();
+                shoppingCartViewController.totalValue = tableSource.catalogElementViewModel.GetTotalValue();
+
+            }
+            base.PrepareForSegue(segue, sender);
         }
 
         private void SetupButtonFilter(List<Category> categories)

@@ -180,6 +180,7 @@
         <Compile Include="SceneDelegate.designer.cs">
           <DependentUpon>SceneDelegate.cs</DependentUpon>
         </Compile>
+        <Compile Include="app\catalog\Common.cs" />
     </ItemGroup>
     <ItemGroup>
       <BundleResource Include="Resources\en.lproj\Localizable.strings" />

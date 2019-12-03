@@ -15,13 +15,49 @@ namespace Ios.app.cart
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel ProductDiscount { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView ProductImage { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel ProductName { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel ProductPrice { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel ProductQuantity { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (ProductDiscount != null) {
+                ProductDiscount.Dispose ();
+                ProductDiscount = null;
+            }
+
             if (ProductImage != null) {
                 ProductImage.Dispose ();
                 ProductImage = null;
+            }
+
+            if (ProductName != null) {
+                ProductName.Dispose ();
+                ProductName = null;
+            }
+
+            if (ProductPrice != null) {
+                ProductPrice.Dispose ();
+                ProductPrice = null;
+            }
+
+            if (ProductQuantity != null) {
+                ProductQuantity.Dispose ();
+                ProductQuantity = null;
             }
         }
     }
