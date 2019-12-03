@@ -26,7 +26,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)model\catalog\CatalogElementLocalDataSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)model\catalog\CatalogElementRepository.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)model\catalog\ICatalogAdapterDataSource.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)viewmodel\Bla.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)view\ICatalogView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)db\App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils.cs" />

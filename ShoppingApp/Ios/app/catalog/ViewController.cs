@@ -21,7 +21,20 @@ namespace Ios.app.catalog
         public override void ViewDidLoad ()
         {
             base.ViewDidLoad();
+        }
+
+        public override void ViewWillAppear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+
+            tableSource = null;
+            tableSourceList = null;
+            catalogViewModel = null;
             catalogViewModel = new CatalogViewModel(this);
+
+            tableViewCatalog.TableFooterView = new UIView();
+            tableViewCatalog.SeparatorColor = UIColor.FromRGB(217, 217, 217);
+
             _ = catalogViewModel.GetData();
         }
 
@@ -46,15 +59,15 @@ namespace Ios.app.catalog
 
         private void SetupButtonFilter(List<Category> categories)
         {
-            FIlterBarButton.Clicked += (s, e) => {
+            FilterBarButton.Clicked += (s, e) => {
                 UIAlertController alertController = GetAlertController(categories);
-                this.PresentViewController(alertController, true, null);
+                PresentViewController(alertController, true, null);
             };
         }
 
         private UIAlertController GetAlertController(List<Category> categories)
         {
-            UIAlertController alertController = UIAlertController.Create(null, null, UIAlertControllerStyle.ActionSheet);
+            UIAlertController alertController = UIAlertController.Create(null, null, preferredStyle: UIAlertControllerStyle.ActionSheet);
             alertController.AddAction(UIAlertAction.Create(NSBundle.MainBundle.GetLocalizedString("all_categories", " "), UIAlertActionStyle.Default, (a) => {
                 _ = catalogViewModel.GetData();
             }));
@@ -74,7 +87,6 @@ namespace Ios.app.catalog
         public void LoadData(List<Category> categories, List<object> preparedList, Dictionary<string, Sale> salesDict)
         {
             ShowMain();
-            tableViewCatalog.SeparatorColor = UIColor.FromRGB(127, 106, 0);
 
             if(tableSource == null)
             {
@@ -95,7 +107,7 @@ namespace Ios.app.catalog
         {
             ShowMain();
 
-            this.tableSourceList.Clear();
+            tableSourceList.Clear();
             foreach (object o in preparedList)
             {
                 this.tableSourceList.Add(o);
@@ -114,10 +126,12 @@ namespace Ios.app.catalog
             if (value <= 0)
             {
                 buttonBuy.Enabled = false;
+                buttonBuy.Alpha = 0.5f;
             }
             else
             {
                 buttonBuy.Enabled = true;
+                buttonBuy.Alpha = 1.0f;
             }
         }
 

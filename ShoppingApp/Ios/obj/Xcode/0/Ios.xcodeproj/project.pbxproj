@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D37B0620000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8B201E0000000000000000 /* UIKit.framework */; };
+		615972600000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0FDAD20000000000000000 /* MapKit.framework */; };
+		7EF37DEA0000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672336F00000000000000000 /* Foundation.framework */; };
+		F7D164AE0000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EDC1960000000000000000 /* CoreGraphics.framework */; };
+		70AF4B720000000000000000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C976AC020000000000000000 /* Assets.xcassets */; };
+		E98D32360000000000000000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425492C60000000000000000 /* LaunchScreen.storyboard */; };
+		626B18FA0000000000000000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB32798A0000000000000000 /* Main.storyboard */; };
+		DB48FFBE0000000000000000 /* CatalogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7BADE7A0000000000000000 /* CatalogTableViewCell.xib */; };
+		5426E6820000000000000000 /* ShoppingCartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D212A2E0000000000000000 /* ShoppingCartTableViewCell.xib */; };
+		CD04CD460000000000000000 /* SaleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5098C53E0000000000000000 /* SaleTableViewCell.xib */; };
+		45E2B40A0000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3410604E0000000000000000 /* Info.plist */; };
+		BEC09ACE0000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACEE47120000000000000000 /* Entitlements.plist */; };
+		379E81920000000000000000 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAA149A0000000000000000 /* SceneDelegate.m */; };
+		B07C68560000000000000000 /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9065E2220000000000000000 /* ShoppingCartViewController.m */; };
+		295A4F1A0000000000000000 /* ShppingCartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8221AFAA0000000000000000 /* ShppingCartTableViewCell.m */; };
+		A23835DE0000000000000000 /* SaleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DD7D320000000000000000 /* SaleTableViewCell.m */; };
+		1B161CA20000000000000000 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE77317E0000000000000000 /* ViewController.m */; };
+		93F403660000000000000000 /* CatalogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EECC8E0000000000000000 /* CatalogTableViewCell.m */; };
+		CD1EA2A00000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1459C99E0000000000000000 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10CBA85A0000000000000000 /* Ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Ios.app"; path = "Ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8B201E0000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		1F0FDAD20000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		672336F00000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		97EDC1960000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		C976AC020000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets.xcassets"; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		425492C60000000000000000 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "LaunchScreen.storyboard"; path = "LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		BB32798A0000000000000000 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Main.storyboard"; path = "Main.storyboard"; sourceTree = "<group>"; };
+		D7BADE7A0000000000000000 /* CatalogTableViewCell.xib */ = {isa = PBXFileReference; name = "CatalogTableViewCell.xib"; path = "app/catalog/CatalogTableViewCell.xib"; sourceTree = "<group>"; };
+		6D212A2E0000000000000000 /* ShoppingCartTableViewCell.xib */ = {isa = PBXFileReference; name = "ShoppingCartTableViewCell.xib"; path = "app/cart/ShoppingCartTableViewCell.xib"; sourceTree = "<group>"; };
+		5098C53E0000000000000000 /* SaleTableViewCell.xib */ = {isa = PBXFileReference; name = "SaleTableViewCell.xib"; path = "app/catalog/SaleTableViewCell.xib"; sourceTree = "<group>"; };
+		3410604E0000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		ACEE47120000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		89A98F1E0000000000000000 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en"; path = "en.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		28775E200000000000000000 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es"; path = "es.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7B655CA60000000000000000 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt"; path = "pt.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F443436A0000000000000000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "Base"; path = "Base.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		25CC2DD60000000000000000 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SceneDelegate.h"; path = "SceneDelegate.h"; sourceTree = "<group>"; };
+		9EAA149A0000000000000000 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SceneDelegate.m"; path = "SceneDelegate.m"; sourceTree = "<group>"; };
+		1787FB5E0000000000000000 /* ShoppingCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShoppingCartViewController.h"; path = "ShoppingCartViewController.h"; sourceTree = "<group>"; };
+		9065E2220000000000000000 /* ShoppingCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ShoppingCartViewController.m"; path = "ShoppingCartViewController.m"; sourceTree = "<group>"; };
+		943C8E600000000000000000 /* ShppingCartTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShppingCartTableViewCell.h"; path = "ShppingCartTableViewCell.h"; sourceTree = "<group>"; };
+		8221AFAA0000000000000000 /* ShppingCartTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ShppingCartTableViewCell.m"; path = "ShppingCartTableViewCell.m"; sourceTree = "<group>"; };
+		FAFF966E0000000000000000 /* SaleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SaleTableViewCell.h"; path = "SaleTableViewCell.h"; sourceTree = "<group>"; };
+		73DD7D320000000000000000 /* SaleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SaleTableViewCell.m"; path = "SaleTableViewCell.m"; sourceTree = "<group>"; };
+		65994ABA0000000000000000 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ViewController.h"; path = "ViewController.h"; sourceTree = "<group>"; };
+		DE77317E0000000000000000 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ViewController.m"; path = "ViewController.m"; sourceTree = "<group>"; };
+		4910E5CA0000000000000000 /* CatalogTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CatalogTableViewCell.h"; path = "CatalogTableViewCell.h"; sourceTree = "<group>"; };
+		C1EECC8E0000000000000000 /* CatalogTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CatalogTableViewCell.m"; path = "CatalogTableViewCell.m"; sourceTree = "<group>"; };
+		9B7BE2DA0000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		1459C99E0000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E0880B40000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D37B0620000000000000000 /* UIKit.framework in Frameworks */,
+				615972600000000000000000 /* MapKit.framework in Frameworks */,
+				7EF37DEA0000000000000000 /* Foundation.framework in Frameworks */,
+				F7D164AE0000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60DCE07F0000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				49C7800A0000000000000000 /* Ios */,
+				6351AAFC0000000000000000 /* Frameworks */,
+				32B21F950000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32B21F950000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10CBA85A0000000000000000 /* Ios.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		6351AAFC0000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE8B201E0000000000000000 /* UIKit.framework */,
+				1F0FDAD20000000000000000 /* MapKit.framework */,
+				672336F00000000000000000 /* Foundation.framework */,
+				97EDC1960000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		49C7800A0000000000000000 /* Ios */ = {
+			isa = PBXGroup;
+			children = (
+				9B7BE2DA0000000000000000 /* AppDelegate.h */,
+				1459C99E0000000000000000 /* AppDelegate.m */,
+				C976AC020000000000000000 /* Assets.xcassets */,
+				4910E5CA0000000000000000 /* CatalogTableViewCell.h */,
+				C1EECC8E0000000000000000 /* CatalogTableViewCell.m */,
+				ACEE47120000000000000000 /* Entitlements.plist */,
+				3410604E0000000000000000 /* Info.plist */,
+				425492C60000000000000000 /* LaunchScreen.storyboard */,
+				EB5D233D0000000000000000 /* Localizable.strings */,
+				BB32798A0000000000000000 /* Main.storyboard */,
+				FAFF966E0000000000000000 /* SaleTableViewCell.h */,
+				73DD7D320000000000000000 /* SaleTableViewCell.m */,
+				25CC2DD60000000000000000 /* SceneDelegate.h */,
+				9EAA149A0000000000000000 /* SceneDelegate.m */,
+				1787FB5E0000000000000000 /* ShoppingCartViewController.h */,
+				9065E2220000000000000000 /* ShoppingCartViewController.m */,
+				943C8E600000000000000000 /* ShppingCartTableViewCell.h */,
+				8221AFAA0000000000000000 /* ShppingCartTableViewCell.m */,
+				65994ABA0000000000000000 /* ViewController.h */,
+				DE77317E0000000000000000 /* ViewController.m */,
+				A61D01DE0000000000000000 /* app */,
+			);
+			name = "Ios";
+			sourceTree = "<group>";
+		};
+		A61D01DE0000000000000000 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				D447C2C80000000000000000 /* cart */,
+				BD3262530000000000000000 /* catalog */,
+			);
+			name = "app";
+			sourceTree = "<group>";
+		};
+		BD3262530000000000000000 /* catalog */ = {
+			isa = PBXGroup;
+			children = (
+				D7BADE7A0000000000000000 /* CatalogTableViewCell.xib */,
+				5098C53E0000000000000000 /* SaleTableViewCell.xib */,
+			);
+			name = "catalog";
+			sourceTree = "<group>";
+		};
+		D447C2C80000000000000000 /* cart */ = {
+			isa = PBXGroup;
+			children = (
+				6D212A2E0000000000000000 /* ShoppingCartTableViewCell.xib */,
+			);
+			name = "cart";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A75594120000000000000000 /* Ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED71FE360000000000000000 /* Build configuration list for PBXNativeTarget "Ios" */;
+			buildPhases = (
+				13555ADA0000000000000000 /* Sources */,
+				5E0880B40000000000000000 /* Frameworks */,
+				38AEEDC70000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ios";
+			productName = "Ios";
+			productReference = 10CBA85A0000000000000000 /* Ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F60C2EF60000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+			};
+			buildConfigurationList = D65C9DC10000000000000000 /* Build configuration list for PBXProject "Ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+				pt,
+				Base,
+			);
+			mainGroup = 60DCE07F0000000000000000;
+			productRefGroup = 32B21F950000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A75594120000000000000000 /* Ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38AEEDC70000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AF4B720000000000000000 /* Assets.xcassets in Resources */,
+				E98D32360000000000000000 /* LaunchScreen.storyboard in Resources */,
+				626B18FA0000000000000000 /* Main.storyboard in Resources */,
+				DB48FFBE0000000000000000 /* CatalogTableViewCell.xib in Resources */,
+				5426E6820000000000000000 /* ShoppingCartTableViewCell.xib in Resources */,
+				CD04CD460000000000000000 /* SaleTableViewCell.xib in Resources */,
+				45E2B40A0000000000000000 /* Info.plist in Resources */,
+				BEC09ACE0000000000000000 /* Entitlements.plist in Resources */,
+				85AFD0EE0000000000000000 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13555ADA0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379E81920000000000000000 /* SceneDelegate.m in Sources */,
+				B07C68560000000000000000 /* ShoppingCartViewController.m in Sources */,
+				295A4F1A0000000000000000 /* ShppingCartTableViewCell.m in Sources */,
+				A23835DE0000000000000000 /* SaleTableViewCell.m in Sources */,
+				1B161CA20000000000000000 /* ViewController.m in Sources */,
+				93F403660000000000000000 /* CatalogTableViewCell.m in Sources */,
+				CD1EA2A00000000000000000 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB5D233D0000000000000000 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F443436A0000000000000000 /* Base */,
+				89A98F1E0000000000000000 /* en */,
+				28775E200000000000000000 /* es */,
+				7B655CA60000000000000000 /* pt */,
+			);
+			name = "Localizable.strings";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F049853A0000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69276BFE0000000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE8DB7B20000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.lidiocorp.ShoppingApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		776B9E760000000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.lidiocorp.ShoppingApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D65C9DC10000000000000000 /* Build configuration list for PBXProject "Ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F049853A0000000000000000 /* Debug */,
+				69276BFE0000000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ED71FE360000000000000000 /* Build configuration list for PBXNativeTarget "Ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8DB7B20000000000000000 /* Debug */,
+				776B9E760000000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F60C2EF60000000000000000 /* Project object */;
+}

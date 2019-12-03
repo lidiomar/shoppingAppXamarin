@@ -30,7 +30,7 @@ namespace Ios.app.catalog
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIBarButtonItem FIlterBarButton { get; set; }
+        UIKit.UIBarButtonItem FilterBarButton { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -38,9 +38,9 @@ namespace Ios.app.catalog
 
         void ReleaseDesignerOutlets ()
         {
-            if (FIlterBarButton != null) {
-                FIlterBarButton.Dispose ();
-                FIlterBarButton = null;
+            if (FilterBarButton != null) {
+                FilterBarButton.Dispose ();
+                FilterBarButton = null;
             }
 
             if (tableViewCatalog != null) {

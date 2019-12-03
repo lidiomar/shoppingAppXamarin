@@ -14,7 +14,6 @@ namespace ShoppingApp.app.model.catalog
             List<Category> local = await catalogLocalDataSource.GetCategoriesAsync();
             if(local.Count > 0)
             {
-                //Log.Info("cacheControl", "categories loaded from LOCAL data source");
                 return local;
             }
 
@@ -28,7 +27,6 @@ namespace ShoppingApp.app.model.catalog
                     }
                 });
             }
-            //Log.Info("cacheControl", "categories loaded from REMOTE data source");
             return categories;
             
         }
@@ -45,7 +43,6 @@ namespace ShoppingApp.app.model.catalog
             List<Product> local = await catalogLocalDataSource.GetProductsAsync();
             if (local.Count > 0)
             {
-                //Log.Info("cacheControl", "products loaded from LOCAL data source");
                 return local;
             }
             
@@ -60,7 +57,6 @@ namespace ShoppingApp.app.model.catalog
                     }
                 });
             }
-            //Log.Info("cacheControl","products loaded from REMOTE data source");
             return products;
             
         }
@@ -68,7 +64,6 @@ namespace ShoppingApp.app.model.catalog
         public async Task<List<Product>> GetProductsByCategoryAsync(string category)
         {
             List<Product> local = await catalogLocalDataSource.GetProductsByCategoryAsync(category);
-            //Log.Info("cacheControl", "products BY CATEGORY loaded from LOCAL data source");
             return local;
             
         }

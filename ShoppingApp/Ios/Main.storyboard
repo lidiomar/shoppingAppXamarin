@@ -15,11 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Yb-Zg-3PT" userLabel="Main" misplaced="YES">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Yb-Zg-3PT" userLabel="Main">
+                                <rect key="frame" x="0.0" y="70" width="320" height="498"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Jf-Si-QJb" misplaced="YES">
-                                        <rect key="frame" x="0.0" y="444" width="320" height="80"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Jf-Si-QJb">
+                                        <rect key="frame" x="0.0" y="418" width="320" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpN-QL-jym">
                                                 <rect key="frame" x="10" y="20" width="300" height="40"/>
@@ -33,7 +33,7 @@
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="UvJ-h2-Ly5" kind="show" id="po5-M7-tIA" identifier="buttonBuySegue"/>
+                                                    <segue destination="UvJ-h2-Ly5" kind="show" identifier="buttonBuySegue" id="po5-M7-tIA"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -46,8 +46,8 @@
                                             <constraint firstItem="tpN-QL-jym" firstAttribute="centerY" secondItem="6Jf-Si-QJb" secondAttribute="centerY" id="kgX-d7-W3I"/>
                                         </constraints>
                                     </view>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dUw-nT-gnP" misplaced="YES">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="444"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dUw-nT-gnP">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="418"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </tableView>
                                 </subviews>
@@ -66,11 +66,11 @@
                                     <constraint firstItem="6Jf-Si-QJb" firstAttribute="top" secondItem="dUw-nT-gnP" secondAttribute="bottom" id="tMa-48-aCM"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKU-j0-dF2" userLabel="Loading" misplaced="YES">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKU-j0-dF2" userLabel="Loading">
+                                <rect key="frame" x="0.0" y="70" width="320" height="498"/>
                                 <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="aVO-vD-X0p" misplaced="YES">
-                                        <rect key="frame" x="150" y="252" width="20" height="20"/>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="aVO-vD-X0p">
+                                        <rect key="frame" x="141.5" y="230.5" width="37" height="37"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -79,11 +79,11 @@
                                     <constraint firstItem="aVO-vD-X0p" firstAttribute="centerX" secondItem="dKU-j0-dF2" secondAttribute="centerX" id="y7O-Th-GFA"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yc-oK-FF9" userLabel="Error" misplaced="YES">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yc-oK-FF9" userLabel="Error">
+                                <rect key="frame" x="0.0" y="70" width="320" height="498"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EC-88-oDd" misplaced="YES">
-                                        <rect key="frame" x="144" y="251.5" width="32" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EC-88-oDd">
+                                        <rect key="frame" x="144.5" y="239" width="31.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -119,7 +119,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="FIlterBarButton" destination="vsh-7Y-0ys" id="name-outlet-vsh-7Y-0ys"/>
+                        <outlet property="FilterBarButton" destination="vsh-7Y-0ys" id="name-outlet-vsh-7Y-0ys"/>
                         <outlet property="buttonBuy" destination="tpN-QL-jym" id="DG1-w6-S2p"/>
                         <outlet property="errorView" destination="8yc-oK-FF9" id="GGi-vK-fhV"/>
                         <outlet property="loadingView" destination="dKU-j0-dF2" id="i3K-8W-wfX"/>
@@ -139,8 +139,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zUK-CX-UBc" misplaced="YES">
-                                <rect key="frame" x="0.0" y="44" width="320" height="364"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zUK-CX-UBc">
+                                <rect key="frame" x="0.0" y="70" width="320" height="338"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55z-C2-ZrV">
@@ -230,11 +230,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Carrinho" id="hES-3J-OaJ"/>
                     <connections>
-                        <outlet property="tableViewShoppingCart" destination="zUK-CX-UBc" id="name-outlet-zUK-CX-UBc"/>
-                        <outlet property="UnLabel" destination="pO4-hC-2XP" id="name-outlet-pO4-hC-2XP"/>
+                        <outlet property="Checkout" destination="MPA-Mk-9l2" id="name-outlet-MPA-Mk-9l2"/>
                         <outlet property="PriceLabel" destination="qfX-zE-VYW" id="name-outlet-qfX-zE-VYW"/>
                         <outlet property="TotalLabel" destination="7i1-ZB-E4c" id="name-outlet-7i1-ZB-E4c"/>
-                        <outlet property="Checkout" destination="MPA-Mk-9l2" id="name-outlet-MPA-Mk-9l2"/>
+                        <outlet property="UnLabel" destination="pO4-hC-2XP" id="name-outlet-pO4-hC-2XP"/>
+                        <outlet property="tableViewShoppingCart" destination="zUK-CX-UBc" id="name-outlet-zUK-CX-UBc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00N-zv-k8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

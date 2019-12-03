@@ -165,7 +165,10 @@ namespace Ios.app.catalog
                 {
                     string markAsfavoriteError = NSBundle.MainBundle.GetLocalizedString("favorite_error", " ");
                     string markAsfavoriteErrorFormated = String.Format(markAsfavoriteError, product?.Name);
-                    //Toast.MakeText(context, markAsfavoriteErrorFormated, ToastLength.Short).Show();
+
+                    UIAlertController alertController = UIAlertController.Create(null, markAsfavoriteErrorFormated, preferredStyle: UIAlertControllerStyle.Alert);
+                    alertController.AddAction(UIAlertAction.Create(NSBundle.MainBundle.GetLocalizedString("cancel", " "), UIAlertActionStyle.Default, (a)=> { }));
+                    //TODO
                 }
             });
         }

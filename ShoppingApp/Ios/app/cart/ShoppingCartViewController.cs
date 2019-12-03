@@ -31,7 +31,8 @@ namespace Ios.app.cart
 
         protected void LoadTable()
         {
-            tableViewShoppingCart.SeparatorColor = UIColor.FromRGB(127, 106, 0);
+            tableViewShoppingCart.TableFooterView = new UIView();
+            tableViewShoppingCart.SeparatorColor = UIColor.FromRGB(217, 217, 217);
             tableViewShoppingCart.Source = new ShoppingCartTableSource(products);
         }
     }

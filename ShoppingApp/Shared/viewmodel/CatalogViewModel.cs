@@ -13,9 +13,13 @@ namespace ShoppingApp.app.catalog.viewmodel
         private List<Category> categories;
         private List<Sale> sales;
         private List<Product> products;
+
         public CatalogViewModel(ICatalogView view)
         {
             this.view = view;
+            categories = new List<Category>();
+            sales = new List<Sale>();
+            products = new List<Product>();
         }
 
         public async Task GetData()

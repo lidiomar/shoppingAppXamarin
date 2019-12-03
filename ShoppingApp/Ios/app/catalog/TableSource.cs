@@ -11,17 +11,17 @@ namespace Ios.app.catalog
     public class TableSource : UITableViewSource
     {
         NSString cellIdentifier = new NSString("TableCell");
-        public ICatalogView owner;
         public List<object> preparedList = new List<object>();
         public Dictionary<string, Sale> salesDict = new Dictionary<string, Sale>();
-        public ICatalogElementViewModel catalogElementViewModel;
+        public CatalogElementViewModel catalogElementViewModel;
+        public ICatalogView owner;
 
         public TableSource(ICatalogView owner, List<object> preparedList, Dictionary<string, Sale> salesDict)
         {
-            this.owner = owner;
             this.preparedList = preparedList;
             this.salesDict = salesDict;
-            this.catalogElementViewModel = new CatalogElementViewModel();
+            this.owner = owner;
+            catalogElementViewModel = new CatalogElementViewModel();
         }
         
         public override nint RowsInSection(UITableView tableview, nint section)
