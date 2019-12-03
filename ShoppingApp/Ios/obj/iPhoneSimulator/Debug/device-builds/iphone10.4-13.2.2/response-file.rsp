@@ -1,5 +1,5 @@
---cache=/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache
---sim=/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/Ios.app
+--cache=/Users/lidiomarfernandomachado/dev_test/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-cache
+--sim=/Users/lidiomarfernandomachado/dev_test/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/Ios.app
 --executable=Ios
  --debug
  --sgen-conc
@@ -10,7 +10,7 @@
  --aot-options=-O=-float32
  --http-message-handler=NSUrlSessionHandler
  --abi=x86_64
---symbollist=/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-symbols.list
+--symbollist=/Users/lidiomarfernandomachado/dev_test/shoppingAppXamarin/ShoppingApp/Ios/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-13.2.2/mtouch-symbols.list
  --dsym=no
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
@@ -164,16 +164,16 @@
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XmlDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll
--r=/Users/lfernandomachado/.nuget/packages/newtonsoft.json/12.0.3/lib/netstandard2.0/Newtonsoft.Json.dll
--r=/Users/lfernandomachado/.nuget/packages/refit/5.0.23/lib/netstandard2.0/Refit.dll
--r=/Users/lfernandomachado/.nuget/packages/sqlite-net-pcl/1.6.292/lib/netstandard1.1/SQLite-net.dll
--r=/Users/lfernandomachado/.nuget/packages/sqlitenetextensions/2.1.0/lib/netstandard1.1/SQLiteNetExtensions.dll
--r=/Users/lfernandomachado/.nuget/packages/sqlitepclraw.bundle_green/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll
--r=/Users/lfernandomachado/.nuget/packages/sqlitepclraw.bundle_green/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll
--r=/Users/lfernandomachado/.nuget/packages/sqlitepclraw.core/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.core.dll
--r=/Users/lfernandomachado/.nuget/packages/sqlitepclraw.provider.sqlite3.ios_unified/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll
--r=/Users/lfernandomachado/.nuget/packages/xamarin.essentials/1.2.0/lib/xamarinios10/Xamarin.Essentials.dll
--r=/Users/lfernandomachado/.nuget/packages/xamarin.sdwebimage/4.4.7/lib/Xamarin.iOS/SDWebImage.iOS.dll
+-r=/Users/lidiomarfernandomachado/.nuget/packages/newtonsoft.json/12.0.3/lib/netstandard2.0/Newtonsoft.Json.dll
+-r=/Users/lidiomarfernandomachado/.nuget/packages/refit/5.0.23/lib/netstandard2.0/Refit.dll
+-r=/Users/lidiomarfernandomachado/.nuget/packages/sqlite-net-pcl/1.6.292/lib/netstandard1.1/SQLite-net.dll
+-r=/Users/lidiomarfernandomachado/.nuget/packages/sqlitenetextensions/2.1.0/lib/netstandard1.1/SQLiteNetExtensions.dll
+-r=/Users/lidiomarfernandomachado/.nuget/packages/sqlitepclraw.bundle_green/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll
+-r=/Users/lidiomarfernandomachado/.nuget/packages/sqlitepclraw.bundle_green/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll
+-r=/Users/lidiomarfernandomachado/.nuget/packages/sqlitepclraw.core/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.core.dll
+-r=/Users/lidiomarfernandomachado/.nuget/packages/sqlitepclraw.provider.sqlite3.ios_unified/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll
+-r=/Users/lidiomarfernandomachado/.nuget/packages/xamarin.essentials/1.2.0/lib/xamarinios10/Xamarin.Essentials.dll
+-r=/Users/lidiomarfernandomachado/.nuget/packages/xamarin.sdwebimage/4.4.7/lib/Xamarin.iOS/SDWebImage.iOS.dll
  --target-framework=Xamarin.iOS,v1.0
---root-assembly=/Users/lfernandomachado/dev/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/Ios.exe
+--root-assembly=/Users/lidiomarfernandomachado/dev_test/shoppingAppXamarin/ShoppingApp/Ios/bin/iPhoneSimulator/Debug/Ios.exe
  

@@ -1,19 +1,24 @@
 ﻿<Properties StartupConfiguration="{4722FE14-77EC-4962-8292-2626C786DE28}|Default">
-  <MonoDevelop.Ide.ItemProperties.Ios automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.80CFC64E-A9EC-4B77-8183-9C6CAFB2C584" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Ios/app/catalog/TableSource.cs">
+  <MonoDevelop.Ide.ItemProperties.Ios automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DA189CEB-CF71-4A24-8A99-A8A42EEFEA46" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/app/catalog/CatalogFragment.cs">
     <Files>
-      <File FileName="Ios/app/catalog/CatalogTableViewCell.cs" Line="150" Column="1" />
-      <File FileName="Ios/app/catalog/TableSource.cs" Line="1" Column="1" />
+      <File FileName="Ios/app/catalog/ViewController.cs" Line="48" Column="13" />
+      <File FileName="Droid/app/catalog/CatalogFragment.cs" Line="169" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShoppingApp" expanded="True">
-            <Node name="Ios" expanded="True">
+            <Node name="Droid" expanded="True">
               <Node name="app" expanded="True">
                 <Node name="catalog" expanded="True">
-                  <Node name="TableSource.cs" selected="True" />
+                  <Node name="CatalogFragment.cs" selected="True" />
                 </Node>
+              </Node>
+            </Node>
+            <Node name="Ios" expanded="True">
+              <Node name="app" expanded="True">
+                <Node name="catalog" expanded="True" />
               </Node>
               <Node name="Resources" expanded="True">
                 <Node name="Base.lproj" expanded="True" />
@@ -27,6 +32,9 @@
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

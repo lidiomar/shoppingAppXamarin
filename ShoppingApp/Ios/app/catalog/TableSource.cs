@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using Foundation;
 using Shared.view;
 using ShoppingApp.app.catalog.viewmodel;
